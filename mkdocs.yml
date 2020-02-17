@@ -1,0 +1,5 @@
+site_name: Galaxy Lightcone
+nav:  
+   - Home:  index.md  
+   - About:  about.md  
+theme:  readthedocs
