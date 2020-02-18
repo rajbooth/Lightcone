@@ -55,9 +55,31 @@ plt.legend()
 plt.show()
 ```
 
-## Delete a file
+## Latex equations
+$$M = m - 5 (\log_{10}D_L - 1) $$
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+where $M$ is absolute magnitude and $m$ is apparent magnitude
+
+$$ m = M + 5 (\log_{10}D_L - 1) $$
+
+$$\rightarrow D_L = 10^{0.2(m-M) - 1} $$
+
+where $D_L = (1+z) D_C$
+
+Schechter:
+$M^*_J = -21.4$
+
+$$M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}$$
+
+$$ \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} $$
+
+Efstathieu (Les Houcehs Lectures):
+
+"In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"
+
+$$5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  $$
+
+$$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 
 ## Export a file
 
@@ -178,7 +200,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzM5NTgzNzgsOTE4MTk5NDUxLDE0OD
-A4MzM0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2
-XX0=
+eyJoaXN0b3J5IjpbODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
+MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
+
 -->
