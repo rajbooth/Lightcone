@@ -45,6 +45,15 @@ def add_snapshot(snap):
 Yet more code:
 
 ``` python
+zs = np.arange(0, 1, 0.02)
+for mag in np.arange(20.0,26.1, 1.0):
+    plt.loglog(zs, getLum(mag, zs), label = 'M = {0:.2f}'.format(mag))
+plt.title("Minimum Luminostiy vs Redshift")
+plt.xlabel("Redshift (z)")
+plt.ylabel("Min Luminostiy (units of $M_*$)")
+plt.legend()
+plt.show()
+```
 
 ## Delete a file
 
@@ -169,7 +178,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzOTYxNjc2LDkxODE5OTQ1MSwxNDgwOD
-MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
-
+eyJoaXN0b3J5IjpbLTEyNzM5NTgzNzgsOTE4MTk5NDUxLDE0OD
+A4MzM0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2
+XX0=
 -->
