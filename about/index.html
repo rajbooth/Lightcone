@@ -64,20 +64,20 @@
         
             <li><a class="toctree-l3" href="#overview">Overview</a></li>
         
+            <li><a class="toctree-l3" href="#file-structure">File structure</a></li>
+        
         </ul>
     
 
-    <li class="toctree-l2"><a href="#files">Files</a></li>
+    <li class="toctree-l2"><a href="#viewing-lightcone-data">Viewing lightcone data</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#create-files-and-folders">Create files and folders</a></li>
-        
-            <li><a class="toctree-l3" href="#switch-to-another-file">Switch to another file</a></li>
+            <li><a class="toctree-l3" href="#displaying-python-code">Displaying Python code</a></li>
         
             <li><a class="toctree-l3" href="#rename-a-file">Rename a file</a></li>
         
-            <li><a class="toctree-l3" href="#delete-a-file">Delete a file</a></li>
+            <li><a class="toctree-l3" href="#latex-equations">Latex equations</a></li>
         
             <li><a class="toctree-l3" href="#export-a-file">Export a file</a></li>
         
@@ -164,16 +164,62 @@
 <h2 id="overview">Overview</h2>
 <p>This notebook describes the contents of a galaxy lightcone and the associagted file structure used to store this data, and provides illustrative samples of python code that can be used to retrieve and process this data.</p>
 <p>The lighcone catalog dataset provides positional, redshift, and lumionosity data on more than 16 billion galaxies spanning a comoving spatial volume of $6000/h \,  Mpc^3$.  </p>
-<h1 id="files">Files</h1>
-<p>StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible <strong>offline!</strong></p>
-<h2 id="create-files-and-folders">Create files and folders</h2>
-<p>The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the <strong>New file</strong> button in the file explorer. You can also create folders by clicking the <strong>New folder</strong> button.</p>
-<h2 id="switch-to-another-file">Switch to another file</h2>
-<p>All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.</p>
+<h2 id="file-structure">File structure</h2>
+<p>Uses hdf5 data files.</p>
+<h1 id="viewing-lightcone-data">Viewing lightcone data</h1>
+<p><img alt="Slice through galaxy lightcone" src="https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png" />
+The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the <strong>New file</strong> button in the file explorer. You can also create folders by clicking the <strong>New folder</strong> button.</p>
+<h2 id="displaying-python-code">Displaying Python code</h2>
+<pre><code class="python">s = &quot;Python syntax highlighting&quot;
+print s
+</code></pre>
+
+<p>Now for some more code:</p>
+<pre><code class="python">def add_snapshot(snap):
+    ngals = 0
+    fname = 'galaxy_lightcone.snap{0:02d}'.format(snap)
+    with h5py.File(fpath+fname,'r') as fi:
+        for k in fi.keys():
+            print (k, fi[k].shape) 
+            if True: # k=='octant_0':
+                g = fi[k]
+                gals = g[(g['Dec']&gt;85) &amp; (g['Dec']&lt;95)]
+                L.extend(gals['L'])
+                r.extend(gals['r'])
+                ra.extend(gals['RA'])
+                dec.extend(gals['Dec'])
+                RSD.extend(gals['RSD'])
+                zz.extend(gals['z'])
+                ngals += len(gals)
+    return ngals
+</code></pre>
+
 <h2 id="rename-a-file">Rename a file</h2>
-<p>You can rename the current file by clicking the file name in the navigation bar or by clicking the <strong>Rename</strong> button in the file explorer.</p>
-<h2 id="delete-a-file">Delete a file</h2>
-<p>You can delete the current file by clicking the <strong>Remove</strong> button in the file explorer. The file will be moved into the <strong>Trash</strong> folder and automatically deleted after 7 days of inactivity.</p>
+<p>Yet more code:</p>
+<pre><code class="python">zs = np.arange(0, 1, 0.02)
+for mag in np.arange(20.0,26.1, 1.0):
+    plt.loglog(zs, getLum(mag, zs), label = 'M = {0:.2f}'.format(mag))
+plt.title(&quot;Minimum Luminostiy vs Redshift&quot;)
+plt.xlabel(&quot;Redshift (z)&quot;)
+plt.ylabel(&quot;Min Luminostiy (units of $M_*$)&quot;)
+plt.legend()
+plt.show()
+</code></pre>
+
+<h2 id="latex-equations">Latex equations</h2>
+<p>$$M = m - 5 (\log_{10}D_L - 1) $$</p>
+<p>where $M$ is absolute magnitude and $m$ is apparent magnitude</p>
+<p>$$ m = M + 5 (\log_{10}D_L - 1) $$</p>
+<p>$$\rightarrow D_L = 10^{0.2(m-M) - 1} $$</p>
+<p>where $D_L = (1+z) D_C$</p>
+<p>Schechter:
+$M^*_J = -21.4$</p>
+<p>$$M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}$$</p>
+<p>$$ \rightarrow \frac{L_<em>}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,</em>})} $$</p>
+<p>Efstathieu (Les Houcehs Lectures):</p>
+<p>"In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"</p>
+<p>$$5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  $$</p>
+<p>$$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$</p>
 <h2 id="export-a-file">Export a file</h2>
 <p>You can export the current file by clicking <strong>Export to disk</strong> in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.</p>
 <h1 id="synchronization">Synchronization</h1>
@@ -281,6 +327,12 @@ A --&gt; C(Round Rect)
 B --&gt; D{Rhombus}
 C --&gt; D
 </code></pre>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOT
+k0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4
+NjE4OTQwODZdfQ==
+-->
               
             </div>
           </div>
