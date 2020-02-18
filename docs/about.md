@@ -56,6 +56,7 @@ plt.show()
 ```
 
 ## Latex equations
+
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
 where $M$ is absolute magnitude and $m$ is apparent magnitude
@@ -200,7 +201,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
-MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
-
+eyJoaXN0b3J5IjpbMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOT
+k0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4
+NjE4OTQwODZdfQ==
 -->
