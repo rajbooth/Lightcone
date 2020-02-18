@@ -1,9 +1,9 @@
 site_name: Galaxy Lightcone
 nav:  
-   - Home:  index.md  
-   - About:  about.md  
+  - Home:  index.md  
+  - About:  about.md  
 theme:  readthedocs
 markdown_extensions:
-    - markdown_katex:
-      no_inline_svg: True
-      insert_fonts_css: True
+  - markdown_katex:
+     no_inline_svg: True
+     insert_fonts_css: True
