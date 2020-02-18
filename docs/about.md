@@ -7,9 +7,9 @@ This notebook describes the contents of a galaxy lightcone and the associagted f
 The lighcone catalog dataset provides positional, redshift, and lumionosity data on more than 16 billion galaxies spanning a comoving spatial volume of $6000/h \,  Mpc^3$.  
 
 
-# Files
+## File structure
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+Uses hdf5 data files.
 
 ## Create files and folders
 
@@ -146,5 +146,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
 -->
