@@ -21,8 +21,26 @@ The file explorer is accessible using the button in left corner of the navigatio
 s = "Python syntax highlighting"
 print s
 ```
-Nof 
-
+Now for some more code:
+``` python
+def add_snapshot(snap):
+    ngals = 0
+    fname = 'galaxy_lightcone.snap{0:02d}'.format(snap)
+    with h5py.File(fpath+fname,'r') as fi:
+        for k in fi.keys():
+            print (k, fi[k].shape) 
+            if True: # k=='octant_0':
+                g = fi[k]
+                gals = g[(g['Dec']>85) & (g['Dec']<95)]
+                L.extend(gals['L'])
+                r.extend(gals['r'])
+                ra.extend(gals['RA'])
+                dec.extend(gals['Dec'])
+                RSD.extend(gals['RSD'])
+                zz.extend(gals['z'])
+                ngals += len(gals)
+    return ngals
+```
 ## Rename a file
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
@@ -150,6 +168,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjY0MzQ4OSwxNDgwODMzNCwtOTM3OT
+eyJoaXN0b3J5IjpbMTY0OTQ4NjM4MSwxNDgwODMzNCwtOTM3OT
 g4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
 -->
