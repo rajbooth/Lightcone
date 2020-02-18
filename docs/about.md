@@ -12,7 +12,7 @@ The lighcone catalog dataset provides positional, redshift, and lumionosity data
 Uses hdf5 data files.
 
 # Viewing lightcone data
-![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
+![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
 ## Switch to another file
@@ -146,6 +146,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3Mzg1MzA1NSwtOTM3OTg4NjE4LDYwMD
-U0MTg3OCwtMTg2MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1ND
+E4NzgsLTE4NjE4OTQwODZdfQ==
 -->
