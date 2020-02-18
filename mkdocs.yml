@@ -3,3 +3,5 @@ nav:
    - Home:  index.md  
    - About:  about.md  
 theme:  readthedocs
+markdown_extensions:
+    - markdown-katex
