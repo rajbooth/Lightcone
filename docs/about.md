@@ -11,7 +11,7 @@ The lighcone catalog dataset provides positional, redshift, and lumionosity data
 
 Uses hdf5 data files.
 
-## Create files and folders
+# Viewing lightcone data
 
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
@@ -146,5 +146,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4Nj
+E4OTQwODZdfQ==
 -->
