@@ -15,9 +15,13 @@ Uses hdf5 data files.
 ![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
-## Switch to another file
+## Displaying Python code
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+```python
+s = "Python syntax highlighting"
+print s
+```
+Nof 
 
 ## Rename a file
 
@@ -146,6 +150,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1ND
-E4NzgsLTE4NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbLTcxMjY0MzQ4OSwxNDgwODMzNCwtOTM3OT
+g4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
 -->
