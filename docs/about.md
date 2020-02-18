@@ -65,7 +65,7 @@ where $M$ is absolute magnitude and $m$ is apparent magnitude
 
 $$\rightarrow D_L = 10^{0.2(m-M) - 1}$$ 
 
-where \(D_L = (1+z) D_C$)
+where \(D_L = (1+z) D_C$ \)
 
 Schechter:
 $M^*_J = -21.4$
@@ -201,7 +201,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5ODI4NTcwOCwtMTYzNTY0MTA3NSwxOD
+eyJoaXN0b3J5IjpbMjA4MzA1OTYxMiwtMTYzNTY0MTA3NSwxOD
 A2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwODMzNCwt
 OTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
 -->
