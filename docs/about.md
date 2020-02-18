@@ -16,7 +16,6 @@ Uses hdf5 data files.
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
 ## Displaying Python code
-
 ```python
 s = "Python syntax highlighting"
 print s
@@ -168,6 +167,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTQ4NjM4MSwxNDgwODMzNCwtOTM3OT
-g4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5OD
+g2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
 -->
