@@ -163,7 +163,7 @@
                 <h1 id="a-galaxy-lightcone-catalog">A Galaxy Lightcone Catalog</h1>
 <h2 id="overview">Overview</h2>
 <p>This notebook describes the contents of a galaxy lightcone and the associagted file structure used to store this data, and provides illustrative samples of python code that can be used to retrieve and process this data.</p>
-<p>The lighcone catalog dataset provides positional, redshift, and lumionosity data on more than 16 billion galaxies spanning a comoving spatial volume of $6000/h \,  Mpc^3$.  </p>
+<p>The lighcone catalog dataset provides positional, redshift, and lumionosity data on more than 16 billion galaxies spanning a comoving spatial volume of <script type="math/tex">6000/h \,  Mpc^3</script>.  </p>
 <h2 id="file-structure">File structure</h2>
 <p>Uses hdf5 data files.</p>
 <h1 id="viewing-lightcone-data">Viewing lightcone data</h1>
@@ -207,26 +207,29 @@ plt.show()
 </code></pre>
 
 <h2 id="latex-equations">Latex equations</h2>
-<pre><code class="math">M = m - 5 (\log_{10}D_L - 1) 
-</code></pre>
-
-<p>where $M$ is absolute magnitude and $m$ is apparent magnitude</p>
-<pre><code class="math"> m = M + 5 (\log_{10}D_L - 1) 
-
-\rightarrow D_L = 10^{0.2(m-M) - 1} 
-</code></pre>
-
-<p>where $D_L = (1+z) D_C$</p>
+<p>
+<script type="math/tex; mode=display">M = m - 5 (\log_{10}D_L - 1) </script>
+</p>
+<p>where <script type="math/tex">M</script> is absolute magnitude and <script type="math/tex">m</script> is apparent magnitude</p>
+<p>
+<script type="math/tex; mode=display">m = M + 5 (\log_{10}D_L - 1)</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\rightarrow D_L = 10^{0.2(m-M) - 1}</script>
+</p>
+<p>where <script type="math/tex">D_L = (1+z) D_C </script>
+</p>
 <p>Schechter:
-$M^*_J = -21.4$</p>
+<script type="math/tex"> M^*_J = -21.4 </script>
+</p>
 <p>
 <script type="math/tex; mode=display">M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}</script>
 </p>
 <p>
 <script type="math/tex; mode=display"> \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} </script>
 </p>
-<p>Efstathieu (Les Houcehs Lectures):</p>
-<p>"In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"</p>
+<p>Efstathieu (Les Houches Lectures):</p>
+<p>"In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity <script type="math/tex">L</script> can be seen out to a distance <script type="math/tex">d_{max}</script> (redshift <script type="math/tex">z_{max}</script>) given by:"</p>
 <p>
 <script type="math/tex; mode=display">5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  </script>
 </p>
@@ -313,7 +316,7 @@ $M^*_J = -21.4$</p>
 </table>
 <h2 id="katex">KaTeX</h2>
 <p>You can render LaTeX mathematical expressions using <a href="https://khan.github.io/KaTeX/">KaTeX</a>:</p>
-<p>The <em>Gamma function</em> satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral</p>
+<p>The <em>Gamma function</em> satisfying <script type="math/tex">\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N</script> is via the Euler integral</p>
 <p>
 <script type="math/tex; mode=display">
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
@@ -344,9 +347,10 @@ C --&gt; D
 </code></pre>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MT
-k4NTU2Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2
-MDA1NDE4NzgsLTE4NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbNzUzMzc1Njc3LDIwODMwNTk2MTIsLTE2Mz
+U2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOTk0NTEs
+MTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4NjE4OT
+QwODZdfQ==
 -->
               
             </div>
