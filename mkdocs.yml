@@ -4,4 +4,4 @@ nav:
    - About:  about.md  
 theme:  readthedocs
 markdown_extensions:
-    - markdown-katex
+    - katex
