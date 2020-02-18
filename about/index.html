@@ -207,19 +207,32 @@ plt.show()
 </code></pre>
 
 <h2 id="latex-equations">Latex equations</h2>
-<p>$$M = m - 5 (\log_{10}D_L - 1) $$</p>
+<pre><code class="math">M = m - 5 (\log_{10}D_L - 1) 
+</code></pre>
+
 <p>where $M$ is absolute magnitude and $m$ is apparent magnitude</p>
-<p>$$ m = M + 5 (\log_{10}D_L - 1) $$</p>
-<p>$$\rightarrow D_L = 10^{0.2(m-M) - 1} $$</p>
+<pre><code class="math"> m = M + 5 (\log_{10}D_L - 1) 
+
+\rightarrow D_L = 10^{0.2(m-M) - 1} 
+</code></pre>
+
 <p>where $D_L = (1+z) D_C$</p>
 <p>Schechter:
 $M^*_J = -21.4$</p>
-<p>$$M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}$$</p>
-<p>$$ \rightarrow \frac{L_<em>}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,</em>})} $$</p>
+<p>
+<script type="math/tex; mode=display">M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}</script>
+</p>
+<p>
+<script type="math/tex; mode=display"> \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} </script>
+</p>
 <p>Efstathieu (Les Houcehs Lectures):</p>
 <p>"In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"</p>
-<p>$$5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  $$</p>
-<p>$$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$</p>
+<p>
+<script type="math/tex; mode=display">5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  </script>
+</p>
+<p>
+<script type="math/tex; mode=display"> \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} </script>
+</p>
 <h2 id="export-a-file">Export a file</h2>
 <p>You can export the current file by clicking <strong>Export to disk</strong> in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.</p>
 <h1 id="synchronization">Synchronization</h1>
@@ -301,9 +314,11 @@ $M^*_J = -21.4$</p>
 <h2 id="katex">KaTeX</h2>
 <p>You can render LaTeX mathematical expressions using <a href="https://khan.github.io/KaTeX/">KaTeX</a>:</p>
 <p>The <em>Gamma function</em> satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral</p>
-<p>$$
+<p>
+<script type="math/tex; mode=display">
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$</p>
+</script>
+</p>
 <blockquote>
 <p>You can find more information about <strong>LaTeX</strong> mathematical expressions <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">here</a>.</p>
 </blockquote>
@@ -329,9 +344,9 @@ C --&gt; D
 </code></pre>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOT
-k0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4
-NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbLTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MT
+k4NTU2Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2
+MDA1NDE4NzgsLTE4NjE4OTQwODZdfQ==
 -->
               
             </div>
@@ -374,6 +389,7 @@ NjE4OTQwODZdfQ==
 </div>
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
       <script src="../search/main.js" defer></script>
 
 </body>
