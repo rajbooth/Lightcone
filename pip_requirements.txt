@@ -1,1 +1,2 @@
 markdown_katex
+python-markdown-math
