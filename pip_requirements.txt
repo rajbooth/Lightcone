@@ -1,1 +1,1 @@
-pip install markdown_katex
+markdown_katex
