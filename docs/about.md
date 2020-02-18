@@ -62,10 +62,11 @@ M = m - 5 (\log_{10}D_L - 1)
 ```
 where $M$ is absolute magnitude and $m$ is apparent magnitude
 
-$$ m = M + 5 (\log_{10}D_L - 1) $$
+```math
+ m = M + 5 (\log_{10}D_L - 1) 
 
-$$\rightarrow D_L = 10^{0.2(m-M) - 1} $$
-
+\rightarrow D_L = 10^{0.2(m-M) - 1} 
+```
 where $D_L = (1+z) D_C$
 
 Schechter:
@@ -202,7 +203,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzEwODU3NzEsMTgwNjMxNzUzLDg3MT
+eyJoaXN0b3J5IjpbLTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MT
 k4NTU2Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2
 MDA1NDE4NzgsLTE4NjE4OTQwODZdfQ==
 -->
