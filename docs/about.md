@@ -42,7 +42,9 @@ def add_snapshot(snap):
 ```
 ## Rename a file
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+Yet more code:
+
+``` python
 
 ## Delete a file
 
@@ -167,6 +169,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5OD
-g2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbNjgzOTYxNjc2LDkxODE5OTQ1MSwxNDgwOD
+MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
+
 -->
