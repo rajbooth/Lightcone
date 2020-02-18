@@ -65,16 +65,16 @@ where $M$ is absolute magnitude and $m$ is apparent magnitude
 
 $$\rightarrow D_L = 10^{0.2(m-M) - 1}$$ 
 
-where \(D_L = (1+z) D_C$ \)
+where \(D_L = (1+z) D_C \)
 
 Schechter:
-$M^*_J = -21.4$
+\( M^*_J = -21.4 \)
 
 $$M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}$$
 
 $$ \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} $$
 
-Efstathieu (Les Houcehs Lectures):
+Efstathieu (Les Houches Lectures):
 
 "In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"
 
@@ -201,7 +201,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MzA1OTYxMiwtMTYzNTY0MTA3NSwxOD
-A2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwODMzNCwt
-OTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbNzUzMzc1Njc3LDIwODMwNTk2MTIsLTE2Mz
+U2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOTk0NTEs
+MTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4NjE4OT
+QwODZdfQ==
 -->
