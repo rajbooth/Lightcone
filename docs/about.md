@@ -62,7 +62,7 @@ All the data for the entire reduced dataset is stored in a single dataset ('gala
 
 ### Data fields
 * r - co-moving radial distance
-* Dec - declination in degrees $(\pm 90$
+* Dec - declination in degrees $(\pm 90 \degree)$
 * RA - right ascension
 * z - redshift
 * L - luminosity ratio $(L/L^*)$
@@ -103,9 +103,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDUwODMxLDE0MTg5NzY0MDEsNDY1ND
-U3NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LDc1MzM3NTY3Nywy
-MDgzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYzMTc1Myw4NzE5OD
-U1NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5ODg2MTgsNjAw
-NTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbMTExMTA3MDAwMiwxNDE4OTc2NDAxLDQ2NT
+Q1Nzc3MiwxNzMwOTY0MDYsLTc2MTMwNzI3Niw3NTMzNzU2Nzcs
+MjA4MzA1OTYxMiwtMTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOT
+g1NTYzLDkxODE5OTQ1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYw
+MDU0MTg3OCwtMTg2MTg5NDA4Nl19
 -->
