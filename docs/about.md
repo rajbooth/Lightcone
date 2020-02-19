@@ -3,7 +3,8 @@
 ## Building the lightcone
 
 ### Source data
-Gadget s
+Gadget snapshots.
+
 ### The luminosity function
 
 $$M = m - 5 (\log_{10}D_L - 1) $$
@@ -34,11 +35,12 @@ $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 
 ### Redshift space distortion
 
-## File structure
-Uses hdf5 data files.
-
 ## Data products
+Primary galaxy lightcone catalog located at:
 
+
+### File structure
+Uses hdf5 data files.
 ### Data fields
 
 ### Co-ordinate system
@@ -69,9 +71,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA1NDUzNTg5LDE3MzA5NjQwNiwtNzYxMz
-A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
-LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
-M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbMTczOTA0MDI1NSwxNzMwOTY0MDYsLTc2MT
+MwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMTYzNTY0MTA3
+NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
+MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
 
 -->
