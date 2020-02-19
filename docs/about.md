@@ -4,23 +4,15 @@
 
 
 ## Building the lightcone
+### The luminosity function
 
 ## File structure
 
 ## Data fields
-
+Co-ordinate system
 Uses hdf5 data files.
 
 ## Reading lightcone data
-![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
-## Displaying Python code
-```python
-s = "Python syntax highlighting"
-print s
-```
-Now for some more code:
 ``` python
 def add_snapshot(snap):
     ngals = 0
@@ -40,6 +32,17 @@ def add_snapshot(snap):
                 ngals += len(gals)
     return ngals
 ```
+## Visualising the lightcone
+![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
+The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+
+## Displaying Python code
+```python
+s = "Python syntax highlighting"
+print s
+```
+Now for some more code:
+
 ## Rename a file
 
 Yet more code:
@@ -201,8 +204,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTE0OTgyNiw3NTMzNzU2NzcsMjA4Mz
-A1OTYxMiwtMTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYz
-LDkxODE5OTQ1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MT
-g3OCwtMTg2MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbLTE1NDA1Njg4NzUsNzUzMzc1Njc3LDIwOD
+MwNTk2MTIsLTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2
+Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1ND
+E4NzgsLTE4NjE4OTQwODZdfQ==
 -->
