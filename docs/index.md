@@ -1,17 +1,8 @@
-# Welcome to MkDocs
+# Welcome to the galaxy lightcone catalog
+This document describes the contents of a galaxy lightcone and the associated file structure used to store this data, and provides illustrative samples of python code that can be used to retrieve and process this data.
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+The lighcone catalog dataset provides positional, redshift, and luminosity data on more than 16 billion galaxies spanning a co-moving spatial volume of $6000/h \,  Mpc^3$.  
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk2MjAzNDIwOF19
+-->
