@@ -4,13 +4,19 @@
 
 
 ## Building the lightcone
+
 ### The luminosity function
 
-## File structure
+### Redshift space distortion
 
-## Data fields
-Co-ordinate system
+## File structure
 Uses hdf5 data files.
+
+## Data products
+
+### Data fields
+
+### Co-ordinate system
 
 ## Reading lightcone data
 ``` python
@@ -36,27 +42,7 @@ def add_snapshot(snap):
 ![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
-## Displaying Python code
-```python
-s = "Python syntax highlighting"
-print s
-```
-Now for some more code:
 
-## Rename a file
-
-Yet more code:
-
-``` python
-zs = np.arange(0, 1, 0.02)
-for mag in np.arange(20.0,26.1, 1.0):
-    plt.loglog(zs, getLum(mag, zs), label = 'M = {0:.2f}'.format(mag))
-plt.title("Minimum Luminostiy vs Redshift")
-plt.xlabel("Redshift (z)")
-plt.ylabel("Min Luminostiy (units of $M_*$)")
-plt.legend()
-plt.show()
-```
 
 ## Latex equations
 
@@ -204,7 +190,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA1Njg4NzUsNzUzMzc1Njc3LDIwOD
+eyJoaXN0b3J5IjpbLTE2NDI3MzUxNjIsNzUzMzc1Njc3LDIwOD
 MwNTk2MTIsLTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2
 Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1ND
 E4NzgsLTE4NjE4OTQwODZdfQ==
