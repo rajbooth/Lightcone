@@ -65,24 +65,21 @@ All the data for the entire reduced dataset is stored in a single dataset ('gala
 ### Co-ordinate system
 
 ## Reading lightcone data
+
 ``` python
-def add_snapshot(snap):
-    ngals = 0
-    fname = 'galaxy_lightcone.snap{0:02d}'.format(snap)
-    with h5py.File(fpath+fname,'r') as fi:
-        for k in fi.keys():
-            print (k, fi[k].shape) 
-            if True: # k=='octant_0':
-                g = fi[k]
-                gals = g[(g['Dec']>85) & (g['Dec']<95)]
-                L.extend(gals['L'])
-                r.extend(gals['r'])
-                ra.extend(gals['RA'])
-                dec.extend(gals['Dec'])
-                RSD.extend(gals['RSD'])
-                zz.extend(gals['z'])
-                ngals += len(gals)
-    return ngals
+# read data from test file
+fname = outpath + 'galaxy_lightcone_M_limited.h5'
+with h5py.File(fname,'r') as fi:
+    # open the galaxies dataset
+    gals = fi['galaxies']
+    # extract each data field into separate arrays
+    L = gals['L']
+    zz = gals['z']
+    r = gals['r']
+    ra = gals['RA']
+    dec = gals['Dec']
+    RSD = gals['RSD']
+print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
 ## Visualising the lightcone
 ![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
@@ -90,9 +87,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1NDU3NzcyLDE3MzA5NjQwNiwtNzYxMz
-A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
-LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
-M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
-
+eyJoaXN0b3J5IjpbNzIzNTYzMzE0LDQ2NTQ1Nzc3MiwxNzMwOT
+Y0MDYsLTc2MTMwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwt
+MTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OT
+Q1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2
+MTg5NDA4Nl19
 -->
