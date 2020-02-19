@@ -36,8 +36,8 @@ $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 ### Redshift space distortion
 
 ## Data products
-Primary galaxy lightcone catalog located at:
-
+Primary galaxy lightcone catalog located on COSMA server at Durham, at:
+[/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky]
 
 ### File structure
 Uses hdf5 data files.
@@ -71,9 +71,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTA0MDI1NSwxNzMwOTY0MDYsLTc2MT
-MwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMTYzNTY0MTA3
-NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
-MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbMzEyNDA3NDc2LDE3MzA5NjQwNiwtNzYxMz
+A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
+LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
+M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
 
 -->
