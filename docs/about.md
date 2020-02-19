@@ -56,7 +56,9 @@ Each of these files contains 8 datasets, corresponding to each of the 8 octants 
 ```
 octant_x
 ```
-where x is 
+where x is the octant number in the range 0 - 7
+#### Reduced dataset
+All the data for teh entire reduced dataset is sored in a single dataset
 ### Data fields
 
 ### Co-ordinate system
@@ -87,9 +89,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDUwOTQ5NTIsMTczMDk2NDA2LC03Nj
-EzMDcyNzYsNzUzMzc1Njc3LDIwODMwNTk2MTIsLTE2MzU2NDEw
-NzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOTk0NTEsMTQ4MD
-gzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4NjE4OTQwODZd
-fQ==
+eyJoaXN0b3J5IjpbLTk3NjQwODQ4LDE3MzA5NjQwNiwtNzYxMz
+A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
+LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
+M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+
 -->
