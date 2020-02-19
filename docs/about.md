@@ -3,7 +3,7 @@
 ## Building the lightcone
 
 ### Source data
-
+Gadget s
 ### The luminosity function
 
 $$M = m - 5 (\log_{10}D_L - 1) $$
@@ -69,8 +69,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMDk2NDA2LC03NjEzMDcyNzYsNzUzMz
-c1Njc3LDIwODMwNTk2MTIsLTE2MzU2NDEwNzUsMTgwNjMxNzUz
-LDg3MTk4NTU2Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4OD
-YxOCw2MDA1NDE4NzgsLTE4NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbOTA1NDUzNTg5LDE3MzA5NjQwNiwtNzYxMz
+A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
+LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
+M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+
 -->
