@@ -47,12 +47,16 @@ This lightcone only extends out to a redshift of $z<=0.4$ and a luminosity cut-o
 ### File structure
 The lightcone data is stored in files conforming to the hdf5 file format.
 #### Primary dataset
-Data for each Gadget snapshot is stored in a separate file, with a name of the form:
+Data for each shell derived from a specific Gadget snapshot is stored in a separate file, with a name of the form:
 ```
 galaxy_lightcone.snapxx
 ```
 where xx is the snapshot number ranging from 42 - 63.
-Each of these files contains 8 datasets, corresponding to each of the 8 octants that comprise the complete spherical volume of the lightcone
+Each of these files contains 8 datasets, corresponding to each of the 8 octants that comprise the complete spherical volume of the lightcone, with a dataset name of the form:
+```
+octant_x
+```
+where x is 
 ### Data fields
 
 ### Co-ordinate system
@@ -83,9 +87,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4OTEwNDIxLDE3MzA5NjQwNiwtNzYxMz
-A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
-LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
-M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
-
+eyJoaXN0b3J5IjpbLTIxNDUwOTQ5NTIsMTczMDk2NDA2LC03Nj
+EzMDcyNzYsNzUzMzc1Njc3LDIwODMwNTk2MTIsLTE2MzU2NDEw
+NzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOTk0NTEsMTQ4MD
+gzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4NjE4OTQwODZd
+fQ==
 -->
