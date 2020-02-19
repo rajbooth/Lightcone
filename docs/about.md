@@ -2,16 +2,16 @@
 
 ## Overview
 
-This notebook describes the contents of a galaxy lightcone and the associagted file structure used to store this data, and provides illustrative samples of python code that can be used to retrieve and process this data.
 
-The lighcone catalog dataset provides positional, redshift, and lumionosity data on more than 16 billion galaxies spanning a comoving spatial volume of $6000/h \,  Mpc^3$.  
-
+## Building the lightcone
 
 ## File structure
 
+## Data fields
+
 Uses hdf5 data files.
 
-# Viewing lightcone data
+## Reading lightcone data
 ![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
@@ -201,8 +201,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzMzc1Njc3LDIwODMwNTk2MTIsLTE2Mz
-U2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOTk0NTEs
-MTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4NjE4OT
-QwODZdfQ==
+eyJoaXN0b3J5IjpbMTQzNTE0OTgyNiw3NTMzNzU2NzcsMjA4Mz
+A1OTYxMiwtMTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYz
+LDkxODE5OTQ1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MT
+g3OCwtMTg2MTg5NDA4Nl19
 -->
