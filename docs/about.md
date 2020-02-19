@@ -48,7 +48,7 @@ This lightcone only extends out to a redshift of $z<=0.4$ and a luminosity cut-o
 The lightcone data is stored in files conforming to the hdf5 file format.
 
 Primary dataset
-============
+
 ### Data fields
 
 ### Co-ordinate system
@@ -79,7 +79,7 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTAzMTg2OCwxNzMwOTY0MDYsLTc2MT
+eyJoaXN0b3J5IjpbMTc3NzgwNTE4MCwxNzMwOTY0MDYsLTc2MT
 MwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMTYzNTY0MTA3
 NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
 MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
