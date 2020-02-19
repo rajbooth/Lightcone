@@ -72,6 +72,7 @@ All the data for the entire reduced dataset is stored in a single dataset ('gala
 The following code snippet can be used to read lightcone data from the reduced dataset file into a series of numpy arrays for subsequent processing and analysis.
 ``` python
 # read data from test file
+outpath = '/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky_Reduced/'
 fname = outpath + 'galaxy_lightcone_M_limited.h5'
 with h5py.File(fname,'r') as fi:
     # open the galaxies dataset
@@ -91,9 +92,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkzODQzMTIzLDQ2NTQ1Nzc3MiwxNzMwOT
-Y0MDYsLTc2MTMwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwt
-MTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OT
-Q1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2
-MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbMTQxODk3NjQwMSw0NjU0NTc3NzIsMTczMD
+k2NDA2LC03NjEzMDcyNzYsNzUzMzc1Njc3LDIwODMwNTk2MTIs
+LTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOT
+k0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4
+NjE4OTQwODZdfQ==
 -->
