@@ -58,7 +58,8 @@ octant_x
 ```
 where x is the octant number in the range 0 - 7
 #### Reduced dataset
-All the data for teh entire reduced dataset is sored in a single dataset
+All the data for the entire reduced dataset is stored in a single dataset ('galaxies') , contained within a single file.
+
 ### Data fields
 
 ### Co-ordinate system
@@ -89,7 +90,7 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjQwODQ4LDE3MzA5NjQwNiwtNzYxMz
+eyJoaXN0b3J5IjpbNDY1NDU3NzcyLDE3MzA5NjQwNiwtNzYxMz
 A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
 LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
 M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
