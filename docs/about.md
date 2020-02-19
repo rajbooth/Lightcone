@@ -61,7 +61,11 @@ where x is the octant number in the range 0 - 7
 All the data for the entire reduced dataset is stored in a single dataset ('galaxies') , contained within a single file.
 
 ### Data fields
-
+Data stored as a *gal* datatype, defined as:
+```python
+#define galaxy datatype
+gal = np.dtype([('r', np.float32),('RA', np.float32),('Dec', np.float32),('z', np.float32),('RSD', np.float32),('L', np.float32)])
+```
 ### Co-ordinate system
 
 ## Reading lightcone data
@@ -92,9 +96,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODk3NjQwMSw0NjU0NTc3NzIsMTczMD
-k2NDA2LC03NjEzMDcyNzYsNzUzMzc1Njc3LDIwODMwNTk2MTIs
-LTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOT
-k0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4
-NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbODg3MTYzNjg4LDE0MTg5NzY0MDEsNDY1ND
+U3NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LDc1MzM3NTY3Nywy
+MDgzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYzMTc1Myw4NzE5OD
+U1NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5ODg2MTgsNjAw
+NTQxODc4LC0xODYxODk0MDg2XX0=
 -->
