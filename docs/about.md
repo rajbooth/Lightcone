@@ -38,7 +38,9 @@ $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 ## Data products
 Primary galaxy lightcone catalog located on COSMA server at Durham, at:
 [Galaxy Full Sky Lightcone](/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky)
-This is
+This is just over 1 Tbyte in size and hence is too large to use othern than by applicaitosn that ar ealso runnign on the COSMA server.
+
+
 ### File structure
 Uses hdf5 data files.
 ### Data fields
@@ -71,9 +73,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxMjIzOTkwLDE3MzA5NjQwNiwtNzYxMz
-A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
-LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
-M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbLTE4MTM2NTk0NCwxNzMwOTY0MDYsLTc2MT
+MwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMTYzNTY0MTA3
+NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
+MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
 
 -->
