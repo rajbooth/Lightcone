@@ -68,8 +68,9 @@ All the data for the entire reduced dataset is stored in a single dataset ('gala
 ### Primary dataset
 *[to follow]*
 ### Reduced dataset
+
+The following code snippet can be used to read lightcone data from the reduced dataset file into a series of numpy arrays for subsequent processing and analysis.
 ``` python
-The following code snippet can be used to read lightcone data into
 # read data from test file
 fname = outpath + 'galaxy_lightcone_M_limited.h5'
 with h5py.File(fname,'r') as fi:
@@ -90,9 +91,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzM1NjcyNiw0NjU0NTc3NzIsMTczMD
-k2NDA2LC03NjEzMDcyNzYsNzUzMzc1Njc3LDIwODMwNTk2MTIs
-LTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOT
-k0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4
-NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbNzkzODQzMTIzLDQ2NTQ1Nzc3MiwxNzMwOT
+Y0MDYsLTc2MTMwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwt
+MTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OT
+Q1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2
+MTg5NDA4Nl19
 -->
