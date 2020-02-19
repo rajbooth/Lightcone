@@ -61,6 +61,12 @@ where x is the octant number in the range 0 - 7
 All the data for the entire reduced dataset is stored in a single dataset ('galaxies') , contained within a single file.
 
 ### Data fields
+
+* r - co-moving radial distance
+* Dec - declination
+* RA - right ascension
+* z - redshift
+* L - luminosity ratio 
 Data stored as a *gal* datatype, defined as:
 ```python
 #define galaxy datatype
@@ -96,9 +102,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3MTYzNjg4LDE0MTg5NzY0MDEsNDY1ND
-U3NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LDc1MzM3NTY3Nywy
-MDgzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYzMTc1Myw4NzE5OD
-U1NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5ODg2MTgsNjAw
-NTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbMTU4MDU2MDgyNSwxNDE4OTc2NDAxLDQ2NT
+Q1Nzc3MiwxNzMwOTY0MDYsLTc2MTMwNzI3Niw3NTMzNzU2Nzcs
+MjA4MzA1OTYxMiwtMTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOT
+g1NTYzLDkxODE5OTQ1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYw
+MDU0MTg3OCwtMTg2MTg5NDA4Nl19
 -->
