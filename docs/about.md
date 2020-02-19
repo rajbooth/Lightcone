@@ -1,5 +1,3 @@
-﻿# A Galaxy Lightcone Catalog
-
 ## Overview
 
 
@@ -70,7 +68,7 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5OTUwMzg2NSw3NTMzNzU2NzcsMjA4Mz
+eyJoaXN0b3J5IjpbLTc2MTMwNzI3Niw3NTMzNzU2NzcsMjA4Mz
 A1OTYxMiwtMTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYz
 LDkxODE5OTQ1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MT
 g3OCwtMTg2MTg5NDA4Nl19
