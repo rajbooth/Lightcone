@@ -6,7 +6,7 @@
 Gadget snapshots.
 
 ### The luminosity function
-
+![Minimum lum](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
 where $M$ is absolute magnitude and $m$ is apparent magnitude
@@ -31,7 +31,7 @@ Efstathieu (Les Houches Lectures):
 $$5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  $$
 
 $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
-
+![Luminosity distribution](https://github.com/rajbooth/Lightcone/raw/master/images/Luminosity_Distribution.png)
 
 ### Redshift space distortion
 
@@ -102,9 +102,10 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzM1MzkzODcsLTEwNTMyNzIwMjgsMT
-QxODk3NjQwMSw0NjU0NTc3NzIsMTczMDk2NDA2LC03NjEzMDcy
-NzYsNzUzMzc1Njc3LDIwODMwNTk2MTIsLTE2MzU2NDEwNzUsMT
-gwNjMxNzUzLDg3MTk4NTU2Myw5MTgxOTk0NTEsMTQ4MDgzMzQs
-LTkzNzk4ODYxOCw2MDA1NDE4NzgsLTE4NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbMTkxOTQ3ODcwOSwtMTQ3MzUzOTM4NywtMT
+A1MzI3MjAyOCwxNDE4OTc2NDAxLDQ2NTQ1Nzc3MiwxNzMwOTY0
+MDYsLTc2MTMwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMT
+YzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1
+MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MT
+g5NDA4Nl19
 -->
