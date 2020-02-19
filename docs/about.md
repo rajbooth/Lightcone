@@ -99,13 +99,12 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
 ## Visualising the lightcone
 ![Slice through galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/particle_lightcone_Particle_z_particle_mass.png)
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMyNzYzMjE5LDE0MTg5NzY0MDEsNDY1ND
-U3NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LDc1MzM3NTY3Nywy
-MDgzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYzMTc1Myw4NzE5OD
-U1NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5ODg2MTgsNjAw
-NTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbLTEwNTMyNzIwMjgsMTQxODk3NjQwMSw0Nj
+U0NTc3NzIsMTczMDk2NDA2LC03NjEzMDcyNzYsNzUzMzc1Njc3
+LDIwODMwNTk2MTIsLTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MT
+k4NTU2Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2
+MDA1NDE4NzgsLTE4NjE4OTQwODZdfQ==
 -->
