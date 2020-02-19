@@ -50,7 +50,9 @@ The lightcone data is stored in files conforming to the hdf5 file format.
 Data for each Gadget snapshot is stored in a separate file, with a name of the form:
 ```
 galaxy_lightcone.snapxx
+```
 where xx is the snapshot number ranging from 42 - 63.
+Each of these files contains 8 datasets, corresponding to each of the 8 octants that comprise the complete spherical volume of the lightcone
 ### Data fields
 
 ### Co-ordinate system
@@ -81,9 +83,9 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTExNzY5MSwxNzMwOTY0MDYsLTc2MT
-MwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMTYzNTY0MTA3
-NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
-MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbMjY4OTEwNDIxLDE3MzA5NjQwNiwtNzYxMz
+A3Mjc2LDc1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1
+LDE4MDYzMTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4Mz
+M0LC05Mzc5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
 
 -->
