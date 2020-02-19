@@ -36,10 +36,11 @@ $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 ### Redshift space distortion
 
 ## Data products
-Primary galaxy lightcone catalog located on COSMA server at Durham, at:
+The primary galaxy lightcone catalogue is located on COSMA server at Durham, at:
 [Galaxy Full Sky Lightcone](/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky)
 This is just over 1 Tbyte in size and hence is too large to use other than by applications that are also running on the COSMA server.
-A reduced size lightcone has been geenrated from this porimary dataset, which can be used for testign purposes and at 2.8 Gbytes, is smal enough fo rdownload to personal off-sit
+
+A reduced size lightcone has been generated from this primary dataset, which can be used for testing purposes and at 2.8 Gbytes, is small enough for download to personal off-site computers.
 
 ### File structure
 Uses hdf5 data files.
@@ -73,7 +74,7 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MTIwODU1MSwxNzMwOTY0MDYsLTc2MT
+eyJoaXN0b3J5IjpbLTI2NDE4MzcxNiwxNzMwOTY0MDYsLTc2MT
 MwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMTYzNTY0MTA3
 NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1MSwxNDgwOD
 MzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MTg5NDA4Nl19
