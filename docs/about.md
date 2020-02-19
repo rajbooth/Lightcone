@@ -1,6 +1,5 @@
 ## Overview
 
-
 ## Building the lightcone
 
 ### Source data
@@ -70,8 +69,8 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTE2MDEwNCwtNzYxMzA3Mjc2LDc1Mz
-M3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYzMTc1
-Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5OD
-g2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbMTczMDk2NDA2LC03NjEzMDcyNzYsNzUzMz
+c1Njc3LDIwODMwNTk2MTIsLTE2MzU2NDEwNzUsMTgwNjMxNzUz
+LDg3MTk4NTU2Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4OD
+YxOCw2MDA1NDE4NzgsLTE4NjE4OTQwODZdfQ==
 -->
