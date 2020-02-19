@@ -6,7 +6,7 @@
 Gadget snapshots.
 
 ### The luminosity function
-![Minimum lum](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
+![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
 where $M$ is absolute magnitude and $m$ is apparent magnitude
@@ -23,7 +23,7 @@ Schechter:
 $$M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}$$
 
 $$ \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} $$
-
+![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Cumulative_Probability_Distribution.png)
 Efstathieu (Les Houches Lectures):
 
 "In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"
@@ -102,7 +102,7 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTQ3ODcwOSwtMTQ3MzUzOTM4NywtMT
+eyJoaXN0b3J5IjpbMTgxMTQyOTc5NSwtMTQ3MzUzOTM4NywtMT
 A1MzI3MjAyOCwxNDE4OTc2NDAxLDQ2NTQ1Nzc3MiwxNzMwOTY0
 MDYsLTc2MTMwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMT
 YzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1
