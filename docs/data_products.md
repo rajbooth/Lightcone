@@ -42,20 +42,16 @@ gal = np.dtype([('r', np.float32),('RA', np.float32),('Dec', np.float32),('z', n
 ### Prerequisites
 Since the lightcone is stored in hdf5 format, it is necessary to load a compatible hdf5 library in order to access the lightcone dataset.  Additionally, other utilities may prove useful in analysing this data.  For Python users, the folloing imports are recommended:
 ```python
-import yt
-from yt.units import parsec, Msun
-from yt.visualization.volume_rendering.api import Scene, VolumeSource, Camera
 import h5py
+import healpy as hp
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-import matplotlib
 import scipy.integrate as integrate
 from scipy.interpolate import UnivariateSpline as spl
 from astropy.cosmology import Planck15 as cosmo, z_at_value
-from astropy import coordinates as coord
-import healpy as hp
 ```
+If it is 
 ### Primary dataset
 *[to follow]*
 ### Reduced dataset
@@ -82,5 +78,5 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjgxMTQ3ODIsLTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbMTExMDcyODIxMSwtNTQ4ODA2NDk2XX0=
 -->
