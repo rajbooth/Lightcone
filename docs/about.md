@@ -5,8 +5,9 @@ The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies ext
 
 ### Source data
 Gadget snapshots.
-
-### The luminosity function
+```
+```
+### <a name="luminosity"></a>The luminosity function
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
@@ -103,10 +104,10 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTUxMTg1OTksMTgxMTQyOTc5NSwtMT
-Q3MzUzOTM4NywtMTA1MzI3MjAyOCwxNDE4OTc2NDAxLDQ2NTQ1
-Nzc3MiwxNzMwOTY0MDYsLTc2MTMwNzI3Niw3NTMzNzU2NzcsMj
-A4MzA1OTYxMiwtMTYzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1
-NTYzLDkxODE5OTQ1MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMD
-U0MTg3OCwtMTg2MTg5NDA4Nl19
+eyJoaXN0b3J5IjpbLTE1NTk2Mjg4OSwtMTQxNTExODU5OSwxOD
+ExNDI5Nzk1LC0xNDczNTM5Mzg3LC0xMDUzMjcyMDI4LDE0MTg5
+NzY0MDEsNDY1NDU3NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LD
+c1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYz
+MTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mz
+c5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
 -->
