@@ -39,6 +39,8 @@ gal = np.dtype([('r', np.float32),('RA', np.float32),('Dec', np.float32),('z', n
 ### Co-ordinate system
 
 ## Reading lightcone data
+### Prerequisites
+Since the lightcone is stored in hdf5 format, it is necessary to load a 
 ### Primary dataset
 *[to follow]*
 ### Reduced dataset
@@ -65,5 +67,5 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDQ5NzA5LC01NDg4MDY0OTZdfQ==
+eyJoaXN0b3J5IjpbMTUxNDE3NzczMywtNTQ4ODA2NDk2XX0=
 -->
