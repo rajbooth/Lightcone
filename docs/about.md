@@ -1,5 +1,5 @@
 ## Overview
-The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies extending out to a redshift of $z \simeq 0.85$, contained in a co-moving cu volume of $6000 Mpc^3/h^3$.
+The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies extending out to a redshift of $z \simeq 0.85$, contained in a co-moving cubic volume of $6000 Mpc^3/h^3$.  In addition to the positional co-ordinates of each galaxy, the lightcone dataset also assignes a luminosity value to each gala
 
 ## Building the lightcone
 
@@ -103,10 +103,10 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MTg4NjI5LDE4MTE0Mjk3OTUsLTE0Nz
-M1MzkzODcsLTEwNTMyNzIwMjgsMTQxODk3NjQwMSw0NjU0NTc3
-NzIsMTczMDk2NDA2LC03NjEzMDcyNzYsNzUzMzc1Njc3LDIwOD
-MwNTk2MTIsLTE2MzU2NDEwNzUsMTgwNjMxNzUzLDg3MTk4NTU2
-Myw5MTgxOTk0NTEsMTQ4MDgzMzQsLTkzNzk4ODYxOCw2MDA1ND
-E4NzgsLTE4NjE4OTQwODZdfQ==
+eyJoaXN0b3J5IjpbLTQ4NDIzOTgwNCwxODExNDI5Nzk1LC0xND
+czNTM5Mzg3LC0xMDUzMjcyMDI4LDE0MTg5NzY0MDEsNDY1NDU3
+NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LDc1MzM3NTY3NywyMD
+gzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYzMTc1Myw4NzE5ODU1
+NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5ODg2MTgsNjAwNT
+QxODc4LC0xODYxODk0MDg2XX0=
 -->
