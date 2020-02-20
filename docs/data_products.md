@@ -51,7 +51,7 @@ import scipy.integrate as integrate
 from scipy.interpolate import UnivariateSpline as spl
 from astropy.cosmology import Planck15 as cosmo, z_at_value
 ```
-If it is the intention to visualise the lightcone data then the use of the *yt* visualisation package is recommended for Python users.
+If it intended to visualise the lightcone data then the use of the *yt* visualisation package is recommended for Python users.
 ```python
 import yt
 from yt.units import parsec, Msun
@@ -83,6 +83,6 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA4MTE5NDIwLC0xODU2Njc2MDMsLTE4NT
-Y2NzYwMywtNTQ4ODA2NDk2XX0=
+eyJoaXN0b3J5IjpbNTIzMzAwMTYsOTA4MTE5NDIwLC0xODU2Nj
+c2MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
 -->
