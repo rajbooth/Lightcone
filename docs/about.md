@@ -1,5 +1,5 @@
 ## Overview
-
+The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies
 ## Building the lightcone
 
 ### Source data
@@ -102,10 +102,10 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMTQyOTc5NSwtMTQ3MzUzOTM4NywtMT
-A1MzI3MjAyOCwxNDE4OTc2NDAxLDQ2NTQ1Nzc3MiwxNzMwOTY0
-MDYsLTc2MTMwNzI3Niw3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMT
-YzNTY0MTA3NSwxODA2MzE3NTMsODcxOTg1NTYzLDkxODE5OTQ1
-MSwxNDgwODMzNCwtOTM3OTg4NjE4LDYwMDU0MTg3OCwtMTg2MT
-g5NDA4Nl19
+eyJoaXN0b3J5IjpbLTIzNzcyNTIyNSwxODExNDI5Nzk1LC0xND
+czNTM5Mzg3LC0xMDUzMjcyMDI4LDE0MTg5NzY0MDEsNDY1NDU3
+NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LDc1MzM3NTY3NywyMD
+gzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYzMTc1Myw4NzE5ODU1
+NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mzc5ODg2MTgsNjAwNT
+QxODc4LC0xODYxODk0MDg2XX0=
 -->
