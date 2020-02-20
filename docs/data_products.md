@@ -40,7 +40,7 @@ gal = np.dtype([('r', np.float32),('RA', np.float32),('Dec', np.float32),('z', n
 Positional data is stored in celestial co-ordinates, i.e. radial co-moving distance to observer $r\;(Mpc/h)$, declination from equatorial plane $Dec\; (\pm 90^\circ)$ , and right ascension $RA\;(\pm 180^\circ)$.
 ## Reading lightcone data
 ### Prerequisites
-Since the lightcone is stored in hdf5 format, it is necessary to load a compatible hdf5 library in order to access the lightcone dataset.  Additionally, other utilities may prove useful in analysing this data.  For Python users, the folloing imports are recommended:
+Since the lightcone is stored in hdf5 format, it is necessary to load a compatible hdf5 library in order to access the lightcone dataset.  Additionally, other utilities may prove useful in analysing this data.  For Python users, the following imports are recommended:
 ```python
 import h5py
 import healpy as hp
@@ -83,6 +83,7 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzMzAwMTYsOTA4MTE5NDIwLC0xODU2Nj
-c2MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
+eyJoaXN0b3J5IjpbLTM2Mzk2NTI4MSw1MjMzMDAxNiw5MDgxMT
+k0MjAsLTE4NTY2NzYwMywtMTg1NjY3NjAzLC01NDg4MDY0OTZd
+fQ==
 -->
