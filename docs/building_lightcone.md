@@ -1,4 +1,4 @@
-## Building the lightcone
+## Methodology
 
 ### Source data
 Gadget snapshots.
@@ -35,5 +35,5 @@ $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 ### Redshift space distortion
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEwOTIzMDUyXX0=
+eyJoaXN0b3J5IjpbMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
 -->
