@@ -1,5 +1,5 @@
 ## Overview
-The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies extending out to a redshift of $z \simeq 0.85$, contained in a co-moving cubic volume of $6000 Mpc^3/h^3$.  In addition to the positional co-ordinates of each galaxy, the lightcone dataset also assigns a luminosity value to each galaxy such that the overall luminosity distribution fits a [Schechter function](#luminosity).
+The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies extending out to a redshift of $z \simeq 0.85$, contained in a co-moving cubic volume of $6000 Mpc^3/h^3$.  In addition to the positional co-ordinates of each galaxy, the lightcone dataset also assigns a luminosity value to each galaxy such that the overall luminosity distribution fits a [Schechter function](#luminosity).  This enables the user to apply a magnitude filter to the galaxy dataset to extract onoly those galaxies that will be visibile in an observational galaxy survey
 
 ## Building the lightcone
 
@@ -104,7 +104,7 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk0NDY5NTAsLTE0MTUxMTg1OTksMT
+eyJoaXN0b3J5IjpbLTE2MTcxMzgzODYsLTE0MTUxMTg1OTksMT
 gxMTQyOTc5NSwtMTQ3MzUzOTM4NywtMTA1MzI3MjAyOCwxNDE4
 OTc2NDAxLDQ2NTQ1Nzc3MiwxNzMwOTY0MDYsLTc2MTMwNzI3Ni
 w3NTMzNzU2NzcsMjA4MzA1OTYxMiwtMTYzNTY0MTA3NSwxODA2
