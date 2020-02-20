@@ -55,7 +55,7 @@ If it intended to visualise the lightcone data then the use of the *yt* visualis
 ```python
 import yt
 from yt.units import parsec, Msun
-from yt.visualization.volume_rendering.api import Scene, VolumeSource, Camera```
+from yt.visualization.volume_rendering.api import Scene, VolumeSource, Camera
 ```
 ### Primary dataset
 *[to follow]*
@@ -83,7 +83,7 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Mzk2NTI4MSw1MjMzMDAxNiw5MDgxMT
-k0MjAsLTE4NTY2NzYwMywtMTg1NjY3NjAzLC01NDg4MDY0OTZd
-fQ==
+eyJoaXN0b3J5IjpbMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMz
+MwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMs
+LTU0ODgwNjQ5Nl19
 -->
