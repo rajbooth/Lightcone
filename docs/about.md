@@ -2,42 +2,6 @@
 The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies extending out to a redshift of $z \simeq 0.85$, contained in a co-moving cubic volume of $6000 Mpc^3/h^3$.  In addition to the positional co-ordinates of each galaxy, the lightcone dataset also assigns a luminosity value to each galaxy such that the overall luminosity distribution fits a [Schechter function](#luminosity).  This enables the user to apply a magnitude filter to the galaxy dataset to extract only those galaxies that will be visible in an observational galaxy survey for a given instrument sensitivity.
 The dataset also holds the redshift space distortion factor associated with each galaxy, derived from its peculiar velocity in the N-body simulation snapshot.  This allows the user to generate positional data in redshift space if desired.
 
-## Building the lightcone
-
-### Source data
-Gadget snapshots.
-```
-```
-### <a name="luminosity"></a>The luminosity function
-![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
-$$M = m - 5 (\log_{10}D_L - 1) $$
-
-where $M$ is absolute magnitude and $m$ is apparent magnitude
-
- $$m = M + 5 (\log_{10}D_L - 1)$$ 
-
-$$\rightarrow D_L = 10^{0.2(m-M) - 1}$$ 
-
-where \(D_L = (1+z) D_C \)
-
-Schechter:
-\( M^*_J = -21.4 \)
-
-$$M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}$$
-
-$$ \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} $$
-![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Cumulative_Probability_Distribution.png)
-Efstathieu (Les Houches Lectures):
-
-"In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"
-
-$$5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  $$
-
-$$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
-![Luminosity distribution](https://github.com/rajbooth/Lightcone/raw/master/images/Luminosity_Distribution.png)
-
-### Redshift space distortion
-
 ## Data products
 The primary galaxy lightcone catalogue is located on COSMA server at Durham, at:
 [Galaxy Full Sky Lightcone](/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky)
@@ -105,7 +69,7 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ5Nzg1NTc0LC0xNDE1MTE4NTk5LDE4MT
+eyJoaXN0b3J5IjpbNDg0NDU0MDQwLC0xNDE1MTE4NTk5LDE4MT
 E0Mjk3OTUsLTE0NzM1MzkzODcsLTEwNTMyNzIwMjgsMTQxODk3
 NjQwMSw0NjU0NTc3NzIsMTczMDk2NDA2LC03NjEzMDcyNzYsNz
 UzMzc1Njc3LDIwODMwNTk2MTIsLTE2MzU2NDEwNzUsMTgwNjMx
