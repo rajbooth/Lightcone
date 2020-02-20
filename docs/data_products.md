@@ -1,4 +1,4 @@
-## Data products
+## Data location
 The primary galaxy lightcone catalogue is located on COSMA server at Durham, at:
 [/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky](/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky)
 This is just over 1 Tbyte in size and hence is too large to use other than by applications that are also running on the COSMA server.
@@ -51,9 +51,9 @@ import scipy.integrate as integrate
 from scipy.interpolate import UnivariateSpline as spl
 from astropy.cosmology import Planck15 as cosmo, z_at_value
 ```
-If it is the intention to vosualise the lightcone data then the use of the yt visualisation package is recommended for Pythoin users.
+If it is the intention to visualise the lightcone data then the use of the *yt* visualisation package is recommended for Python users.
 ```python
-import healpy as hpimport yt
+import yt
 from yt.units import parsec, Msun
 from yt.visualization.volume_rendering.api import Scene, VolumeSource, Camera```
 ```
@@ -83,5 +83,5 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc2ODc4MjksLTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
 -->
