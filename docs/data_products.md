@@ -37,7 +37,7 @@ Data stored as a *gal* datatype, defined as:
 gal = np.dtype([('r', np.float32),('RA', np.float32),('Dec', np.float32),('z', np.float32),('RSD', np.float32),('L', np.float32)])
 ```
 ### Co-ordinate system
-
+Positional data is stored in celestial co-ordinates, i.e. radial co-moving distance to observer $r
 ## Reading lightcone data
 ### Prerequisites
 Since the lightcone is stored in hdf5 format, it is necessary to load a compatible hdf5 library in order to access the lightcone dataset.  Additionally, other utilities may prove useful in analysing this data.  For Python users, the folloing imports are recommended:
@@ -83,6 +83,6 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0Mjg4MTMsLTE4NTY2NzYwMywtMTg1Nj
-Y3NjAzLC01NDg4MDY0OTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MzgwNzg2OTMsLTE4NTY2NzYwMywtMT
+g1NjY3NjAzLC01NDg4MDY0OTZdfQ==
 -->
