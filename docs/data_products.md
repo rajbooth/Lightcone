@@ -25,7 +25,7 @@ All the data for the entire reduced dataset is stored in a single dataset ('gala
 
 ### Data fields
 * r - co-moving radial distance $(Mpc)$
-* Dec - declination in degrees $(\pm 90 \degree)$
+* Dec - declination in degrees $(\pm 90 \deg)$
 * RA - right ascension  $(\pm 180 \degree)$
 * z - redshift
 * L - luminosity ratio $(L/L^*)$
@@ -83,5 +83,6 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
+eyJoaXN0b3J5IjpbMTMwODQ1MTI4NywtMTg1NjY3NjAzLC01ND
+g4MDY0OTZdfQ==
 -->
