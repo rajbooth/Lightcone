@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Data products - Galaxy Lightcone</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Data products";
+    var mkdocs_page_input_path = "data_products.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Galaxy Lightcone</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../building_lightcone/">Building the lightcone</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Data products</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#data-location">Data location</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#file-structure">File structure</a></li>
+        
+            <li><a class="toctree-l3" href="#data-fields">Data fields</a></li>
+        
+            <li><a class="toctree-l3" href="#co-ordinate-system">Co-ordinate system</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#reading-lightcone-data">Reading lightcone data</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#prerequisites">Prerequisites</a></li>
+        
+            <li><a class="toctree-l3" href="#primary-dataset_1">Primary dataset</a></li>
+        
+            <li><a class="toctree-l3" href="#reduced-dataset_1">Reduced dataset</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#visualising-the-lightcone">Visualising the lightcone</a></li>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Galaxy Lightcone</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Data products</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="data-location">Data location</h2>
+<p>The primary galaxy lightcone catalogue is located on COSMA server at Durham, at:
+<a href="/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky">/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky</a>
+This is just over 1 Tbyte in size and hence is too large to use other than by applications that are also running on the COSMA server.</p>
+<p>A reduced size lightcone has been generated from this primary dataset, which can be used for testing purposes and at 2.8 Gbytes, is small enough for download to personal off-site computers.  This can be found at:
+<a href="/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky_Reduced/galaxy_lightcone_M_limited.h5">/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky_Reduced/galaxy_lightcone_M_limited.h5</a>
+This lightcone only extends out to a redshift of <script type="math/tex">z<=0.4</script> and a luminosity cut-off has been applied such that only galaxies with a luminosity <script type="math/tex">L<= 21</script> are included in the catalogue.</p>
+<h3 id="file-structure">File structure</h3>
+<p>The lightcone data is stored in files conforming to the hdf5 file format.</p>
+<h4 id="primary-dataset">Primary dataset</h4>
+<p>Data for each shell derived from a specific Gadget snapshot is stored in a separate file, with a name of the form:</p>
+<pre><code>galaxy_lightcone.snapxx
+</code></pre>
+
+<p>where xx is the snapshot number ranging from 42 - 63.
+Each of these files contains 8 datasets, corresponding to each of the 8 octants that comprise the complete spherical volume of the lightcone, with a dataset name of the form:</p>
+<pre><code>octant_x
+</code></pre>
+
+<p>where x is the octant number in the range 0 - 7</p>
+<h4 id="reduced-dataset">Reduced dataset</h4>
+<p>All the data for the entire reduced dataset is stored in a single dataset ('galaxies') , contained within a single file.</p>
+<h3 id="data-fields">Data fields</h3>
+<ul>
+<li>r - co-moving radial distance <script type="math/tex">(Mpc)</script>
+</li>
+<li>Dec - declination in degrees <script type="math/tex">(\pm 90^\circ)</script>
+</li>
+<li>RA - right ascension  <script type="math/tex">(\pm 180^\circ)</script>
+</li>
+<li>z - redshift</li>
+<li>L - luminosity ratio <script type="math/tex">(L/L^*)</script>
+</li>
+<li>RSD - redshift distortion <script type="math/tex">(Mpc)</script>
+</li>
+</ul>
+<p>Data stored as a <em>gal</em> datatype, defined as:</p>
+<pre><code class="python">#define galaxy datatype
+gal = np.dtype([('r', np.float32),('RA', np.float32),('Dec', np.float32),('z', np.float32),('RSD', np.float32),('L', np.float32)])
+</code></pre>
+
+<h3 id="co-ordinate-system">Co-ordinate system</h3>
+<p>Positional data is stored in celestial co-ordinates, i.e. radial co-moving distance to observer <script type="math/tex">r\;(Mpc/h)</script>, declination from equatorial plane <script type="math/tex">Dec\; (\pm 90^\circ)</script> , and right ascension <script type="math/tex">RA\;(\pm 180^\circ)</script>.</p>
+<h2 id="reading-lightcone-data">Reading lightcone data</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Since the lightcone is stored in hdf5 format, it is necessary to load a compatible hdf5 library in order to access the lightcone dataset.  Additionally, other utilities may prove useful in analysing this data.  For Python users, the following imports are recommended:</p>
+<pre><code class="python">import h5py
+import healpy as hp
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+import scipy.integrate as integrate
+from scipy.interpolate import UnivariateSpline as spl
+from astropy.cosmology import Planck15 as cosmo, z_at_value
+</code></pre>
+
+<p>If it intended to visualise the lightcone data then the use of the <em>yt</em> visualisation package is recommended for Python users.</p>
+<pre><code class="python">import yt
+from yt.units import parsec, Msun
+from yt.visualization.volume_rendering.api import Scene, VolumeSource, Camera
+</code></pre>
+
+<h3 id="primary-dataset_1">Primary dataset</h3>
+<p><em>[to follow]</em></p>
+<h3 id="reduced-dataset_1">Reduced dataset</h3>
+<p>The following code snippet can be used to read lightcone data from the reduced dataset file into a series of numpy arrays for subsequent processing and analysis.</p>
+<pre><code class="python"># read data from test file
+outpath = '/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky_Reduced/'
+fname = outpath + 'galaxy_lightcone_M_limited.h5'
+with h5py.File(fname,'r') as fi:
+    # open the galaxies dataset
+    gals = fi['galaxies']
+    # extract each data field into separate arrays
+    L = gals['L']
+    zz = gals['z']
+    r = gals['r']
+    ra = gals['RA']
+    dec = gals['Dec']
+    RSD = gals['RSD']
+print('Finished reading {0:01d} galaxies'.format(len(r)))
+</code></pre>
+
+<h2 id="visualising-the-lightcone">Visualising the lightcone</h2>
+<p><img alt="Luminosity limited galaxy lightcone" src="https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19.png" />
+<em>[to follow - transforming to Cartesian co-ordinates and visualisation in yt]</em></p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMz
+MwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMs
+LTU0ODgwNjQ5Nl19
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../building_lightcone/" class="btn btn-neutral" title="Building the lightcone"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../building_lightcone/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

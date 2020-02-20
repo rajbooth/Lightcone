@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>About - Galaxy Lightcone</title>
+  <title>Building the lightcone - Galaxy Lightcone</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
-    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_name = "Building the lightcone";
+    var mkdocs_page_input_path = "building_lightcone.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -53,20 +53,30 @@
     <a class="" href="..">Home</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">About</a>
+    <a class="current" href="./">Building the lightcone</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#overview">Overview</a></li>
+    <li class="toctree-l2"><a href="#methodology">Methodology</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#source-data">Source data</a></li>
+        
+            <li><a class="toctree-l3" href="#the-luminosity-function">The luminosity function</a></li>
+        
+            <li><a class="toctree-l3" href="#redshift-space-distortion">Redshift space distortion</a></li>
+        
+        </ul>
     
 
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../building_lightcone/">Building the lightcone</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -96,7 +106,7 @@
     
       
     
-    <li>About</li>
+    <li>Building the lightcone</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -106,16 +116,44 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="overview">Overview</h2>
-<p>The galaxy lightcone catalogue provides a dataset of over 2 billion galaxies extending out to a redshift of <script type="math/tex">z \simeq 0.85</script>, contained in a co-moving cubic volume of <script type="math/tex">6000 Mpc^3/h^3</script>.  In addition to the positional co-ordinates of each galaxy, the lightcone dataset also assigns a luminosity value to each galaxy such that the overall luminosity distribution fits a <a href="../building_lightcone/#luminosity">Schechter function</a>.  This enables the user to apply a magnitude filter to the galaxy dataset to extract only those galaxies that will be visible in an observational galaxy survey for a given instrument sensitivity.
-The dataset also holds the redshift space distortion factor associated with each galaxy, derived from its peculiar velocity in the N-body simulation snapshot.  This allows the user to generate positional data in redshift space if desired.</p>
+                <h2 id="methodology">Methodology</h2>
+<h3 id="source-data">Source data</h3>
+<p>Gadget snapshots.</p>
+<pre><code></code></pre>
+
+<h3 id="the-luminosity-function"><a name="luminosity"></a>The luminosity function</h3>
+<p><img alt="Minimum luminosity" src="https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png" />
+<script type="math/tex; mode=display">M = m - 5 (\log_{10}D_L - 1) </script>
+</p>
+<p>where <script type="math/tex">M</script> is absolute magnitude and <script type="math/tex">m</script> is apparent magnitude</p>
+<p>
+<script type="math/tex; mode=display">m = M + 5 (\log_{10}D_L - 1)</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\rightarrow D_L = 10^{0.2(m-M) - 1}</script>
+</p>
+<p>where <script type="math/tex">D_L = (1+z) D_C </script>
+</p>
+<p>Schechter:
+<script type="math/tex"> M^*_J = -21.4 </script>
+</p>
+<p>
+<script type="math/tex; mode=display">M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}</script>
+</p>
+<p>
+<script type="math/tex; mode=display"> \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} </script>
+<img alt="enter image description here" src="https://github.com/rajbooth/Lightcone/raw/master/images/Cumulative_Probability_Distribution.png" />
+Efstathieu (Les Houches Lectures):</p>
+<p>"In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity <script type="math/tex">L</script> can be seen out to a distance <script type="math/tex">d_{max}</script> (redshift <script type="math/tex">z_{max}</script>) given by:"</p>
+<p>
+<script type="math/tex; mode=display">5 \log d_{max}(L) = m_{lim} - M_\odot - 25 + 2.5 \log(L/L_\odot) + kz_{max}  </script>
+</p>
+<p>
+<script type="math/tex; mode=display"> \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} </script>
+<img alt="Luminosity distribution" src="https://github.com/rajbooth/Lightcone/raw/master/images/Luminosity_Distribution.png" /></p>
+<h3 id="redshift-space-distortion">Redshift space distortion</h3>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzgzNDc2OSwtMTQxNTExODU5OSwxOD
-ExNDI5Nzk1LC0xNDczNTM5Mzg3LC0xMDUzMjcyMDI4LDE0MTg5
-NzY0MDEsNDY1NDU3NzcyLDE3MzA5NjQwNiwtNzYxMzA3Mjc2LD
-c1MzM3NTY3NywyMDgzMDU5NjEyLC0xNjM1NjQxMDc1LDE4MDYz
-MTc1Myw4NzE5ODU1NjMsOTE4MTk5NDUxLDE0ODA4MzM0LC05Mz
-c5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
+eyJoaXN0b3J5IjpbMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
 -->
               
             </div>
@@ -124,10 +162,10 @@ c5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../building_lightcone/" class="btn btn-neutral float-right" title="Building the lightcone">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../data_products/" class="btn btn-neutral float-right" title="Data products">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -153,10 +191,10 @@ c5ODg2MTgsNjAwNTQxODc4LC0xODYxODk0MDg2XX0=
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../about/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../building_lightcone/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../data_products/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
