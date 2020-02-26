@@ -80,10 +80,13 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
 ## Visualising the lightcone
 ![Luminosity limited galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19.png)
+The fact that the lightcone dataset is stored as a hdf5 file makes the process of extracting a sub-set of the data for visualisation purposes relatively e
+
+
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMz
-MwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMs
-LTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbODUxMDc0NjY2LDEzODc0MzMyODEsLTM2Mz
+k2NTI4MSw1MjMzMDAxNiw5MDgxMTk0MjAsLTE4NTY2NzYwMywt
+MTg1NjY3NjAzLC01NDg4MDY0OTZdfQ==
 -->
