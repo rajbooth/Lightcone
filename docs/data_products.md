@@ -38,7 +38,7 @@ gal = np.dtype([('r', np.float32),('RA', np.float32),('Dec', np.float32),('z', n
 ```
 ### Co-ordinate system
 Positional data is stored in celestial co-ordinates, i.e. radial co-moving distance to observer $r\;(Mpc/h)$, declination from equatorial plane $Dec\; (\pm 90^\circ)$ , and right ascension $RA\;(\pm 180^\circ)$.
-## Reading lightcone data
+## <a name="reading_lightcone"></a>Reading lightcone data
 ### Prerequisites
 Since the lightcone is stored in hdf5 format, it is necessary to load a compatible hdf5 library in order to access the lightcone dataset.  Additionally, other utilities may prove useful in analysing this data.  For Python users, the following imports are recommended:
 ```python
@@ -80,13 +80,14 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
 ## Visualising the lightcone
 ![Luminosity limited galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19.png)
-The fact that the lightcone dataset is stored as a hdf5 file makes the process of extracting a sub-set of the data for visualisation purposes relatively simple.  Using the h5py Python library makes it possible to use the standard numpy array indexing syntax to define a specific data slice to extract from the entire dataset.  Extending the python code snippet 
+The fact that the lightcone dataset is stored as a hdf5 file makes the process of extracting a sub-set of the data for visualisation purposes relatively simple.  Using the h5py Python library makes it possible to use the standard numpy array indexing syntax to define a specific data slice to extract from the entire dataset.  Extending the python code snippet in `[Reading the Lightcone](#reading_lightcone)`
 
 
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwxMz
-g3NDMzMjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIw
-LC0xODU2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
+eyJoaXN0b3J5IjpbMTA5NzEyMDg3MSwtMTQzNTc1NjY2MSwxOT
+AwMjU1MDgwLDEzODc0MzMyODEsLTM2Mzk2NTI4MSw1MjMzMDAx
+Niw5MDgxMTk0MjAsLTE4NTY2NzYwMywtMTg1NjY3NjAzLC01ND
+g4MDY0OTZdfQ==
 -->
