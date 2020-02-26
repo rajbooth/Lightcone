@@ -169,11 +169,11 @@ plt.ylabel('y (Mpc)')
 plt.savefig('FullSky_Galaxy_Slice_M0-{5:0.0f}_mode-{0:s}_interp-{1:s}_res-{2:0d}_dpi-{3:0d}_cmap-{4:s}'.format(mode,Interp, size*2, Dpi, cmap_name, M0), dpi = Dpi)
 plt.show()
 ```
-![Lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-kaiser_res-4000_dpi-600.png)
+![Lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-kaiser_res-4000_dpi-600_blue.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwNjIzMTgzLC02NDYyMTk2MDcsLTE1ND
-IyODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1NzU2
-NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLD
-UyMzMwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2
-MDMsLTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbMTUwODczMjE2Miw5MDA2MjMxODMsLTY0Nj
+IxOTYwNywtMTU0MjI4NTkwMiwtMTQ4Njg3OTM5MiwxNjcxNjA0
+ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwxMzg3NDMzMjgxLC
+0zNjM5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIwLC0xODU2Njc2
+MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
 -->
