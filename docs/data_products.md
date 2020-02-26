@@ -154,11 +154,24 @@ Finally, we can display the image array created in the previous step by invoking
 
  method, as illustrated here:
 ```python
-
+Dpi = 600  					# set image resolution 
+Cmap = cm.get_cmap('hot')	# colour map to use
+Interp = 'None'				# anti-aliasing type, if required
+Norm = cm.colors.LogNorm(vmin=0.01, vmax=L_max)
+ext = (-r_max, r_max, -r_max, r_max)
+fig = plt.subplots(figsize = (12,12))
+plt.imshow(img,  cmap = Cmap, norm = Norm, interpolation = Interp, extent = ext)
+cbar = plt.colorbar(shrink = 0.8)
+cbar.set_label('Luminosity')
+plt.xlabel('x (Mpc)')
+plt.ylabel('y (Mpc)')
+plt.savefig('FullSky_Galaxy_Slice_M0-{5:0.0f}_mode-{0:s}_interp-{1:s}_res-{2:0d}_dpi-{3:0d}_cmap-{4:s}'.format(mode,Interp, size*2, Dpi, cmap_name, M0), dpi = Dpi)
+plt.show()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDIyODU5MDIsLTE0ODY4NzkzOTIsMT
-Y3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQz
-MzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2LDkwODExOTQyMCwtMT
-g1NjY3NjAzLC0xODU2Njc2MDMsLTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbLTYwMTY5MzU5NywtMTU0MjI4NTkwMiwtMT
+Q4Njg3OTM5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1
+NTA4MCwxMzg3NDMzMjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOT
+A4MTE5NDIwLC0xODU2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2
+NDk2XX0=
 -->
