@@ -100,12 +100,19 @@ with h5py.File(fname,'r') as fi:
     RSD = gals['RSD']
 print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
-In order to create a
+In order to create a 2D image of our lightcone slice, we first need to convert from celestial to Cartesian co-ordinates.  
+```python
+# convert from polar to cartesian coords
+theta = np.radians(dec)
+phi = np.radians(ra)
+x = r * np.cos(theta) * np.sin(phi)
+y = r * np.cos(theta) * np.cos(phi)
+z = r * np.sin(theta)
+```
 
-*[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzMxMDA4MTMsMTY3MTYwNDg4LC0xND
+eyJoaXN0b3J5IjpbLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xND
 M1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1
 MjgxLDUyMzMwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xOD
 U2Njc2MDMsLTU0ODgwNjQ5Nl19
