@@ -148,10 +148,17 @@ L_max = np.amax(img)
 L_min = np.amin(img)
 print ('L_max = ', L_max, 'L_min = ', L_min)
 ```
-Finally, we can display the image array created in the previous step by 
+Finally, we can display the image array created in the previous step by invoking the 
+
+> MatPlotLib imshow
+
+ method, as illustrated here:
+```python
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NjYyMDUyMSwtMTQ4Njg3OTM5MiwxNj
-cxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwxMzg3NDMz
-MjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIwLC0xOD
-U2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
+eyJoaXN0b3J5IjpbLTE1NDIyODU5MDIsLTE0ODY4NzkzOTIsMT
+Y3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQz
+MzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2LDkwODExOTQyMCwtMT
+g1NjY3NjAzLC0xODU2Njc2MDMsLTU0ODgwNjQ5Nl19
 -->
