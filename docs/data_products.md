@@ -100,13 +100,13 @@ with h5py.File(fname,'r') as fi:
     RSD = gals['RSD']
 print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
-
+In order to create a
 
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MD
-AyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2
-LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLTU0OD
-gwNjQ5Nl19
+eyJoaXN0b3J5IjpbLTE4NzMxMDA4MTMsMTY3MTYwNDg4LC0xND
+M1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1
+MjgxLDUyMzMwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xOD
+U2Njc2MDMsLTU0ODgwNjQ5Nl19
 -->
