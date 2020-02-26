@@ -109,8 +109,10 @@ x = r * np.cos(theta) * np.sin(phi)
 y = r * np.cos(theta) * np.cos(phi)
 z = r * np.sin(theta)
 ```
-We now need to calculate the intensity value to display in our lightcone image.  There are various ways this can be achieved.  One approach would simply be to do a count of the total number of galaxies that fall within an image pixel.  A more sophisticated approach is to use the assigned galaxy luminosities as 
-
+We now need to calculate the intensity value to display in our lightcone image.  There are various ways this could be achieved.  One approach would simply be to do a count of the total number of galaxies that fall within an image pixel.  A more sophisticated approach that we employ here is to use the assigned galaxy luminosities as a proxy for galaxy mass.
+The code snippet below offers two alternative approaches to assigning luminosity to an image pixel:
+- Nearest Grid Point (NGP)
+- Cloud in Cell (CIC)
 ```python
 # set density deposition mode
 mode = 'NGP' # alternative is 'CIC'
@@ -146,8 +148,9 @@ L_max = np.amax(img)
 L_min = np.amin(img)
 print ('L_max = ', L_max, 'L_min = ', L_min)
 ```
+Finally, we can display the image array created in the previous step by 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4ODgzNzIwNSwtMTQ4Njg3OTM5MiwxNj
+eyJoaXN0b3J5IjpbMTY1NjYyMDUyMSwtMTQ4Njg3OTM5MiwxNj
 cxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwxMzg3NDMz
 MjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIwLC0xOD
 U2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
