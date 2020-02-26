@@ -80,13 +80,13 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
 ## Visualising the lightcone
 ![Luminosity limited galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19.png)
-The fact that the lightcone dataset is stored as a hdf5 file makes the process of extracting a sub-set of the data for visualisation purposes relatively simple.  Using the h5py Python library makes it possible to use the standard
+The fact that the lightcone dataset is stored as a hdf5 file makes the process of extracting a sub-set of the data for visualisation purposes relatively simple.  Using the h5py Python library makes it possible to use the standard numpy array indexing syntax to define a specific data slice to extract from the entire dataset. 
 
 
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MjA0OTQ1OCwxMzg3NDMzMjgxLC0zNj
+eyJoaXN0b3J5IjpbMTkwMDI1NTA4MCwxMzg3NDMzMjgxLC0zNj
 M5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIwLC0xODU2Njc2MDMs
 LTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
 -->
