@@ -127,6 +127,7 @@ i = i.astype(int) # x index of cell that contains particle
 j = j.astype(int) # y index of cell that contains particle
 
 # define image mesh
+# fill it with low non-zero value as we will want to use a log scale
 img = np.full((2*size,2*size),0.0001)
 
 # calcuate total luminosity in each image grid cell by summing over all galaxies
@@ -157,7 +158,7 @@ Finally, we can display the image array created in the previous step by invoking
 Dpi = 600  					# set image resolution 
 Cmap = cm.get_cmap('hot')	# colour map to use
 Interp = 'None'				# anti-aliasing type, if required
-Norm = cm.colors.LogNorm(vmin=0.01, vmax=L_max)
+Norm = cm.colors.LogNorm(vmin=0.01, vmax=L_max) # normalise lumonisoty v
 ext = (-r_max, r_max, -r_max, r_max)
 fig = plt.subplots(figsize = (12,12))
 plt.imshow(img,  cmap = Cmap, norm = Norm, interpolation = Interp, extent = ext)
@@ -169,7 +170,7 @@ plt.savefig('FullSky_Galaxy_Slice_M0-{5:0.0f}_mode-{0:s}_interp-{1:s}_res-{2:0d}
 plt.show()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTY5MzU5NywtMTU0MjI4NTkwMiwtMT
+eyJoaXN0b3J5IjpbMTA5OTI1OTQ2NiwtMTU0MjI4NTkwMiwtMT
 Q4Njg3OTM5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1
 NTA4MCwxMzg3NDMzMjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOT
 A4MTE5NDIwLC0xODU2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2
