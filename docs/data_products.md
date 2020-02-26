@@ -83,13 +83,13 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 The fact that the lightcone dataset is stored as a hdf5 file makes the process of extracting a sub-set of the data for visualisation purposes relatively simple.  Using the h5py Python library makes it possible to use the standard numpy array indexing syntax to define a specific data slice to extract from the entire dataset.  Extending the python code snippet in [reading lightcone data](#reading_lightcone), we add a slice filter to include only those galaxies that lie within a specified absolute declination:
 ```python
 # read data from test file
-depth = 5
+depth = 5 # depth of slice in degrees
 fname = outpath + 'galaxy_lightcone_M_limited.h5'
 with h5py.File(fname,'r') as fi:
     # open the galaxies dataset
     g = fi['galaxies']
     # construct a filter to inlude only those galaxies with a luminosity greater than the redshift dependent cut-off
-    f0 = tuple([(abs(g['Dec'])<depth)]) #note, in Python 3, filter mus
+    f0 = tuple([(abs(g['Dec'])<depth)]) #note: in Python 3, an array filter must be a tuple rather than another array
     gals = g[f0]
     # extract each data field into separate arrays
     L = gals['L']
@@ -105,8 +105,8 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 *[to follow - transforming to Cartesian co-ordinates and visualisation in yt]*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Njg1NTQ1MCwtMTQzNTc1NjY2MSwxOT
-AwMjU1MDgwLDEzODc0MzMyODEsLTM2Mzk2NTI4MSw1MjMzMDAx
-Niw5MDgxMTk0MjAsLTE4NTY2NzYwMywtMTg1NjY3NjAzLC01ND
-g4MDY0OTZdfQ==
+eyJoaXN0b3J5IjpbMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MD
+AyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2
+LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLTU0OD
+gwNjQ5Nl19
 -->
