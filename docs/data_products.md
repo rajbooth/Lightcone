@@ -109,11 +109,46 @@ x = r * np.cos(theta) * np.sin(phi)
 y = r * np.cos(theta) * np.cos(phi)
 z = r * np.sin(theta)
 ```
+We now need to calculate the intensity value to display in our lightcone image.  There are various ways this can be achieved.  One approach would simply be to do a count of the total number of galaxies that fall within an image pixel.  A more sophisticated approach is to use the assigned galaxy luminosities as 
 
+```python
+# set density deposition mode
+mode = 'NGP' # alternative is 'CIC'
+size = 2000 # size if image array/2
+X = x * size/x_max + size-1 # rescale x axis
+Y = y * size/y_max + size-1 # rescale y axis
 
+# Calculate cell in which each galaxy is located on 2D grid
+i = np.floor(X)
+j = np.floor(Y)
+i = i.astype(int) # x index of cell that contains particle
+j = j.astype(int) # y index of cell that contains particle
+
+# define image mesh
+img = np.full((2*size,2*size),0.0001)
+
+# calcuate total luminosity in each image grid cell by summing over all galaxies
+for k,l in enumerate(L):
+    if mode=='CIC':
+        d_x = X[k] - i[k]  # x offset of particle in cell
+        d_y = Y[k] - j[k]  # y offset of particle in cell
+        t_x = 1 - d_x
+        t_y = 1 - d_y
+
+        img[i[k],j[k]]    += l * t_x * t_y
+        if i[k]<2*size-1: img[i[k]+1,j[k]]  += l * d_x * t_y
+        if j[k]<2*size-1: img[i[k],j[k]+1]  += l * t_x * d_y
+        if i[k]<2*size-1 and j[k]<2*size-1: img[i[k]+1,j[k]+1]+= l * d_x * d_y
+    else:       # if NGP mode
+        img[i[k],j[k]]+= l
+        
+L_max = np.amax(img)
+L_min = np.amin(img)
+print ('L_max = ', L_max, 'L_min = ', L_min)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xND
-M1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1
-MjgxLDUyMzMwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xOD
-U2Njc2MDMsLTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbLTg4ODgzNzIwNSwtMTQ4Njg3OTM5MiwxNj
+cxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwxMzg3NDMz
+MjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIwLC0xOD
+U2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
 -->
