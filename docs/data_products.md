@@ -165,7 +165,9 @@ plt.ylabel('y (Mpc)')
 plt.savefig('FullSky_Galaxy_Slice_M0-{5:0.0f}_mode-{0:s}_interp-{1:s}_res-{2:0d}_dpi-{3:0d}_cmap-{4:s}'.format(mode,Interp, size*2, Dpi, cmap_name, M0), dpi = Dpi)
 plt.show()
 ```
-![Lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-kaiser_res-4000_dpi-600_blue8_mode-CIC_interp-None_res-4000_dpi-600_cmap-hot.png)
+
+![Lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-kaiser_res-4000_dpi-600_cmap-hot.png)
+
 ### Applying a luminosity filter
 We can now make use of the luminosity data that is associated with each galaxy in order to filter only only those galaxies that will be visible in a survey using an instrument of a given magnitude sensitivity, $M_0$ .
 This can be achieved simply by adding a luminosity filter to the filter expression used when reading in data from the lightcone dataset, as shown here:
@@ -178,10 +180,10 @@ This can be achieved simply by adding a luminosity filter to the filter expressi
 
 ![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQ0NDY4NTQsMTMwNzAzNTg1LDE1MD
-g3MzIxNjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5
-MDIsLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLD
-E5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMw
-MDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLT
-U0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbMTQ1MjMzNzMyLC0yMTM0NDQ2ODU0LDEzMD
+cwMzU4NSwxNTA4NzMyMTYyLDkwMDYyMzE4MywtNjQ2MjE5NjA3
+LC0xNTQyMjg1OTAyLC0xNDg2ODc5MzkyLDE2NzE2MDQ4OCwtMT
+QzNTc1NjY2MSwxOTAwMjU1MDgwLDEzODc0MzMyODEsLTM2Mzk2
+NTI4MSw1MjMzMDAxNiw5MDgxMTk0MjAsLTE4NTY2NzYwMywtMT
+g1NjY3NjAzLC01NDg4MDY0OTZdfQ==
 -->
