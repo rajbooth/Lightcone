@@ -74,16 +74,18 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 ```
 ## Visualising the lightcone
 ![Luminosity limited galaxy lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19.png)
+### Generating a slice plot
 The fact that the lightcone dataset is stored as a hdf5 file makes the process of extracting a sub-set of the data for visualisation purposes relatively simple.  Using the h5py Python library makes it possible to use the standard numpy array indexing syntax to define a specific data slice to extract from the entire dataset.  Extending the python code snippet in [reading lightcone data](#reading_lightcone), we add a slice filter to include only those galaxies that lie within a specified absolute declination:
 ```python
 # read data from test file
-depth = 5 # depth of slice in degrees
+depth = 510 # depth of slice in degreesMpc
 fname = outpath + 'galaxy_lightcone_M_limited.h5'
 with h5py.File(fname,'r') as fi:
     # open the galaxies dataset
     g = fi['galaxies']
     # construct a filter to inlude only those galaxies with a luminosity greater than the redshift dependent cut-off
-    f0 = tuple([(abs(g['Dec'])<depth)]) #note: in Python 3, an array filter must be a tuple rather than another array
+    fz0 = tuple([(abs(g['Dec'])g['r'] * np.sin(np.radians(abs(g['Dec']))) # calculate z co-ordinate of particle
+    f0 = tuple([(z0<depth)]) #note: in Python 3, an array filter must be a tuple rather than another array
     gals = g[f0]
     # extract each data field into separate arrays
     L = gals['L']
@@ -126,7 +128,7 @@ img = np.full((2*size,2*size),0.0001)
 
 # calcuate total luminosity in each image grid cell by summing over all galaxies
 for k,l in enumerate(L):
-    if mode=='CIC':
+      if mode=='CIC' and i[k]<2*size-1 and j[k]<2*size-1:
         d_x = X[k] - i[k]  # x offset of particle in cell
         d_y = Y[k] - j[k]  # y offset of particle in cell
         t_x = 1 - d_x
@@ -136,7 +138,7 @@ for k,l in enumerate(L):
         if i[k]<2*size-1: img[i[k]+1,j[k]]  += l * d_x * t_y
         if j[k]<2*size-1: img[i[k],j[k]+1]  += l * t_x * d_y
         if i[k]<2*size-1 and j[k]<2*size-1: img[i[k]+1,j[k]+1]+= l * d_x * d_y
-    else:       # if NGP mode
+    else:       # if NGP mode or on grid boundary
         img[i[k],j[k]]+= l
         
 L_max = np.amax(img)
@@ -145,9 +147,9 @@ print ('L_max = ', L_max, 'L_min = ', L_min)
 ```
 Finally, we can display the image array created in the previous step by invoking the 
 
-> MatPlotLib imshow
+> *MatPlotLib imshow
 
- method, as illustrated here:
+* method, as illustrated here:
 ```python
 Dpi = 600  					# set image resolution 
 Cmap = cm.get_cmap('hot')	# colour map to use
@@ -163,11 +165,23 @@ plt.ylabel('y (Mpc)')
 plt.savefig('FullSky_Galaxy_Slice_M0-{5:0.0f}_mode-{0:s}_interp-{1:s}_res-{2:0d}_dpi-{3:0d}_cmap-{4:s}'.format(mode,Interp, size*2, Dpi, cmap_name, M0), dpi = Dpi)
 plt.show()
 ```
-![Lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-kaiser_res-4000_dpi-600_blue.png)
+![Lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-kaiser_res-4000_dpi-600_blue8_mode-CIC_interp-None_res-4000_dpi-600_cmap-hot.png)
+### Applying a luminosity filter
+We can now make use of the luminosity data that is associated with each galaxy in order to filter only only those galaxies that will be visible in a survey using an instrument of a given magnitude sensitivity, $M_0$ .
+This can be achieved simply by adding a luminosity filter to the filter expression used when reading in data from the lightcone dataset, as shown here:
+```python
+    f0 = tuple([(z0<depth) & (g['L'] > z2L(g['z']))])
+```
+![Luminosity filtered](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-18_mode-CIC_interp-kaiser_res-4000_dpi-600_cmap-blue2_new.png)
+
+### Redshift Space Distortion
+
+![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzAzNTg1LDE1MDg3MzIxNjIsOTAwNj
-IzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5MDIsLTE0ODY4Nzkz
-OTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMT
-M4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2LDkwODExOTQy
-MCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbLTIxMzQ0NDY4NTQsMTMwNzAzNTg1LDE1MD
+g3MzIxNjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5
+MDIsLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLD
+E5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMw
+MDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLT
+U0ODgwNjQ5Nl19
 -->
