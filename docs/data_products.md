@@ -51,12 +51,6 @@ import scipy.integrate as integrate
 from scipy.interpolate import UnivariateSpline as spl
 from astropy.cosmology import Planck15 as cosmo, z_at_value
 ```
-If it intended to visualise the lightcone data then the use of the *yt* visualisation package is recommended for Python users.
-```python
-import yt
-from yt.units import parsec, Msun
-from yt.visualization.volume_rendering.api import Scene, VolumeSource, Camera
-```
 ### Primary dataset
 *[to follow]*
 ### Reduced dataset
@@ -171,9 +165,9 @@ plt.show()
 ```
 ![Lightcone](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-kaiser_res-4000_dpi-600_blue.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODczMjE2Miw5MDA2MjMxODMsLTY0Nj
-IxOTYwNywtMTU0MjI4NTkwMiwtMTQ4Njg3OTM5MiwxNjcxNjA0
-ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwxMzg3NDMzMjgxLC
-0zNjM5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIwLC0xODU2Njc2
-MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
+eyJoaXN0b3J5IjpbMTMwNzAzNTg1LDE1MDg3MzIxNjIsOTAwNj
+IzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5MDIsLTE0ODY4Nzkz
+OTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMT
+M4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2LDkwODExOTQy
+MCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLTU0ODgwNjQ5Nl19
 -->
