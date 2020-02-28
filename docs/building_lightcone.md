@@ -33,11 +33,12 @@ $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 ![Luminosity distribution](https://github.com/rajbooth/Lightcone/raw/master/images/Luminosity_Distribution.png)
 
 ### Redshift space distortion
-The redshift space distortion for a galaxy at redshift $z$ is given by
+The redshift space distortion for a galaxy at redshift $z$ is given, to a good approximation, by
 
 $$r = (1+z) \frac{v_\parallel }{H(z)}$$
-where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction
+where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
+This redshift distiortion factor is calculagted for every galaxy in th elightconbe,based on the peculiar velocity of the corr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODAyOTY3OTYsMTczMDA1NDUwOSw4MT
-A5MjMwNTJdfQ==
+eyJoaXN0b3J5IjpbMjgwNzgyMDYxLDE3MzAwNTQ1MDksODEwOT
+IzMDUyXX0=
 -->
