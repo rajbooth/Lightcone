@@ -37,8 +37,8 @@ The redshift space distortion for a galaxy at redshift $z$ is given, to a good a
 
 $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
-This redshift distiortion factor is calculagted for every galaxy in th elightconbe,based on the peculiar velocity of the corr
+This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwNzgyMDYxLDE3MzAwNTQ1MDksODEwOT
+eyJoaXN0b3J5IjpbODg1MzE1MTI4LDE3MzAwNTQ1MDksODEwOT
 IzMDUyXX0=
 -->
