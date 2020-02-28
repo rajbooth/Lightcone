@@ -177,7 +177,7 @@ This can be achieved simply by adding a luminosity filter to the filter expressi
 ![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
 
 ## Sky maps
-The full lightcone dataset readily lends itself to the generation of full sky density or luminosity maps.  The simplest approach is to read an entire snapshot file, which is inherently comprised of all galaxies within a given redshift range. Using the  *ang2pix* function in *healpy* Python implementation of Healpix, we can assign each gaslaxy to a pixel on a sky map, using code similar to this:
+The full lightcone dataset readily lends itself to the generation of full sky density or luminosity maps.  The simplest approach is to read an entire snapshot file, which is inherently comprised of all galaxies within a given redshift range. Using the  *ang2pix* function in *healpy* Python implementation of Healpix, we can assign each galaxy to a pixel on a sky map, using code similar to this:
 ```python
 snaps = [60,61,62]
 # Initialise data arrays
@@ -191,19 +191,20 @@ for snap in snaps:
     add_snapshot(snap)
     phi = ra * np.pi / 180
     theta = (dec + 90) * np.pi / 180 
+    
     pix = hp.ang2pix(nside,theta,phi)
     for i, px in enumerate(pix):
         sn = snap-44
         if (m[sn][px] == hp.UNSEEN):
-            m[sn][px] = L0[i]
+            m[sn][px] = L[i]
         else:
-            m[sn][px] += L0[i]
+            m[sn][px] += L[i]
     print('Done making map for snapshot ', snap)
 ```
 
 ![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Galaxy_Shell_snap=60.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyNTcwNzA4LDQwNTAzNzc4MiwtMTA0Mz
+eyJoaXN0b3J5IjpbODgxNjQ2ODk5LDQwNTAzNzc4MiwtMTA0Mz
 M0ODA4MCwtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2
 Miw5MDA2MjMxODMsLTY0NjIxOTYwNywtMTU0MjI4NTkwMiwtMT
 Q4Njg3OTM5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1
