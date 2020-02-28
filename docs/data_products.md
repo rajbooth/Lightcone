@@ -177,13 +177,15 @@ This can be achieved simply by adding a luminosity filter to the filter expressi
 ![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
 
 ## Sky maps
-The full lightcone dataset readily lends itself to the generation of full sky density or luminosity maps.  The simplest 
+The full lightcone dataset readily lends itself to the generation of full sky density or luminosity maps.  The simplest approach is to read an entire snapshot file, which is inherently comprised of all galaxies within a given redshift range.
+
+![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Galaxy_Shell_snap=60.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODI3NjAzMCw0MDUwMzc3ODIsLTEwND
-MzNDgwODAsLTIxMzQ0NDY4NTQsMTMwNzAzNTg1LDE1MDg3MzIx
-NjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5MDIsLT
-E0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAy
-NTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2LD
-kwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLTU0ODgw
-NjQ5Nl19
+eyJoaXN0b3J5IjpbLTIwOTQ3MDcwODUsNDA1MDM3NzgyLC0xMD
+QzMzQ4MDgwLC0yMTM0NDQ2ODU0LDEzMDcwMzU4NSwxNTA4NzMy
+MTYyLDkwMDYyMzE4MywtNjQ2MjE5NjA3LC0xNTQyMjg1OTAyLC
+0xNDg2ODc5MzkyLDE2NzE2MDQ4OCwtMTQzNTc1NjY2MSwxOTAw
+MjU1MDgwLDEzODc0MzMyODEsLTM2Mzk2NTI4MSw1MjMzMDAxNi
+w5MDgxMTk0MjAsLTE4NTY2NzYwMywtMTg1NjY3NjAzLC01NDg4
+MDY0OTZdfQ==
 -->
