@@ -203,14 +203,28 @@ for snap in snaps:
 ```
 
 ![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Galaxy_Shell_snap=60.png)
-Having generated a healpix sky map, we can use the *anafast* function within healpy to calculate the angular power spectrum $(Cl)$ associated with this matter distribution.
+Having generated a healpix sky map, we can use the *anafast* function within healpy to calculate the angular power spectrum $(C_l)$ associated with this matter distribution.
+```python
+cl = hp.anafast(m[snap-44])
+ell = np.arange(len(cl))
+fig, ax = plt.subplots(1, 1,figsize=(12,8))
+ax.loglog(ell, cl * ell * (ell+1) /(2 * np.pi), label = 'snap {0:02d}'.format(snap))
+ax.set_xlabel('l')
+ax.set_ylabel('$C_l.l(l+1)/2\pi$')
+ax.legend()
+ax.set_ylim(1e-5,1e-1)
+ax.set_xlim(10, 4e3)
+plt.title('Matter Angular Power Spectrum')
+plt.savefig('Angular_Power_Spectrum_snap-{0:02d}.png'.format(snap))
+plt.show()
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Nzk0NTQ4NCwxMDA0ODA2MzQyLDQwNT
-AzNzc4MiwtMTA0MzM0ODA4MCwtMjEzNDQ0Njg1NCwxMzA3MDM1
-ODUsMTUwODczMjE2Miw5MDA2MjMxODMsLTY0NjIxOTYwNywtMT
-U0MjI4NTkwMiwtMTQ4Njg3OTM5MiwxNjcxNjA0ODgsLTE0MzU3
-NTY2NjEsMTkwMDI1NTA4MCwxMzg3NDMzMjgxLC0zNjM5NjUyOD
-EsNTIzMzAwMTYsOTA4MTE5NDIwLC0xODU2Njc2MDMsLTE4NTY2
-NzYwM119
+eyJoaXN0b3J5IjpbLTExNTY5NjA4NDIsMTAwNDgwNjM0Miw0MD
+UwMzc3ODIsLTEwNDMzNDgwODAsLTIxMzQ0NDY4NTQsMTMwNzAz
+NTg1LDE1MDg3MzIxNjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLT
+E1NDIyODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1
+NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1Mj
+gxLDUyMzMwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2
+Njc2MDNdfQ==
 -->
