@@ -177,7 +177,7 @@ This can be achieved simply by adding a luminosity filter to the filter expressi
 ![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
 
 ## Sky maps
-The full lightcone dataset readily lends itself to the generation of full sky density or luminosity maps.  The simplest approach is to read an entire snapshot file, which is inherently comprised of all galaxies within a given redshift range. Using the  *ang2pix* function in *healpy* Python implementation of Healpix, we can assign each galaxy to a pixel on a sky map, using code similar to this:
+The full lightcone dataset readily lends itself to the generation of full sky density or luminosity maps.  The simplest approach is to read an entire snapshot file, which is inherently comprised of all galaxies within a given redshift range. Using the  *ang2pix* function in *healpy* Python implementation of Healpix, we can assign each galaxy to a pixel on a sky map, then sum the galaxy luminosities in each pixel to generate the final map.  The following code snippet illustrates this process.
 ```python
 snaps = [60,61,62]
 # Initialise data arrays
@@ -204,11 +204,11 @@ for snap in snaps:
 
 ![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Galaxy_Shell_snap=60.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgxNjQ2ODk5LDQwNTAzNzc4MiwtMTA0Mz
-M0ODA4MCwtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2
-Miw5MDA2MjMxODMsLTY0NjIxOTYwNywtMTU0MjI4NTkwMiwtMT
-Q4Njg3OTM5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1
-NTA4MCwxMzg3NDMzMjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOT
-A4MTE5NDIwLC0xODU2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2
-NDk2XX0=
+eyJoaXN0b3J5IjpbMTAwNDgwNjM0Miw0MDUwMzc3ODIsLTEwND
+MzNDgwODAsLTIxMzQ0NDY4NTQsMTMwNzAzNTg1LDE1MDg3MzIx
+NjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5MDIsLT
+E0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAy
+NTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2LD
+kwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLTU0ODgw
+NjQ5Nl19
 -->
