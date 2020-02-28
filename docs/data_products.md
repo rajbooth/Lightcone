@@ -218,13 +218,13 @@ plt.title('Matter Angular Power Spectrum')
 plt.savefig('Angular_Power_Spectrum_snap-{0:02d}.png'.format(snap))
 plt.show()
 ```
-
+![Angular power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/Angular_Power_Spectrum_snap-62.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTY5NjA4NDIsMTAwNDgwNjM0Miw0MD
-UwMzc3ODIsLTEwNDMzNDgwODAsLTIxMzQ0NDY4NTQsMTMwNzAz
-NTg1LDE1MDg3MzIxNjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLT
-E1NDIyODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1
-NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1Mj
-gxLDUyMzMwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2
-Njc2MDNdfQ==
+eyJoaXN0b3J5IjpbODE2NzQzNTEyLC0xMTU2OTYwODQyLDEwMD
+Q4MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4MDgwLC0yMTM0NDQ2
+ODU0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLDkwMDYyMzE4MywtNj
+Q2MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2ODc5MzkyLDE2NzE2
+MDQ4OCwtMTQzNTc1NjY2MSwxOTAwMjU1MDgwLDEzODc0MzMyOD
+EsLTM2Mzk2NTI4MSw1MjMzMDAxNiw5MDgxMTk0MjAsLTE4NTY2
+NzYwM119
 -->
