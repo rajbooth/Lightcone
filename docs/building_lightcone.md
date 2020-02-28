@@ -33,8 +33,10 @@ $$ \rightarrow \frac{L}{L_\odot} = d_{max}^2 10^{0.4(M_\odot - m_{lim} + 25)} $$
 ![Luminosity distribution](https://github.com/rajbooth/Lightcone/raw/master/images/Luminosity_Distribution.png)
 
 ### Redshift space distortion
-The redshift space distortion for
+The redshift space distortion is given by
+
+$$r = (1+z) \frac{v_\parallel }{H(z)$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MzAwMzgzMywxNzMwMDU0NTA5LDgxMD
+eyJoaXN0b3J5IjpbMTMxMjY2OTAwNCwxNzMwMDU0NTA5LDgxMD
 kyMzA1Ml19
 -->
