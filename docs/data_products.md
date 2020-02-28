@@ -186,6 +186,8 @@ print('Nside =', nside, ' npix =',npix)
 # initialise map arrays
 m = np.full((20,npix),hp.UNSEEN)
 
+snaps = [62,59,56,53]
+
 for snap in snaps:
     # Initialise data arrays
     L = []
@@ -231,7 +233,7 @@ plt.show()
 ```
 ![Angular power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/Angular_Power_Spectrum_snap-62.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTgyMjAxNDUsODE2NzQzNTEyLC0xMT
+eyJoaXN0b3J5IjpbLTE3MzMxNzE3ODAsODE2NzQzNTEyLC0xMT
 U2OTYwODQyLDEwMDQ4MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4
 MDgwLC0yMTM0NDQ2ODU0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLD
 kwMDYyMzE4MywtNjQ2MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2
