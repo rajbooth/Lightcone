@@ -203,12 +203,13 @@ for snap in snaps:
 ```
 
 ![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Galaxy_Shell_snap=60.png)
+Having generated a healpix sky map, we can use the anafast function wihtin healpy to calculate the angular power spectrum 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDgwNjM0Miw0MDUwMzc3ODIsLTEwND
-MzNDgwODAsLTIxMzQ0NDY4NTQsMTMwNzAzNTg1LDE1MDg3MzIx
-NjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5MDIsLT
-E0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAy
-NTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUyMzMwMDE2LD
-kwODExOTQyMCwtMTg1NjY3NjAzLC0xODU2Njc2MDMsLTU0ODgw
-NjQ5Nl19
+eyJoaXN0b3J5IjpbLTE5MTU2MzUzNywxMDA0ODA2MzQyLDQwNT
+AzNzc4MiwtMTA0MzM0ODA4MCwtMjEzNDQ0Njg1NCwxMzA3MDM1
+ODUsMTUwODczMjE2Miw5MDA2MjMxODMsLTY0NjIxOTYwNywtMT
+U0MjI4NTkwMiwtMTQ4Njg3OTM5MiwxNjcxNjA0ODgsLTE0MzU3
+NTY2NjEsMTkwMDI1NTA4MCwxMzg3NDMzMjgxLC0zNjM5NjUyOD
+EsNTIzMzAwMTYsOTA4MTE5NDIwLC0xODU2Njc2MDMsLTE4NTY2
+NzYwM119
 -->
