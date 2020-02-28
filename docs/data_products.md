@@ -145,11 +145,7 @@ L_max = np.amax(img)
 L_min = np.amin(img)
 print ('L_max = ', L_max, 'L_min = ', L_min)
 ```
-Finally, we can display the image array created in the previous step by invoking the 
-
-> *MatPlotLib imshow
-
-* method, as illustrated here:
+Finally, we can display the image array created in the previous step by invoking the *MatPlotLib imshow* method, as illustrated here:
 ```python
 Dpi = 600  					# set image resolution 
 Cmap = cm.get_cmap('hot')	# colour map to use
@@ -179,11 +175,13 @@ This can be achieved simply by adding a luminosity filter to the filter expressi
 ### Redshift Space Distortion
 
 ![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
+
+## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDMzNDgwODAsLTIxMzQ0NDY4NTQsMT
-MwNzAzNTg1LDE1MDg3MzIxNjIsOTAwNjIzMTgzLC02NDYyMTk2
-MDcsLTE1NDIyODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC
-0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYz
-OTY1MjgxLDUyMzMwMDE2LDkwODExOTQyMCwtMTg1NjY3NjAzLC
-0xODU2Njc2MDMsLTU0ODgwNjQ5Nl19
+eyJoaXN0b3J5IjpbMjAyODMyNTY5NCwtMTA0MzM0ODA4MCwtMj
+EzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2Miw5MDA2MjMx
+ODMsLTY0NjIxOTYwNywtMTU0MjI4NTkwMiwtMTQ4Njg3OTM5Mi
+wxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwxMzg3
+NDMzMjgxLC0zNjM5NjUyODEsNTIzMzAwMTYsOTA4MTE5NDIwLC
+0xODU2Njc2MDMsLTE4NTY2NzYwMywtNTQ4ODA2NDk2XX0=
 -->
