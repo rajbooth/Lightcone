@@ -179,19 +179,30 @@ This can be achieved simply by adding a luminosity filter to the filter expressi
 ## Sky maps
 The full lightcone dataset readily lends itself to the generation of full sky density or luminosity maps.  The simplest approach is to read an entire snapshot file, which is inherently comprised of all galaxies within a given redshift range. Using the  *ang2pix* function in *healpy* Python implementation of Healpix, we can assign each galaxy to a pixel on a sky map, then sum the galaxy luminosities in each pixel to generate the final map.  The following code snippet illustrates this process.
 ```python
-snaps = [60,61,62]
-# Initialise data arrays
-L = []
-zz = []
-r = []
-ra = []
-dec = []
-RSD = []
+## set resolution
+nside = 1024
+npix = hp.nside2npix(nside);
+print('Nside =', nside, ' npix =',npix)
+# initialise map arrays
+m = np.full((20,npix),hp.UNSEEN)
+
 for snap in snaps:
+    # Initialise data arrays
+    L = []
+    zz = []
+    r = []
+    ra = []
+    dec = []
+    RSD = []
+    
     add_snapshot(snap)
+
+    ra = np.asarray(ra)
+    dec = np.asarray(dec)
+    
     phi = ra * np.pi / 180
     theta = (dec + 90) * np.pi / 180 
-    
+
     pix = hp.ang2pix(nside,theta,phi)
     for i, px in enumerate(pix):
         sn = snap-44
@@ -220,11 +231,11 @@ plt.show()
 ```
 ![Angular power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/Angular_Power_Spectrum_snap-62.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2NzQzNTEyLC0xMTU2OTYwODQyLDEwMD
-Q4MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4MDgwLC0yMTM0NDQ2
-ODU0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLDkwMDYyMzE4MywtNj
-Q2MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2ODc5MzkyLDE2NzE2
-MDQ4OCwtMTQzNTc1NjY2MSwxOTAwMjU1MDgwLDEzODc0MzMyOD
-EsLTM2Mzk2NTI4MSw1MjMzMDAxNiw5MDgxMTk0MjAsLTE4NTY2
-NzYwM119
+eyJoaXN0b3J5IjpbLTIwNTgyMjAxNDUsODE2NzQzNTEyLC0xMT
+U2OTYwODQyLDEwMDQ4MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4
+MDgwLC0yMTM0NDQ2ODU0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLD
+kwMDYyMzE4MywtNjQ2MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2
+ODc5MzkyLDE2NzE2MDQ4OCwtMTQzNTc1NjY2MSwxOTAwMjU1MD
+gwLDEzODc0MzMyODEsLTM2Mzk2NTI4MSw1MjMzMDAxNiw5MDgx
+MTk0MjBdfQ==
 -->
