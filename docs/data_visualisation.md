@@ -193,6 +193,8 @@ plt.show()
 ```
 ![Matter power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/gadget_snapshot_Pk_1.png)
 This can be compared to the power spectrum calculated by evolving back the initial $z=0$ power spectrum using the methodology described in  [Smith, R.E. & Angulo, R. 2019](https://doi.org/10.1093/mnras/stz890)
+
+[enter link description here](https://github.com/rajbooth/Lightcone/raw/master/images/gadget_snapshot_Pk.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NDIwNzU5OSwyMjA1MjkzMjldfQ==
+eyJoaXN0b3J5IjpbLTIyNzk2OTE2OSwyMjA1MjkzMjldfQ==
 -->
