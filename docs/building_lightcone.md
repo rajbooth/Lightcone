@@ -5,10 +5,10 @@ The data used in this lightcone catalogue originates in the N-body simulations t
 The principal cosmological parameters used for the fiducial run are summarised in the table below.
 
 | Parameter | Description | Value |
-|---------------|-------------|-----------|
+|-------------|-------------|-----------|
 | $\Omega_{DE}$ | Dark energy fraction of $\Omega$ | 0.6914 |
-|$\omega_c$	 | Cold dark matter fraction of $\Omega$ | 0.11889 |
-|$\omega_b$  | Baryonic matter fraction of $\Omega$ |0.
+|$\omega_c \equiv \Omega_$	 | Cold dark matter fraction of $\Omega$  | 0.11889 |
+|$\omega_b$  | Baryonic matter fraction of $\Omega$ |0.022161
 
 ### <a name="luminosity"></a>The luminosity function
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
@@ -45,7 +45,7 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzcwMDE1NjIsLTE4NjkzMTkwODksLT
-UyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMw
-NTJdfQ==
+eyJoaXN0b3J5IjpbMTQxODY3NDQxNiwtMTg2OTMxOTA4OSwtNT
+IxOTIzNDkxLDg4NTMxNTEyOCwxNzMwMDU0NTA5LDgxMDkyMzA1
+Ml19
 -->
