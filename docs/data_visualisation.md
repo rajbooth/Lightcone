@@ -192,7 +192,7 @@ plt.title('Gadget snapshot matter power spectrum')
 plt.show()
 ```
 ![Matter power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/gadget_snapshot_Pk_1.png)
-This can be compared to the power spectrum calculated by evolving back the initial $z=0$ power spectrum according to the methodology described in  [Smith, R.E>](https://doi.org/10.1093/mnras/stz890)
+This can be compared to the power spectrum calculated by evolving back the initial $z=0$ power spectrum using the methodology described in  [Smith, R.E. & Angulo, R. 2019](https://doi.org/10.1093/mnras/stz890)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjE5NTkyMCwyMjA1MjkzMjldfQ==
+eyJoaXN0b3J5IjpbLTM4NDIwNzU5OSwyMjA1MjkzMjldfQ==
 -->
