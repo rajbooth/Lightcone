@@ -192,6 +192,7 @@ plt.title('Gadget snapshot matter power spectrum')
 plt.show()
 ```
 ![Matter power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/gadget_snapshot_Pk_1.png)
+This can be compared to the power spectrum calculated 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwNTI5MzI5XX0=
+eyJoaXN0b3J5IjpbLTM1NzczMTQ2OSwyMjA1MjkzMjldfQ==
 -->
