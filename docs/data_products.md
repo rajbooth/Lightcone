@@ -252,13 +252,35 @@ plt.show()
 ```
 ![Angular power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/Angular_Power_Spectrum_snap-62.png)
 ## <a name="power_spectrum"></a>Matter power spectrum
-The power spectrum for each Gadget snapshot can be read from the hdf5 data file using a code snippet such as:
+The power spectrum for each Gadget snapshot can be read from the hdf5 data file and plotted using a code snippet such as:
 ```python
+def Pk_s(snap):
+    fname = '/cosma6/data/dp004/dc-boot5/Lightcone/Power_Spectrum/powerspec_{0:03d}.npy'.format(snap)
+    with h5py.File(fname,'r') as f:
+        Pk = f['Pk0'][()]
+        k = f['k'][()]
+    return k, Pk
+``for snap in range(63,42,-5):
+    #print(snap)
+    k, Pk = Pk_s(snap)
+    plt.loglog(k, Pk, label = 'Snap {0:d}'.format(snap))
+    
+#for snap in range(47,64,4):
+     #plt.loglog(data['rk'], Plin2[63-snap], label = 'Gadget Snap {0:d}'.format(snap), linestyle = '-.')
+   
+plt.xlim(5e-3,1.5)
+plt.ylim(1e2,4e4)
+plt.legend()
+#plt.grid()
+plt.xlabel('k')
+plt.ylabel('$P(k) [Mpc^3 h^{-3}]$')
+plt.title('Gadget snapshot matter power spectrum')
+plt.savefig('gadget_snapshot_Pk_0.png')
+plt.show()
 
-```
 ![Matter power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/gadget_snapshot_Pk_1.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMzUxMDc0MiwxNzI1MDc3MDc4LC0yMD
+eyJoaXN0b3J5IjpbMTAxODA3NTkzNSwxNzI1MDc3MDc4LC0yMD
 g2NDM0MTk4LC0xNzMzMTcxNzgwLDgxNjc0MzUxMiwtMTE1Njk2
 MDg0MiwxMDA0ODA2MzQyLDQwNTAzNzc4MiwtMTA0MzM0ODA4MC
 wtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2Miw5MDA2
