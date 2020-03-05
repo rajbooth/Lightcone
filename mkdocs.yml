@@ -4,6 +4,7 @@ nav:
   - About:  about.md
   - Building the lightcone: building_lightcone.md
   - Data products: data_products.md
+  - Data visualisation: data_visualisation.md
   
 theme:  readthedocs
 
