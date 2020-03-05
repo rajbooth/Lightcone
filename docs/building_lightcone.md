@@ -9,10 +9,11 @@ The principal cosmological parameters used for the fiducial run are summarised i
 | $\Omega_{DE}$ | Dark energy fraction of $\Omega$ | 0.6914 |
 |$\omega_c \equiv \Omega_c h^2$	 | Cold dark matter fraction of $\Omega$  | 0.11889 |
 |$\omega_b\equiv \Omega_b h^2$  | Baryonic matter fraction of $\Omega$ |0.022161 |
-| w_0 | Dark energy EoS parameter | -1.0 |
-| w_a | Dark energy EoS parameter | 0.0 |
-| n_s | Spectral index | 0.9611 |
-| A_s |  | 2.14818 $(\times 10^{-9})$ |
+| $w_0$ | Dark energy EoS parameter | -1.0 |
+| $w_a$ | Dark energy EoS parameter | 0.0 |
+| $n_s$ | Spectral index | 0.9611 |
+| $A_s$ | Curvature fluctuation amplitude | 2.14818 $(\times 10^{-9})$ |
+The 
 
 ### <a name="luminosity"></a>The luminosity function
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
@@ -49,7 +50,7 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTI2MTAxNTgsLTE4NjkzMTkwODksLT
-UyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMw
-NTJdfQ==
+eyJoaXN0b3J5IjpbMTYxNTI0MzAzMywtMTg2OTMxOTA4OSwtNT
+IxOTIzNDkxLDg4NTMxNTEyOCwxNzMwMDU0NTA5LDgxMDkyMzA1
+Ml19
 -->
