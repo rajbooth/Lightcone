@@ -4,8 +4,8 @@
 The data used in this lightcone catalogue originates in the N-body simulations that were carried out as part of the [Daemmerung simulations](https://doi.org/10.1093/mnras/stz890), using the Gadget 2 N-body code.  Specifically, the lightcone uses a subset of the snapshots generated for the fiducial run for 'large-box' component of these simulations. The large-box runs tracked $N=2048^3$ dark matter particles in a comoving box of size $L = 3000 Gpc/h$ , with a mass per particle of $m_p = 2.69 \times 10^{11} M_\odot/h$.
 The principal cosmological parameters used for the fiducial run are summarised in the table below.
 
-| Parameter | Description | Value |
-|-------------|-------------|-----------|
+| Parameter |         Description     | Value |
+|----------|-----------------------------|-----------|
 | $\Omega_{DE}$ | Dark energy fraction of $\Omega$ | 0.6914 |
 |$\omega_c \equiv \Omega_c h^2$	 | Cold dark matter fraction of $\Omega$  | 0.11889 |
 |$\omega_b\equiv \Omega_b h^2$  | Baryonic matter fraction of $\Omega$ |0.022161 |
@@ -13,6 +13,7 @@ The principal cosmological parameters used for the fiducial run are summarised i
 | $w_a$ | Dark energy EoS parameter | 0.0 |
 | $n_s$ | Spectral index | 0.9611 |
 | $A_s$ | Curvature fluctuation amplitude | 2.14818 $(\times 10^{-9})$ |
+
 The lightcone includes snapshots 42 - 63 from the fiducial Gadget run, spanning  the redshift range $0 < z < 0.85$
 ![Gadget snapshot redshifts](https://github.com/rajbooth/Lightcone/raw/master/images/Gadget%20snaphots%20vs%20redshift.png)
 (Note: the Gadget snapshots in this simulation are not linearly spaced in redshift, as shown in the figure above.)
@@ -52,7 +53,7 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU2NDkwMzIsMTI4OTkxMzg3NCw0NT
-I0NjU2ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4ODUzMTUx
-MjgsMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
+eyJoaXN0b3J5IjpbMTM2MjcyMzYwNywtMjEwNTY0OTAzMiwxMj
+g5OTEzODc0LDQ1MjQ2NTY4NywtMTg2OTMxOTA4OSwtNTIxOTIz
+NDkxLDg4NTMxNTEyOCwxNzMwMDU0NTA5LDgxMDkyMzA1Ml19
 -->
