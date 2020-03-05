@@ -16,7 +16,8 @@ The principal cosmological parameters used for the fiducial run are summarised i
 The lightcone includes snapshots 42 - 63 from the fiducial Gadget run, spanning  the redshift range $0 < z < 0.85$
 ![Gadget snapshot redshifts](https://github.com/rajbooth/Lightcone/raw/master/images/Gadget%20snaphots%20vs%20redshift.png)
 (Note: the Gadget snapshots in this simulation are not linearly spaced in redshift, as shown in the figure above.)
-### <a name="luminosity"></a>The luminosity function
+
+###  <a name="luminosity"></a> The luminosity function
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
@@ -51,7 +52,7 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTkxMzg3NCw0NTI0NjU2ODcsLTE4Nj
-kzMTkwODksLTUyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUw
-OSw4MTA5MjMwNTJdfQ==
+eyJoaXN0b3J5IjpbLTIxMDU2NDkwMzIsMTI4OTkxMzg3NCw0NT
+I0NjU2ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4ODUzMTUx
+MjgsMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
 -->
