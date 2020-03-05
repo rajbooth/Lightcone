@@ -186,6 +186,11 @@ NGP plot, no interpolation
 CIC plot, no interpolation
 
 ![NGP plot, gaussian interpolation](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-18_mode-NGP_interp-gaussian_res-4000_dpi-600_cmap-bone.png)
+NGP plot, gaussian interpolation
+
+![NGP plot, kaiser interpolation](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-18_mode-NGP_interp-kaiser_res-4000_dpi-600_cmap-bone.png)
+NGP plot, kaiser interpolation
+
 ### Redshift Space Distortion
 
 ![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
@@ -249,11 +254,11 @@ plt.show()
 ## <a name="power_spectrum"></a>Matter power spectrum
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODE0NDgwOTAsLTIwODY0MzQxOTgsLT
-E3MzMxNzE3ODAsODE2NzQzNTEyLC0xMTU2OTYwODQyLDEwMDQ4
-MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4MDgwLC0yMTM0NDQ2OD
-U0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLDkwMDYyMzE4MywtNjQ2
-MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2ODc5MzkyLDE2NzE2MD
-Q4OCwtMTQzNTc1NjY2MSwxOTAwMjU1MDgwLDEzODc0MzMyODEs
-LTM2Mzk2NTI4MV19
+eyJoaXN0b3J5IjpbMTcyNTA3NzA3OCwtMjA4NjQzNDE5OCwtMT
+czMzE3MTc4MCw4MTY3NDM1MTIsLTExNTY5NjA4NDIsMTAwNDgw
+NjM0Miw0MDUwMzc3ODIsLTEwNDMzNDgwODAsLTIxMzQ0NDY4NT
+QsMTMwNzAzNTg1LDE1MDg3MzIxNjIsOTAwNjIzMTgzLC02NDYy
+MTk2MDcsLTE1NDIyODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwND
+g4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwt
+MzYzOTY1MjgxXX0=
 -->
