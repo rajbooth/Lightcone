@@ -6,8 +6,9 @@ The principal cosmological parameters used for the fiducial run are summarised i
 
 | Parameter | Description | Value |
 |---------------|-------------|-----------|
-| $\Omega_{DE}$ | Dark energy critical density | 0.6914 |
-|$\omega_c$	 | Cold dark matter fraction of \Omega
+| $\Omega_{DE}$ | Dark energy fraction of $\Omega$ | 0.6914 |
+|$\omega_c$	 | Cold dark matter fraction of $\Omega$ | 0.11889 |
+|$\omega_b$  | Baryonic matter fraction of $\Omega$ |0.
 
 ### <a name="luminosity"></a>The luminosity function
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
@@ -44,7 +45,7 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY4NDg1NjAsLTE4NjkzMTkwODksLT
+eyJoaXN0b3J5IjpbLTEyNzcwMDE1NjIsLTE4NjkzMTkwODksLT
 UyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMw
 NTJdfQ==
 -->
