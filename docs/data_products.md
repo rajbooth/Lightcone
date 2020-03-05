@@ -10,7 +10,7 @@ A reduced size lightcone has been generated from this primary dataset, which can
 This lightcone only extends out to a redshift of $z<=0.4$ and a luminosity cut-off has been applied such that only galaxies with a luminosity $L<= 21$ are included in the catalogue.
 
 ### Matter power spectra
-Although not strictly relevant to the lightcone itself, this document also describes some ancillary data that was generated as part of the process of building the lightcone: specifically, a set of matter power spectrum measurements for each of the snapshots that were include din the galaxy lightcone.  Thes eare described in more detail in [enter link description here](#power_spectrum)
+Although not strictly relevant to the lightcone itself, this document also describes some ancillary data that was generated as part of the process of building the lightcone: specifically, a set of matter power spectrum measurements for each of the snapshots that were include din the galaxy lightcone.  These are described in more detail in the section: [matter power spectrum](#power_spectrum)
 
 ### File structure
 The lightcone data is stored in files conforming to the hdf5 file format.
@@ -240,7 +240,7 @@ plt.show()
 ## <a name="power_spectrum"></a>Matter power spectrum
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDc2NjkzNTEsLTE3MzMxNzE3ODAsOD
+eyJoaXN0b3J5IjpbLTIwODY0MzQxOTgsLTE3MzMxNzE3ODAsOD
 E2NzQzNTEyLC0xMTU2OTYwODQyLDEwMDQ4MDYzNDIsNDA1MDM3
 NzgyLC0xMDQzMzQ4MDgwLC0yMTM0NDQ2ODU0LDEzMDcwMzU4NS
 wxNTA4NzMyMTYyLDkwMDYyMzE4MywtNjQ2MjE5NjA3LC0xNTQy
