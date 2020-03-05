@@ -252,13 +252,14 @@ plt.show()
 ```
 ![Angular power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/Angular_Power_Spectrum_snap-62.png)
 ## <a name="power_spectrum"></a>Matter power spectrum
+The power spectrum for each Gadget snapshot can be read from the data file using a code snippet such as:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTA3NzA3OCwtMjA4NjQzNDE5OCwtMT
-czMzE3MTc4MCw4MTY3NDM1MTIsLTExNTY5NjA4NDIsMTAwNDgw
-NjM0Miw0MDUwMzc3ODIsLTEwNDMzNDgwODAsLTIxMzQ0NDY4NT
-QsMTMwNzAzNTg1LDE1MDg3MzIxNjIsOTAwNjIzMTgzLC02NDYy
-MTk2MDcsLTE1NDIyODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwND
-g4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwt
-MzYzOTY1MjgxXX0=
+eyJoaXN0b3J5IjpbMTQwNTg2NjQzNywxNzI1MDc3MDc4LC0yMD
+g2NDM0MTk4LC0xNzMzMTcxNzgwLDgxNjc0MzUxMiwtMTE1Njk2
+MDg0MiwxMDA0ODA2MzQyLDQwNTAzNzc4MiwtMTA0MzM0ODA4MC
+wtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2Miw5MDA2
+MjMxODMsLTY0NjIxOTYwNywtMTU0MjI4NTkwMiwtMTQ4Njg3OT
+M5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwx
+Mzg3NDMzMjgxXX0=
 -->
