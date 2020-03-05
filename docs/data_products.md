@@ -177,6 +177,9 @@ This can be achieved simply by adding a luminosity filter to the filter expressi
 ```
 ![Luminosity filtered](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-18_mode-CIC_interp-kaiser_res-4000_dpi-600_cmap-blue2_new.png)
 
+### Plotting galaxy density
+Use galaxy counts rather than luminosity value.
+![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-18_mode-CIC_interp-None_res-4000_dpi-600_cmap-bone.png)
 ### Redshift Space Distortion
 
 ![Redshift Space Distortion](https://github.com/rajbooth/Lightcone/raw/master/images/FullSky_Galaxy_Slice_M0-19_mode-CIC_interp-None_res-4000_dpi-600_cmap-blue2.png)
@@ -240,11 +243,11 @@ plt.show()
 ## <a name="power_spectrum"></a>Matter power spectrum
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODY0MzQxOTgsLTE3MzMxNzE3ODAsOD
-E2NzQzNTEyLC0xMTU2OTYwODQyLDEwMDQ4MDYzNDIsNDA1MDM3
-NzgyLC0xMDQzMzQ4MDgwLC0yMTM0NDQ2ODU0LDEzMDcwMzU4NS
-wxNTA4NzMyMTYyLDkwMDYyMzE4MywtNjQ2MjE5NjA3LC0xNTQy
-Mjg1OTAyLC0xNDg2ODc5MzkyLDE2NzE2MDQ4OCwtMTQzNTc1Nj
-Y2MSwxOTAwMjU1MDgwLDEzODc0MzMyODEsLTM2Mzk2NTI4MSw1
-MjMzMDAxNl19
+eyJoaXN0b3J5IjpbLTc3MDUyNjUyNywtMjA4NjQzNDE5OCwtMT
+czMzE3MTc4MCw4MTY3NDM1MTIsLTExNTY5NjA4NDIsMTAwNDgw
+NjM0Miw0MDUwMzc3ODIsLTEwNDMzNDgwODAsLTIxMzQ0NDY4NT
+QsMTMwNzAzNTg1LDE1MDg3MzIxNjIsOTAwNjIzMTgzLC02NDYy
+MTk2MDcsLTE1NDIyODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwND
+g4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwt
+MzYzOTY1MjgxXX0=
 -->
