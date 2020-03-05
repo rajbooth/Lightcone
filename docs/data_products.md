@@ -1,8 +1,10 @@
 ## Data location
+### Primary lightcone catalogue
 The primary galaxy lightcone catalogue is located on COSMA server at Durham, at:
 [/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky](/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky)
 This is just over 1 Tbyte in size and hence is too large to use other than by applications that are also running on the COSMA server.
 
+### 
 A reduced size lightcone has been generated from this primary dataset, which can be used for testing purposes and at 2.8 Gbytes, is small enough for download to personal off-site computers.  This can be found at:
 [/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky_Reduced/galaxy_lightcone_M_limited.h5](/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky_Reduced/galaxy_lightcone_M_limited.h5)
 This lightcone only extends out to a redshift of $z<=0.4$ and a luminosity cut-off has been applied such that only galaxies with a luminosity $L<= 21$ are included in the catalogue.
@@ -233,11 +235,11 @@ plt.show()
 ```
 ![Angular power spectrum](https://github.com/rajbooth/Lightcone/raw/master/images/Angular_Power_Spectrum_snap-62.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzMxNzE3ODAsODE2NzQzNTEyLC0xMT
-U2OTYwODQyLDEwMDQ4MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4
-MDgwLC0yMTM0NDQ2ODU0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLD
-kwMDYyMzE4MywtNjQ2MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2
-ODc5MzkyLDE2NzE2MDQ4OCwtMTQzNTc1NjY2MSwxOTAwMjU1MD
-gwLDEzODc0MzMyODEsLTM2Mzk2NTI4MSw1MjMzMDAxNiw5MDgx
-MTk0MjBdfQ==
+eyJoaXN0b3J5IjpbMTUyMDgyOTgwOCwtMTczMzE3MTc4MCw4MT
+Y3NDM1MTIsLTExNTY5NjA4NDIsMTAwNDgwNjM0Miw0MDUwMzc3
+ODIsLTEwNDMzNDgwODAsLTIxMzQ0NDY4NTQsMTMwNzAzNTg1LD
+E1MDg3MzIxNjIsOTAwNjIzMTgzLC02NDYyMTk2MDcsLTE1NDIy
+ODU5MDIsLTE0ODY4NzkzOTIsMTY3MTYwNDg4LC0xNDM1NzU2Nj
+YxLDE5MDAyNTUwODAsMTM4NzQzMzI4MSwtMzYzOTY1MjgxLDUy
+MzMwMDE2XX0=
 -->
