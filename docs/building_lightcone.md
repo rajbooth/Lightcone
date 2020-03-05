@@ -2,7 +2,7 @@
 
 ### Source data
 The data used in this lightcone catalogue originates in the N-body simulations that were carried out as part of the Daemmerung 
-(See
+(See[enter link description here](https://doi.org/10.1093/mnras/stz890)
 ```
 ```
 ### <a name="luminosity"></a>The luminosity function
@@ -40,6 +40,6 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODI2NjQ5Nyw4ODUzMTUxMjgsMTczMD
+eyJoaXN0b3J5IjpbLTUyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMD
 A1NDUwOSw4MTA5MjMwNTJdfQ==
 -->
