@@ -1,7 +1,7 @@
 ## Methodology
 
 ### Source data
-The data used in this lightcone catalogue originates in the N-body simulations that were carried out as part of the [Daemmerung simulations](https://doi.org/10.1093/mnras/stz890), using the Gadget 2 N-body code.  Specifically, the lightcone uses a subset of the snapshots generated for the fiducial run for 'large-box' component of these simulations. The large-box runs tracked $2048^3 dark matter particles, in a comoving box of size L = 500 h−1Mpc, yielding a also followed N = 20483 dark matter particles, but in a comoving 2.69 × 1011h−1M?. box of size L = 3000 h−1Mpc, yielding a mass per particle of
+The data used in this lightcone catalogue originates in the N-body simulations that were carried out as part of the [Daemmerung simulations](https://doi.org/10.1093/mnras/stz890), using the Gadget 2 N-body code.  Specifically, the lightcone uses a subset of the snapshots generated for the fiducial run for 'large-box' component of these simulations. The large-box runs tracked $2048^3$ dark matter particles, in a comoving box of size $L = 3000 Gpc/h$ , with a mass per particle of 
 ```
 ```
 ### <a name="luminosity"></a>The luminosity function
@@ -39,6 +39,6 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE5ODE5NDMyLC01MjE5MjM0OTEsODg1Mz
-E1MTI4LDE3MzAwNTQ1MDksODEwOTIzMDUyXX0=
+eyJoaXN0b3J5IjpbLTEyNzMyNTY5OSwtNTIxOTIzNDkxLDg4NT
+MxNTEyOCwxNzMwMDU0NTA5LDgxMDkyMzA1Ml19
 -->
