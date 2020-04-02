@@ -61,18 +61,7 @@ The primary lightcone dataset consists of 21 files, one for each Gadget snapshot
 The following python example illustrates how the full dataset can be read and analysed, in this case for the purposes of constructing raytracing lens planes.
 ```python
 # Build surface mass density shells from lightcone
-
-from astropy import cosmology
-from astropy.cosmology import Planck15 as cosmo, z_at_value
-from astropy.constants import *
-import scipy.integrate as integrate
-from scipy.interpolate import UnivariateSpline as spl
-from scipy.constants import *
-from astropy import coordinates as coord
-import astropy.constants as const
-import astropy.units as unit
 import numpy as np
-import numpy.random as rnd
 import h5py
 import math
 import healpy as hp
@@ -146,8 +135,6 @@ for snap in range(43, 42, -1):
             
         hp.write_map(sigma_file, sigma[l], dtype = np.float32, overwrite = True)
         print ('sigma written to lens plane {0:0d}'.format(plane), flush = True)
-        
-
 ```
 ### Reduced dataset
 
@@ -171,11 +158,11 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNDg1NzAwMCwxNzI1MDc3MDc4LC0yMD
-g2NDM0MTk4LC0xNzMzMTcxNzgwLDgxNjc0MzUxMiwtMTE1Njk2
-MDg0MiwxMDA0ODA2MzQyLDQwNTAzNzc4MiwtMTA0MzM0ODA4MC
-wtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2Miw5MDA2
-MjMxODMsLTY0NjIxOTYwNywtMTU0MjI4NTkwMiwtMTQ4Njg3OT
-M5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwx
-Mzg3NDMzMjgxXX0=
+eyJoaXN0b3J5IjpbLTE4MDkyMzc2NTYsMTcyNTA3NzA3OCwtMj
+A4NjQzNDE5OCwtMTczMzE3MTc4MCw4MTY3NDM1MTIsLTExNTY5
+NjA4NDIsMTAwNDgwNjM0Miw0MDUwMzc3ODIsLTEwNDMzNDgwOD
+AsLTIxMzQ0NDY4NTQsMTMwNzAzNTg1LDE1MDg3MzIxNjIsOTAw
+NjIzMTgzLC02NDYyMTk2MDcsLTE1NDIyODU5MDIsLTE0ODY4Nz
+kzOTIsMTY3MTYwNDg4LC0xNDM1NzU2NjYxLDE5MDAyNTUwODAs
+MTM4NzQzMzI4MV19
 -->
