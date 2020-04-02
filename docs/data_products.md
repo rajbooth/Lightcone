@@ -58,8 +58,97 @@ from astropy.cosmology import Planck15 as cosmo, z_at_value
 ```
 ### Primary dataset
 The primary lightcone dataset consists of 21 files, one for each Gadget snapshot, ranging from 63 ($z=0$)  to 42 ($z\simeq1$).  Each file is divided into 8 hdf5 datasets, one for each full-sky octant.  The datasets are named 'octant_0' though to 'octant_7'.  The largest of these files for snapshot 42 is over 180 Gbytes in size and cannot therefore be read in one chunk, whereas an individual octant at about 22.5 Gbytes is just about manageable. 
-The following python 
+The following python example illustrates how the full dataset can be read and analysed, in this case for the purposes of constructing raytracing lens planes.
+```python
+# Build surface mass density shells from lightcone
 
+from astropy import cosmology
+from astropy.cosmology import Planck15 as cosmo, z_at_value
+from astropy.constants import *
+import scipy.integrate as integrate
+from scipy.interpolate import UnivariateSpline as spl
+from scipy.constants import *
+from astropy import coordinates as coord
+import astropy.constants as const
+import astropy.units as unit
+import numpy as np
+import numpy.random as rnd
+import h5py
+import math
+import healpy as hp
+from datetime import datetime
+import os.path
+from fast_histogram import histogram1d, histogram2d
+
+# read particle data from lightcone 
+def read_octant(snap, oct):
+    fpath = '/cosma6/data/dp004/dc-boot5/Lightcone/Galaxy_FullSky/'
+    lens_path = '/cosma6/data/dp004/dc-boot5/lensplanes/OnionSkin/'
+    fname = 'galaxy_lightcone.snap{0:02d}'.format(snap)
+    key = 'octant_{0:0d}'.format(oct)
+    print('Started, snapshot =', snap,  datetime.now(), flush = True)
+    with h5py.File(fpath+fname,'r') as fi:
+        gals = fi[key]
+        print('Opened dataset, octant =', oct, datetime.now(), flush = True)
+        r = gals['r']/h
+        phi = gals['RA'] * np.pi / 180
+        theta = (gals['Dec'] + 90) * np.pi / 180 
+        print('Read variables, number of particles = ',len(r), datetime.now(), flush = True)
+           
+    lp = r//delta # calculate lens plane number from radial comoving distance
+    lp = lp.astype(np.int, copy = False)
+    lps = np.unique(lp)   
+    global first_lp 
+    first_lp = lps.min()
+    last_lp = lps.max()
+    nlp = len(lps)
+    print('Calculated lensplanes:', lps, datetime.now(), flush = True)
+    
+    pix = hp.ang2pix(nside,theta,phi)
+    print('Determined pixel', datetime.now(), flush = True)
+    
+    sigma = np.zeros((nlp, npix))  # seem to need this to reserve memory and prevent segmentation fault
+    sigma = histogram2d(lp, pix, range = [[first_lp, last_lp+1], [0, npix+1]],  bins=[nlp,npix])
+    print('Sigma histogram completed', datetime.now(), flush = True)
+    
+    return sigma
+
+## set resolution
+O_DE = 0.6914
+o_b  = 0.022161
+o_c = 0.11889
+h = np.sqrt((o_b + o_c)/(1-O_DE))
+O_m = (o_b + o_c)/(h*h)
+delta = 200 # lens plane thickness in Mpc
+nside = 8192 
+npix = hp.nside2npix(nside)
+dens_fac =  2.69e11 * const.M_sun /h * npix  / (4 * np.pi)
+print('Nside =', nside, ' npix =',npix, 'h = ',h,'Omega_m = ', O_m)
+
+lens_path = '/cosma6/data/dp004/dc-boot5/lensplanes/OnionSkin/'
+for snap in range(43, 42, -1):
+    for oct in range(8):
+        if oct==0:
+            sigma = read_octant(snap,oct)
+        else:
+            sigma += read_octant(snap,oct)
+        
+    nlp = sigma.shape[0]
+    for l in range(nlp):     
+        # write sigma to file
+        plane = l + first_lp
+        sigma_file = lens_path + 'Lens_plane_{0:0d}_nside_{1:0d}'.format(plane, nside)
+        # check whether file already exists
+        if os.path.isfile(sigma_file):
+            sigma0 = hp.read_map(sigma_file, dtype = np.int)
+            # add new sigma to old sigma
+            sigma[l] += sigma0
+            
+        hp.write_map(sigma_file, sigma[l], dtype = np.float32, overwrite = True)
+        print ('sigma written to lens plane {0:0d}'.format(plane), flush = True)
+        
+
+```
 ### Reduced dataset
 
 The following code snippet can be used to read lightcone data from the reduced dataset file into a series of numpy arrays for subsequent processing and analysis.
@@ -82,11 +171,11 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3NDUxOTU1LDE3MjUwNzcwNzgsLTIwOD
-Y0MzQxOTgsLTE3MzMxNzE3ODAsODE2NzQzNTEyLC0xMTU2OTYw
-ODQyLDEwMDQ4MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4MDgwLC
-0yMTM0NDQ2ODU0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLDkwMDYy
-MzE4MywtNjQ2MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2ODc5Mz
-kyLDE2NzE2MDQ4OCwtMTQzNTc1NjY2MSwxOTAwMjU1MDgwLDEz
-ODc0MzMyODFdfQ==
+eyJoaXN0b3J5IjpbLTQzNDg1NzAwMCwxNzI1MDc3MDc4LC0yMD
+g2NDM0MTk4LC0xNzMzMTcxNzgwLDgxNjc0MzUxMiwtMTE1Njk2
+MDg0MiwxMDA0ODA2MzQyLDQwNTAzNzc4MiwtMTA0MzM0ODA4MC
+wtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2Miw5MDA2
+MjMxODMsLTY0NjIxOTYwNywtMTU0MjI4NTkwMiwtMTQ4Njg3OT
+M5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwx
+Mzg3NDMzMjgxXX0=
 -->
