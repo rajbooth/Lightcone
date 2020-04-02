@@ -57,8 +57,7 @@ from scipy.interpolate import UnivariateSpline as spl
 from astropy.cosmology import Planck15 as cosmo, z_at_value
 ```
 ### Primary dataset
-*[to follow]*
-### Reduced dataset
+The primary lighcoen dataset consistes of 21 files, one for each Gadget snapshot, ranging from 6### Reduced dataset
 
 The following code snippet can be used to read lightcone data from the reduced dataset file into a series of numpy arrays for subsequent processing and analysis.
 ``` python
@@ -80,11 +79,11 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzQwNTI5LDE3MjUwNzcwNzgsLTIwOD
-Y0MzQxOTgsLTE3MzMxNzE3ODAsODE2NzQzNTEyLC0xMTU2OTYw
-ODQyLDEwMDQ4MDYzNDIsNDA1MDM3NzgyLC0xMDQzMzQ4MDgwLC
-0yMTM0NDQ2ODU0LDEzMDcwMzU4NSwxNTA4NzMyMTYyLDkwMDYy
-MzE4MywtNjQ2MjE5NjA3LC0xNTQyMjg1OTAyLC0xNDg2ODc5Mz
-kyLDE2NzE2MDQ4OCwtMTQzNTc1NjY2MSwxOTAwMjU1MDgwLDEz
-ODc0MzMyODFdfQ==
+eyJoaXN0b3J5IjpbLTQ3ODM0Nzk3NSwxNzI1MDc3MDc4LC0yMD
+g2NDM0MTk4LC0xNzMzMTcxNzgwLDgxNjc0MzUxMiwtMTE1Njk2
+MDg0MiwxMDA0ODA2MzQyLDQwNTAzNzc4MiwtMTA0MzM0ODA4MC
+wtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2Miw5MDA2
+MjMxODMsLTY0NjIxOTYwNywtMTU0MjI4NTkwMiwtMTQ4Njg3OT
+M5MiwxNjcxNjA0ODgsLTE0MzU3NTY2NjEsMTkwMDI1NTA4MCwx
+Mzg3NDMzMjgxXX0=
 -->
