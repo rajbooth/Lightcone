@@ -57,7 +57,9 @@ from scipy.interpolate import UnivariateSpline as spl
 from astropy.cosmology import Planck15 as cosmo, z_at_value
 ```
 ### Primary dataset
-The primary lighcoen dataset consistes of 21 files, one for each Gadget snapshot, ranging from 6### Reduced dataset
+The primary lightcone dataset consists of 21 files, one for each Gadget snapshot, ranging from 63 ($z=0$)  to 42 ($z\simeq1$).  Each file is divided into 8 hdf5 datasets, one for each full-sky octant
+
+### Reduced dataset
 
 The following code snippet can be used to read lightcone data from the reduced dataset file into a series of numpy arrays for subsequent processing and analysis.
 ``` python
@@ -79,7 +81,7 @@ print('Finished reading {0:01d} galaxies'.format(len(r)))
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3ODM0Nzk3NSwxNzI1MDc3MDc4LC0yMD
+eyJoaXN0b3J5IjpbMTc2OTYwMjQwOSwxNzI1MDc3MDc4LC0yMD
 g2NDM0MTk4LC0xNzMzMTcxNzgwLDgxNjc0MzUxMiwtMTE1Njk2
 MDg0MiwxMDA0ODA2MzQyLDQwNTAzNzc4MiwtMTA0MzM0ODA4MC
 wtMjEzNDQ0Njg1NCwxMzA3MDM1ODUsMTUwODczMjE2Miw5MDA2
