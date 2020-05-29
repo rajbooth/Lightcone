@@ -39,7 +39,7 @@ for d in range(1,3000):
 # create spine for quick lookup
 d2z = spl(d_c,z)
 ```
-This makes use of the astropy python library
+This makes use of the astropy python library function *z_at_value*to determine the value of z corresponding to the comoving distance 
 ###  <a name="luminosity"></a> The luminosity function
 
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
@@ -76,9 +76,9 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDE3MjI5NzMsLTk5NDI1MTc2LDEzOD
-cxMjkxNSwxOTU4NzM1NTExLDEzNjI3MjM2MDcsLTIxMDU2NDkw
-MzIsMTI4OTkxMzg3NCw0NTI0NjU2ODcsLTE4NjkzMTkwODksLT
-UyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMw
-NTJdfQ==
+eyJoaXN0b3J5IjpbLTQ2Njk3OTQyNCwtOTk0MjUxNzYsMTM4Nz
+EyOTE1LDE5NTg3MzU1MTEsMTM2MjcyMzYwNywtMjEwNTY0OTAz
+MiwxMjg5OTEzODc0LDQ1MjQ2NTY4NywtMTg2OTMxOTA4OSwtNT
+IxOTIzNDkxLDg4NTMxNTEyOCwxNzMwMDU0NTA5LDgxMDkyMzA1
+Ml19
 -->
