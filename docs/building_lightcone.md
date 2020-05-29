@@ -30,9 +30,8 @@ ra = np.rad2deg(np.arctan2(y,x))
 ```
 Since the original Cartesian coordinates are in units of $Mpc/h$, the derived co-moving radial distance $r$ will also be in these units.
 
-The redshift $z$ used in the lightcone dataset is calculated from  the comoving  radial distance $r$ by reference to a spline lookup function:
-$r = defined as:
-
+The redshift $z$ used in the lightcone dataset is calculated from  the comoving  radial distance $r$ by reference to a spline lookup function
+$z = d2z(r)$, where $d2z()$ is defined as
 ```python
 for d in range(1,3000):
 	d_c[d] = d
@@ -78,9 +77,9 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDE4ODU4OSwtNzIwMzY5MywtOTk0Mj
-UxNzYsMTM4NzEyOTE1LDE5NTg3MzU1MTEsMTM2MjcyMzYwNywt
-MjEwNTY0OTAzMiwxMjg5OTEzODc0LDQ1MjQ2NTY4NywtMTg2OT
-MxOTA4OSwtNTIxOTIzNDkxLDg4NTMxNTEyOCwxNzMwMDU0NTA5
-LDgxMDkyMzA1Ml19
+eyJoaXN0b3J5IjpbNjg0OTEzODcyLC03MjAzNjkzLC05OTQyNT
+E3NiwxMzg3MTI5MTUsMTk1ODczNTUxMSwxMzYyNzIzNjA3LC0y
+MTA1NjQ5MDMyLDEyODk5MTM4NzQsNDUyNDY1Njg3LC0xODY5Mz
+E5MDg5LC01MjE5MjM0OTEsODg1MzE1MTI4LDE3MzAwNTQ1MDks
+ODEwOTIzMDUyXX0=
 -->
