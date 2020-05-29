@@ -60,6 +60,7 @@ where $L^*$ is the luminosity cut-off (or characteristic luminosity),  and $\phi
 
 To generate the random luminosity values for the galaxy lightcone, we first calculate the cumulative probability distribution function corresponding to the Schechter distribution.
 $$ P(>L_{min}(z))  = \int_{L_{min(z)}}^{\infty} {\phi(L) \mathrm{d}L }$$ 
+We use this to calculate the cumulative probability for a range of luminosity values, form whjich we cons
 The value of $L_{min}$ can be calculated from the particle number density in each Gadget snapshot
 
 $$n = N^3 / R^3$$
@@ -99,11 +100,11 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0OTY1NjM0MCwtMTgyNjg1MTM3MSwxNj
-g4NDA0NDAzLDQ4NDQ2OTA4Niw3MDUyMjg5OCwtODI4MTU1OTEx
-LDk0MzU1NTg4Niw2ODQ5MTM4NzIsLTcyMDM2OTMsLTk5NDI1MT
-c2LDEzODcxMjkxNSwxOTU4NzM1NTExLDEzNjI3MjM2MDcsLTIx
-MDU2NDkwMzIsMTI4OTkxMzg3NCw0NTI0NjU2ODcsLTE4NjkzMT
-kwODksLTUyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUwOV19
+eyJoaXN0b3J5IjpbNzQyOTk4NDc0LDE3NDk2NTYzNDAsLTE4Mj
+Y4NTEzNzEsMTY4ODQwNDQwMyw0ODQ0NjkwODYsNzA1MjI4OTgs
+LTgyODE1NTkxMSw5NDM1NTU4ODYsNjg0OTEzODcyLC03MjAzNj
+kzLC05OTQyNTE3NiwxMzg3MTI5MTUsMTk1ODczNTUxMSwxMzYy
+NzIzNjA3LC0yMTA1NjQ5MDMyLDEyODk5MTM4NzQsNDUyNDY1Nj
+g3LC0xODY5MzE5MDg5LC01MjE5MjM0OTEsODg1MzE1MTI4XX0=
 
 -->
