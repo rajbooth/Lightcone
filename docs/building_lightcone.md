@@ -55,7 +55,7 @@ In addition to the particle positions, the lightcone contains information about 
 
 ####  <a name="luminosity"></a> The luminosity function
 $$ \phi (L) \mathrm{d}L= \left(\frac{L}{L^*} \right)^{\alpha} exp\left[-\frac{L}{L^*} \right] \frac{\phi^*}{L^*} \mathrm{d}L $$    
-where $L^*$ is the luminosity cut-off, $\phi^*$ is normalisation factor
+where $L^*$ is the luminosity cut-off (or characteristic luminosity),  and $\phi^*$ is the normalisation factor
 ![Schechter luminosity function](https://github.com/rajbooth/Lightcone/raw/master/images/Schechter_Luminosity_Function.png)
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
@@ -91,10 +91,10 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzE1NjY0NjAsNzA1MjI4OTgsLTgyOD
-E1NTkxMSw5NDM1NTU4ODYsNjg0OTEzODcyLC03MjAzNjkzLC05
-OTQyNTE3NiwxMzg3MTI5MTUsMTk1ODczNTUxMSwxMzYyNzIzNj
-A3LC0yMTA1NjQ5MDMyLDEyODk5MTM4NzQsNDUyNDY1Njg3LC0x
-ODY5MzE5MDg5LC01MjE5MjM0OTEsODg1MzE1MTI4LDE3MzAwNT
-Q1MDksODEwOTIzMDUyXX0=
+eyJoaXN0b3J5IjpbNDg0NDY5MDg2LDcwNTIyODk4LC04MjgxNT
+U5MTEsOTQzNTU1ODg2LDY4NDkxMzg3MiwtNzIwMzY5MywtOTk0
+MjUxNzYsMTM4NzEyOTE1LDE5NTg3MzU1MTEsMTM2MjcyMzYwNy
+wtMjEwNTY0OTAzMiwxMjg5OTEzODc0LDQ1MjQ2NTY4NywtMTg2
+OTMxOTA4OSwtNTIxOTIzNDkxLDg4NTMxNTEyOCwxNzMwMDU0NT
+A5LDgxMDkyMzA1Ml19
 -->
