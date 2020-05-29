@@ -28,7 +28,9 @@ The lightcone build process takes as its input the particle position and velocit
 			dec = np.rad2deg(np.arcsin(z/r))
 			ra = np.rad2deg(np.arctan2(y,x))
 ```
-Since the Cartesian coordinates where in units of $Mpc/h$, the derived co-moving
+Since the original Cartesian coordinates where in units of $Mpc/h$, the derived co-moving radial distance $r$ will also be in these units.
+
+The reshift $z$ used in the lightcoen dataset is calculated form
 ###  <a name="luminosity"></a> The luminosity function
 
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
@@ -65,8 +67,8 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1NDI4NzY1LDEzODcxMjkxNSwxOTU4Nz
-M1NTExLDEzNjI3MjM2MDcsLTIxMDU2NDkwMzIsMTI4OTkxMzg3
-NCw0NTI0NjU2ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4OD
-UzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
+eyJoaXN0b3J5IjpbLTY5MDM1NzAwMSwxMzg3MTI5MTUsMTk1OD
+czNTUxMSwxMzYyNzIzNjA3LC0yMTA1NjQ5MDMyLDEyODk5MTM4
+NzQsNDUyNDY1Njg3LC0xODY5MzE5MDg5LC01MjE5MjM0OTEsOD
+g1MzE1MTI4LDE3MzAwNTQ1MDksODEwOTIzMDUyXX0=
 -->
