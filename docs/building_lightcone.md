@@ -54,7 +54,7 @@ In addition to the particle positions, the lightcone contains information about 
 [^1]: Schechter, Paul. 1976. “AN ANALYTIC EXPRESSION FOR THE LUMINOSITY FUNCTION FOR GALAXIES.” ApJ 203: 287–306. https://doi.org/10.1017/CBO9781107415324.004.
 
 ####  <a name="luminosity"></a> The luminosity function
-![Schechter luminosity function](https://github.com/rajbooth/Lightcone/blob/master/images/Schechter_Luminosity_Function.png)
+![Schechter luminosity function](https://github.com/rajbooth/Lightcone/raw/master/images/Schechter_Luminosity_Function.png)
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
@@ -89,10 +89,10 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTI5NDAyMywtODI4MTU1OTExLDk0Mz
-U1NTg4Niw2ODQ5MTM4NzIsLTcyMDM2OTMsLTk5NDI1MTc2LDEz
-ODcxMjkxNSwxOTU4NzM1NTExLDEzNjI3MjM2MDcsLTIxMDU2ND
-kwMzIsMTI4OTkxMzg3NCw0NTI0NjU2ODcsLTE4NjkzMTkwODks
-LTUyMTkyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUwOSw4MTA5Mj
-MwNTJdfQ==
+eyJoaXN0b3J5IjpbNzA1MjI4OTgsLTgyODE1NTkxMSw5NDM1NT
+U4ODYsNjg0OTEzODcyLC03MjAzNjkzLC05OTQyNTE3NiwxMzg3
+MTI5MTUsMTk1ODczNTUxMSwxMzYyNzIzNjA3LC0yMTA1NjQ5MD
+MyLDEyODk5MTM4NzQsNDUyNDY1Njg3LC0xODY5MzE5MDg5LC01
+MjE5MjM0OTEsODg1MzE1MTI4LDE3MzAwNTQ1MDksODEwOTIzMD
+UyXX0=
 -->
