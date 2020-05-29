@@ -61,12 +61,12 @@ where $L^*$ is the luminosity cut-off (or characteristic luminosity),  and $\phi
 To generate the random luminosity values for the galaxy lightcone, we first calculate the cumulative probability distribution function corresponding to the Schechter distribution.
 $$ n(>L_{min}(z))  = \int_{L_{min(z)}}^{\infty} {\phi(L) \mathrm{d}L }$$ 
 We use this to calculate the cumulative probability for a range of luminosity values, form which we construct a reverse lookup spline to give L(n).
-The value of $L_{min}$ can be calculated from the particle number density in each Gadget snapshot
+The value of $L_{min}$ required to give a cumulative probablity distribution of $P=1$ can be calculated from the particle number density in each Gadget snapshot
 
 $$n = N^3 / R^3$$
 where the simulation box size is $R = 3000~ Mpc/h$ and the total number of particles in the simulation is $2048^3$.  Using these values we obtain $n= 0.318~ Mpc^{-3} h^3$, giving
 $$L_{min} = 7.74 \times 10^{-5}$$
-
+![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Cumulative_Probability_Distribution.png)
 
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
@@ -85,7 +85,7 @@ Schechter:
 $$M_{bol} = M_\odot -2.5 \log_{10} \frac{L_*}{L_\odot}$$
 
 $$ \rightarrow \frac{L_*}{L_\odot} = 10^{0.4(M_{bol,\odot} - M_{bol,*})} $$
-![enter image description here](https://github.com/rajbooth/Lightcone/raw/master/images/Cumulative_Probability_Distribution.png)
+
 Efstathieu (Les Houches Lectures):
 
 "In a survey limited by apparent magnitude (i.e. a flux limited samplegalaxy of luminosity $L$ can be seen out to a distance $d_{max}$ (redshift $z_{max}$) given by:"
@@ -102,11 +102,11 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzODY0NTgwLDE3NDk2NTYzNDAsLTE4Mj
-Y4NTEzNzEsMTY4ODQwNDQwMyw0ODQ0NjkwODYsNzA1MjI4OTgs
-LTgyODE1NTkxMSw5NDM1NTU4ODYsNjg0OTEzODcyLC03MjAzNj
-kzLC05OTQyNTE3NiwxMzg3MTI5MTUsMTk1ODczNTUxMSwxMzYy
-NzIzNjA3LC0yMTA1NjQ5MDMyLDEyODk5MTM4NzQsNDUyNDY1Nj
-g3LC0xODY5MzE5MDg5LC01MjE5MjM0OTEsODg1MzE1MTI4XX0=
+eyJoaXN0b3J5IjpbMTkzNjIzMjM4NiwxNzQ5NjU2MzQwLC0xOD
+I2ODUxMzcxLDE2ODg0MDQ0MDMsNDg0NDY5MDg2LDcwNTIyODk4
+LC04MjgxNTU5MTEsOTQzNTU1ODg2LDY4NDkxMzg3MiwtNzIwMz
+Y5MywtOTk0MjUxNzYsMTM4NzEyOTE1LDE5NTg3MzU1MTEsMTM2
+MjcyMzYwNywtMjEwNTY0OTAzMiwxMjg5OTEzODc0LDQ1MjQ2NT
+Y4NywtMTg2OTMxOTA4OSwtNTIxOTIzNDkxLDg4NTMxNTEyOF19
 
 -->
