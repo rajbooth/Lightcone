@@ -23,14 +23,15 @@ The lightcone includes snapshots 42 - 63 from the fiducial Gadget run, spanning 
 ### Calculation of data fields in lightcone
 The lightcone build process takes as its input the particle position and velocity data read from the Gadget snapshot files. This is first converted from Cartesian to polar coordinates:
 ```python
-		# calculate comoving radial distance, RA and Dec
-			r = np.sqrt(x*x + y*y + z*z)
-			dec = np.rad2deg(np.arcsin(z/r))
-			ra = np.rad2deg(np.arctan2(y,x))
+# calculate comoving radial distance, RA and Dec
+r = np.sqrt(x*x + y*y + z*z)
+dec = np.rad2deg(np.arcsin(z/r))
+ra = np.rad2deg(np.arctan2(y,x))
 ```
-Since the original Cartesian coordinates where in units of $Mpc/h$, the derived co-moving radial distance $r$ will also be in these units.
+Since the original Cartesian coordinates are in units of $Mpc/h$, the derived co-moving radial distance $r$ will also be in these units.
 
-The redshift $z$ used in the lightcone dataset is calculated from  the comoving  radial distance $r$ by reference to a spline lookup function, defined as:
+The redshift $z$ used in the lightcone dataset is calculated from  the comoving  radial distance $r$ by reference to a spline lookup function:
+$r = defined as:
 
 ```python
 for d in range(1,3000):
@@ -77,9 +78,9 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDM2OTMsLTk5NDI1MTc2LDEzODcxMj
-kxNSwxOTU4NzM1NTExLDEzNjI3MjM2MDcsLTIxMDU2NDkwMzIs
-MTI4OTkxMzg3NCw0NTI0NjU2ODcsLTE4NjkzMTkwODksLTUyMT
-kyMzQ5MSw4ODUzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMwNTJd
-fQ==
+eyJoaXN0b3J5IjpbLTU5MDE4ODU4OSwtNzIwMzY5MywtOTk0Mj
+UxNzYsMTM4NzEyOTE1LDE5NTg3MzU1MTEsMTM2MjcyMzYwNywt
+MjEwNTY0OTAzMiwxMjg5OTEzODc0LDQ1MjQ2NTY4NywtMTg2OT
+MxOTA4OSwtNTIxOTIzNDkxLDg4NTMxNTEyOCwxNzMwMDU0NTA5
+LDgxMDkyMzA1Ml19
 -->
