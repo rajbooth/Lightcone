@@ -30,7 +30,17 @@ The lightcone build process takes as its input the particle position and velocit
 ```
 Since the original Cartesian coordinates where in units of $Mpc/h$, the derived co-moving radial distance $r$ will also be in these units.
 
-The redshift $z$ used in the lightcone dataset is calculated from  the comoving  radial distance $r$
+The redshift $z$ used in the lightcone dataset is calculated from  the comoving  radial distance $r$ by reference to a spline lookup function, defined as:
+
+```python
+for d in range(1,3000):
+	d_c[d] = d
+	z[d] = z_at_value(cosmo.comoving_distance, d * uni.Mpc)    
+# create spine for quick lookup
+d2z = spl(d_c,z)
+
+
+```
 
 ###  <a name="luminosity"></a> The luminosity function
 
@@ -68,8 +78,9 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDI1MTc2LDEzODcxMjkxNSwxOTU4Nz
-M1NTExLDEzNjI3MjM2MDcsLTIxMDU2NDkwMzIsMTI4OTkxMzg3
-NCw0NTI0NjU2ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4OD
-UzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
+eyJoaXN0b3J5IjpbMTI3MzA0MzIwMSwtOTk0MjUxNzYsMTM4Nz
+EyOTE1LDE5NTg3MzU1MTEsMTM2MjcyMzYwNywtMjEwNTY0OTAz
+MiwxMjg5OTEzODc0LDQ1MjQ2NTY4NywtMTg2OTMxOTA4OSwtNT
+IxOTIzNDkxLDg4NTMxNTEyOCwxNzMwMDU0NTA5LDgxMDkyMzA1
+Ml19
 -->
