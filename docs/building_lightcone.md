@@ -21,6 +21,7 @@ The lightcone includes snapshots 42 - 63 from the fiducial Gadget run, spanning 
 (Note: the Gadget snapshots in this simulation are not linearly spaced in redshift, as shown in the figure above.)
 
 ###  <a name="luminosity"></a> The luminosity function
+
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
@@ -55,8 +56,8 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODczNTUxMSwxMzYyNzIzNjA3LC0yMT
-A1NjQ5MDMyLDEyODk5MTM4NzQsNDUyNDY1Njg3LC0xODY5MzE5
-MDg5LC01MjE5MjM0OTEsODg1MzE1MTI4LDE3MzAwNTQ1MDksOD
-EwOTIzMDUyXX0=
+eyJoaXN0b3J5IjpbLTc5NDU3NzIzOSwxOTU4NzM1NTExLDEzNj
+I3MjM2MDcsLTIxMDU2NDkwMzIsMTI4OTkxMzg3NCw0NTI0NjU2
+ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4ODUzMTUxMjgsMT
+czMDA1NDUwOSw4MTA5MjMwNTJdfQ==
 -->
