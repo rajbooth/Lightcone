@@ -58,7 +58,8 @@ $$ \phi (L) \mathrm{d}L= \left(\frac{L}{L^*} \right)^{\alpha} exp\left[-\frac{L}
 where $L^*$ is the luminosity cut-off (or characteristic luminosity),  and $\phi^*$ is the normalisation factor.
 ![Schechter luminosity function](https://github.com/rajbooth/Lightcone/raw/master/images/Schechter_Luminosity_Function.png)
 
-To generate the rand
+To generate the random luminosity values for the galaxy lightcone, we first calculate the cumulative probability distribution function corresponding to the Schechter distribution.
+
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
 
@@ -93,7 +94,7 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTQ4MzgwNCw0ODQ0NjkwODYsNzA1Mj
+eyJoaXN0b3J5IjpbMTY4ODQwNDQwMyw0ODQ0NjkwODYsNzA1Mj
 I4OTgsLTgyODE1NTkxMSw5NDM1NTU4ODYsNjg0OTEzODcyLC03
 MjAzNjkzLC05OTQyNTE3NiwxMzg3MTI5MTUsMTk1ODczNTUxMS
 wxMzYyNzIzNjA3LC0yMTA1NjQ5MDMyLDEyODk5MTM4NzQsNDUy
