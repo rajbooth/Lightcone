@@ -64,8 +64,9 @@ We use this to calculate the cumulative probability for a range of luminosity va
 The value of $L_{min}$ can be calculated from the particle number density in each Gadget snapshot
 
 $$n = N^3 / R^3$$
-where the simulation box size is $R = 3000~ Mpc/h$ and the total number of particles in the simulation is $2048^3$.  Using these values we obtain 
-$$L_{min} = 
+where the simulation box size is $R = 3000~ Mpc/h$ and the total number of particles in the simulation is $2048^3$.  Using these values we obtain $n= 0.318 
+$$L_{min} = 7.74 \times 10^{-5}$$
+
 
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
 $$M = m - 5 (\log_{10}D_L - 1) $$
@@ -101,11 +102,11 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODgzMDcxOSwxNzQ5NjU2MzQwLC0xOD
-I2ODUxMzcxLDE2ODg0MDQ0MDMsNDg0NDY5MDg2LDcwNTIyODk4
-LC04MjgxNTU5MTEsOTQzNTU1ODg2LDY4NDkxMzg3MiwtNzIwMz
-Y5MywtOTk0MjUxNzYsMTM4NzEyOTE1LDE5NTg3MzU1MTEsMTM2
-MjcyMzYwNywtMjEwNTY0OTAzMiwxMjg5OTEzODc0LDQ1MjQ2NT
-Y4NywtMTg2OTMxOTA4OSwtNTIxOTIzNDkxLDg4NTMxNTEyOF19
-
+eyJoaXN0b3J5IjpbLTIxNDcwOTEwMTcsMTc0OTY1NjM0MCwtMT
+gyNjg1MTM3MSwxNjg4NDA0NDAzLDQ4NDQ2OTA4Niw3MDUyMjg5
+OCwtODI4MTU1OTExLDk0MzU1NTg4Niw2ODQ5MTM4NzIsLTcyMD
+M2OTMsLTk5NDI1MTc2LDEzODcxMjkxNSwxOTU4NzM1NTExLDEz
+NjI3MjM2MDcsLTIxMDU2NDkwMzIsMTI4OTkxMzg3NCw0NTI0Nj
+U2ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4ODUzMTUxMjhd
+fQ==
 -->
