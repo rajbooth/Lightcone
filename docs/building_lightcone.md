@@ -21,7 +21,10 @@ The lightcone includes snapshots 42 - 63 from the fiducial Gadget run, spanning 
 (Note: the Gadget snapshots in this simulation are not linearly spaced in redshift, as shown in the figure above.)
 
 ### Calculation of data fields in lightcone
-The lightcone build process takes as its input the particle position and velocity data read from the Gadget snapshot files. This is first converted from Cartesian to polar coordinate
+The lightcone build process takes as its input the particle position and velocity data read from the Gadget snapshot files. This is first converted from Cartesian to polar coordinates:
+'''python
+
+'''
 
 ###  <a name="luminosity"></a> The luminosity function
 
@@ -59,8 +62,8 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzEyOTE1LDE5NTg3MzU1MTEsMTM2Mj
-cyMzYwNywtMjEwNTY0OTAzMiwxMjg5OTEzODc0LDQ1MjQ2NTY4
-NywtMTg2OTMxOTA4OSwtNTIxOTIzNDkxLDg4NTMxNTEyOCwxNz
-MwMDU0NTA5LDgxMDkyMzA1Ml19
+eyJoaXN0b3J5IjpbNTM1NDk5MzA4LDEzODcxMjkxNSwxOTU4Nz
+M1NTExLDEzNjI3MjM2MDcsLTIxMDU2NDkwMzIsMTI4OTkxMzg3
+NCw0NTI0NjU2ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4OD
+UzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
 -->
