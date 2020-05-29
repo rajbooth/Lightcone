@@ -1,9 +1,9 @@
 site_name: Galaxy Lightcone
 nav:  
-  - Home:  index.md  
-  - About:  about.md
-  - Building the lightcone: building_lightcone.md
-  - Data products: data_products.md
+  	- Home:  index.md  
+  	- About:  about.md
+  	- Building the lightcone: building_lightcone.md
+  	- Data products: data_products.md
   - Data visualisation: data_visualisation.md
   
 theme:  readthedocs
@@ -13,4 +13,7 @@ extra_javascript:
 
 markdown_extensions:
   - mdx_math:
-     enable_dollar_delimiter: True
+  -   enable_dollar_delimiter: True
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDcxMjI1MTIzXX0=
+-->
