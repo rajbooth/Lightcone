@@ -22,10 +22,13 @@ The lightcone includes snapshots 42 - 63 from the fiducial Gadget run, spanning 
 
 ### Calculation of data fields in lightcone
 The lightcone build process takes as its input the particle position and velocity data read from the Gadget snapshot files. This is first converted from Cartesian to polar coordinates:
-'''python
-
-'''
-
+```python
+		# calculate comoving radial distance, RA and Dec
+			r = np.sqrt(x*x + y*y + z*z)
+			dec = np.rad2deg(np.arcsin(z/r))
+			ra = np.rad2deg(np.arctan2(y,x))
+```
+Since the Cartesian coordinates where in units of $Mpc/h$, the derived co-moving
 ###  <a name="luminosity"></a> The luminosity function
 
 ![Minimum luminosity](https://github.com/rajbooth/Lightcone/raw/master/images/Min_Lum_Redshift.png)
@@ -62,7 +65,7 @@ $$r = (1+z) \frac{v_\parallel }{H(z)}$$
 where $v_\parallel$ is the peculiar velocity of the galaxy in the line-of-sight direction.
 This redshift distortion factor is calculated for every galaxy in the lightcone, based on the radial peculiar velocity of the corresponding particle in the simulation snapshot.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM1NDk5MzA4LDEzODcxMjkxNSwxOTU4Nz
+eyJoaXN0b3J5IjpbOTI1NDI4NzY1LDEzODcxMjkxNSwxOTU4Nz
 M1NTExLDEzNjI3MjM2MDcsLTIxMDU2NDkwMzIsMTI4OTkxMzg3
 NCw0NTI0NjU2ODcsLTE4NjkzMTkwODksLTUyMTkyMzQ5MSw4OD
 UzMTUxMjgsMTczMDA1NDUwOSw4MTA5MjMwNTJdfQ==
