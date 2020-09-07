@@ -4,7 +4,7 @@ nav:
   	- About:  about.md
   	- Building the lightcone: building_lightcone.md
   	- Data products: data_products.md
-  - Data visualisation: data_visualisation.md
+    - Data visualisation: data_visualisation.md
   
 theme:  readthedocs
 
@@ -15,5 +15,5 @@ markdown_extensions:
   - mdx_math:
   -   enable_dollar_delimiter: True
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcxMjI1MTIzXX0=
+eyJoaXN0b3J5IjpbMTgwODc3NTkwNyw0NzEyMjUxMjNdfQ==
 -->
