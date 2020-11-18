@@ -19,7 +19,9 @@ The lightcone file comprises 22 datasets, one for each of the 22 GADGET snapshot
 
 ### Data fields
 The lightcone file provides positional data for each halo in both celestial and Cartesian coordinates.  The following data fields are included in the dataset:
-
+| Parameter |         Description     | Data type|
+|----------|-----------------------------|-----------|
+| cm| position of  | 0.6914 |
 * r - co-moving radial distance $(Mpc)$
 * Dec - declination in degrees $(\pm 90^\circ)$
 * RA - right ascension  $(\pm 180^\circ)$
@@ -32,6 +34,6 @@ halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),('mass', np.float32
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzY1NDkyNywtNzc2MDk1NDIyLDE5Mj
-g2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbLTIxMTY5NTY0MzQsLTc3NjA5NTQyMiwxOT
+I4NjUzMjMyXX0=
 -->
