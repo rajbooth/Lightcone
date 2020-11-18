@@ -74,8 +74,8 @@ plt.scatter(x, y, s=area, c=col, ec = None, alpha=0.8)
 plt.show()
 ```
 ![Halo Lightcone](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
-
+The fact that the halo lightcone also contains positional data in celestial coordinates means that it is easy to plot whole-sky data for a radial shell
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDI5MzY3LC03NzYwOTU0MjIsMTkyOD
-Y1MzIzMl19
+eyJoaXN0b3J5IjpbLTkyMTcyMTg2NywxNTE0MjkzNjcsLTc3Nj
+A5NTQyMiwxOTI4NjUzMjMyXX0=
 -->
