@@ -74,8 +74,24 @@ plt.scatter(x, y, s=area, c=col, ec = None, alpha=0.8)
 plt.show()
 ```
 ![Halo Lightcone](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
-The fact that the halo lightcone also contains positional data in celestial coordinates means that it is easy to plot whole-sky data for a radial shell
+The fact that the halo lightcone also contains positional data in celestial coordinates means that it is easy to plot whole-sky data for a radial shell thought the lightcone, as in this code snippet.
+```python
+# specify file location
+file = '/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky/halo_lightcone'
+snap = 44 # specify sdnapshot to be viewed
+nside = 256 # set pixel resolution
+npix = hp.nside2npix(nside)
+ds_name = 'snapshot_{0:02d}'.format(snap)
+with h5py.File(file, 'r') as f:
+    # read snapshot shell into pixel map
+    shell = f[ds_name]
+    pix = hp.ang2pix(nside, shell['ra'], shell['dec'], lonlat = True)
+# convert pixel map into a density map
+dens_map = np.histogram(pix, npix)[0]
+
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMTcyMTg2NywxNTE0MjkzNjcsLTc3Nj
+eyJoaXN0b3J5IjpbLTgzNDA1Njk3NywxNTE0MjkzNjcsLTc3Nj
 A5NTQyMiwxOTI4NjUzMjMyXX0=
 -->
