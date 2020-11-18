@@ -29,19 +29,15 @@ The lightcone file provides positional data for each halo in both celestial and 
 | dec| co-moving distance of central halo particle  |(float32) |$(\pm 90^\circ)$ 
 | zz | redshift of halo  |(float32) |Mpc/h |
 | vr | radial line-of-sight velocity of halo  |(float32) |km/s |
-| vel_disp | velocity dispersion  |(float32) |km |
-* r - co-moving radial distance $(Mpc)$
-* Dec - declination in degrees $(\pm 90^\circ)$
-* RA - right ascension  $(\pm 180^\circ)$
-* z - redshift
+| vel_disp | velocity dispersion  |(float32) |km/s |
 
-halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),('mass', np.float32), ('r', np.float32), ('ra', np.float32), ('dec', np.float32), ('zz', np.float32), ('vr', np.float32), ('vel_disp', np.float32)])
-
-* 
 ## Visualisation
+
+## Reading the lightcoen file
+The following code snippet illustgrates how to read from the halo lightcone file
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NDE3MTYwMSwtNzc2MDk1NDIyLDE5Mj
-g2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbLTEzNDYwNTk3NzEsLTc3NjA5NTQyMiwxOT
+I4NjUzMjMyXX0=
 -->
