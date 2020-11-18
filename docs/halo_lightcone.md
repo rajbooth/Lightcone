@@ -33,11 +33,14 @@ The lightcone file provides positional data for each halo in both celestial and 
 
 ## Visualisation
 
-## Reading the lightcoen file
-The following code snippet illustgrates how to read from the halo lightcone file
+## Reading the lightcone file
+The following code snippet illustrates how to read from the halo lightcone file and view a slice though the lightcone.
+```python
+
+```
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDYwNTk3NzEsLTc3NjA5NTQyMiwxOT
+eyJoaXN0b3J5IjpbLTEyMjY4Mzc0NjYsLTc3NjA5NTQyMiwxOT
 I4NjUzMjMyXX0=
 -->
