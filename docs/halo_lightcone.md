@@ -19,9 +19,12 @@ The lightcone file comprises 22 datasets, one for each of the 22 GADGET snapshot
 
 ### Data fields
 The lightcone file provides positional data for each halo in both celestial and Cartesian coordinates.  The following data fields are included in the dataset:
+
 | Parameter |         Description     | Data type| Units |
 |----------|-----------------------------|-----------|-------|
 | cm | position of halo centre of mass (x,y,z) | vect | Mpc/h |
+
+
 | vel | velocity of halo centre of mass (x,y,z) | vect |km/s |
 | pos | position of central halo particle (x,y,z) | vect | Mpc/h |
 | m | halo mass  |float32| $10^{10} M_{\odot}$ |
@@ -95,7 +98,7 @@ hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), ho
 ```
 ![Halo Lightcone Shell](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone_shell.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ0NTE2OCwtMTQ1MDk4NzM4NiwyMT
-I5MDY1NTE1LDIwMzMyNTQ2MDYsMTUxNDI5MzY3LC03NzYwOTU0
-MjIsMTkyODY1MzIzMl19
+eyJoaXN0b3J5IjpbLTE3MTQxMDA3MDIsLTE4NjQ0NTE2OCwtMT
+Q1MDk4NzM4NiwyMTI5MDY1NTE1LDIwMzMyNTQ2MDYsMTUxNDI5
+MzY3LC03NzYwOTU0MjIsMTkyODY1MzIzMl19
 -->
