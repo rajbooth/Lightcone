@@ -89,9 +89,12 @@ with h5py.File(file, 'r') as f:
 # convert pixel map into a density map
 dens_map = np.histogram(pix, npix)[0]
 
+# use Healpy to plot halo shell
+fig, ax = plt.subplots(1,1, figsize=(12,12))
+hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), hold=True, xsize = 3600)
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDA1Njk3NywxNTE0MjkzNjcsLTc3Nj
+eyJoaXN0b3J5IjpbMjAzMzI1NDYwNiwxNTE0MjkzNjcsLTc3Nj
 A5NTQyMiwxOTI4NjUzMjMyXX0=
 -->
