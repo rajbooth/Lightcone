@@ -24,7 +24,7 @@ The lightcone file provides positional data for each halo in both celestial and 
 | cm| position of halo centre of mass (x,y,z) | vect | Mpc/h |
 | vel| velocity of halo centre of mass (x,y,z) | vect |km/s |
 | pos| position of central halo particle (x,y,z) | vect | Mpc/h
-| m| halo mass  |(float32) | $10^{10} M_{\circ}$ |
+| m| halo mass  |(float32) | $10^{10} M_{\odot}$ |
 | r| co-moving distance of central halo particle  |(float32) |Mpc/h |
 | ra | right ascention of central halo particle  |(float32) | $(\pm 90^\circ)$ 
 | dec| co-moving distance of central halo particle  |(float32) |$(\pm 90^\circ)$ 
@@ -67,16 +67,16 @@ vd = h['vel_disp']
 
 # plot halo slice as a scatter graph
 area = m/100  # make area of blob proportional to halo mass
-col = np.log(vd)
+col = np.log(vd) # make colour proportional to velocity dispersion
 fig = plt.subplots(figsize = (12,12))
 plt.scatter(x, y, s=area, c=col, ec = None, alpha=0.8)
-plt.savefig('Halo lightcone.png')
+#plt.savefig('Halo lightcone.png')
 plt.show()
 ```
 
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcwMzEwMTc1LC03NzYwOTU0MjIsMTkyOD
+eyJoaXN0b3J5IjpbMjU4NDk5MzIxLC03NzYwOTU0MjIsMTkyOD
 Y1MzIzMl19
 -->
