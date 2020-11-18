@@ -38,6 +38,10 @@ The lightcone file provides positional data for each halo in both celestial and 
 ## Reading the lightcone file
 The following code snippet illustrates how to read from the halo lightcone file and view a slice though the lightcone.
 ```python
+import numpy as np
+import h5py
+import matplotlib.pyplot as plt
+
 # define data structures
 vect = np.dtype([('x', np.float32), ('y', np.float32), ('z', np.float32)])
 halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),
@@ -80,6 +84,7 @@ The fact that the halo lightcone also contains positional data in celestial coor
 ```python
 import healpy as hp
 import matplotlib.pyplot as plt
+
 # specify file location
 file = '/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky/halo_lightcone'
 snap = 44 # specify sdnapshot to be viewed
@@ -99,7 +104,7 @@ hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), ho
 ```
 ![Halo Lightcone Shell](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone_shell.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4Mzg4OTcyOSwtMTM3NTA5Mzc4LC0xNz
+eyJoaXN0b3J5IjpbMTgxMTM1NzY4NywtMTM3NTA5Mzc4LC0xNz
 E0MTAwNzAyLC0xODY0NDUxNjgsLTE0NTA5ODczODYsMjEyOTA2
 NTUxNSwyMDMzMjU0NjA2LDE1MTQyOTM2NywtNzc2MDk1NDIyLD
 E5Mjg2NTMyMzJdfQ==
