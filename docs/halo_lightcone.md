@@ -28,7 +28,7 @@ The lightcone file provides positional data for each halo in both celestial and 
 | m | halo mass  |float32| $10^{10} M_{\odot}$ |
 | r | co-moving distance of central halo particle  |float32 |Mpc/h |
 | ra | right ascention of central halo particle  |float32 | $(\pm 90^\circ)$ |
-| dec | co-moving distance of central halo particle  |float32 |$(\pm 90^\circ)$ |
+| dec | declination of central halo particle  |float32 |$(\pm 90^\circ)$ |
 | zz | redshift of halo  |float32 |Mpc/h |
 | vr | radial line-of-sight velocity of halo  |float32)|km/s |
 | vel_disp | velocity dispersion  |float32 |km/s |
@@ -75,7 +75,7 @@ plt.scatter(x, y, s=area, c=col, ec = None, alpha=0.8)
 plt.show()
 ```
 ![Halo Lightcone](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
-The fact that the halo lightcone also contains positional data in celestial coordinates means that it is easy to plot whole-sky data for a radial shell thought the lightcone, as in this code snippet.
+The fact that the halo lightcone also contains positional data in celestial coordinates means that it is easy to plot whole-sky data for a radial shell through the lightcone, as in this code snippet.
 ```python
 # specify file location
 file = '/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky/halo_lightcone'
@@ -96,8 +96,8 @@ hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), ho
 ```
 ![Halo Lightcone Shell](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone_shell.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzUwOTM3OCwtMTcxNDEwMDcwMiwtMT
-g2NDQ1MTY4LC0xNDUwOTg3Mzg2LDIxMjkwNjU1MTUsMjAzMzI1
-NDYwNiwxNTE0MjkzNjcsLTc3NjA5NTQyMiwxOTI4NjUzMjMyXX
-0=
+eyJoaXN0b3J5IjpbLTc5OTQwNTk1NCwtMTM3NTA5Mzc4LC0xNz
+E0MTAwNzAyLC0xODY0NDUxNjgsLTE0NTA5ODczODYsMjEyOTA2
+NTUxNSwyMDMzMjU0NjA2LDE1MTQyOTM2NywtNzc2MDk1NDIyLD
+E5Mjg2NTMyMzJdfQ==
 -->
