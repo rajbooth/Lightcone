@@ -18,17 +18,17 @@ The entire halo lightcone is stored in a single $7 Gbyte$ hdf5 data file, which 
 The lightcone file comprises 22 datasets, one for each of the 22 GADGET snapshots that were used in its construction, ranging from $63 (z=0)$ to $41 (z\simeq 1.4)$. The dataset key names are of the form *snapshot_xx*  where *xx* is the snapshot number.
 
 ### Data fields
-The 
+The lightcone file provides positional data for each halo in both celestial and Cartesian coordinates.  The following data fields are included in the dataset:
+
 * r - co-moving radial distance $(Mpc)$
 * Dec - declination in degrees $(\pm 90^\circ)$
 * RA - right ascension  $(\pm 180^\circ)$
 * z - redshift
-* L - luminosity ratio $(L/L^*)$
-* RSD - redshift distortion $(Mpc)$
+
 * 
 ## Visualisation
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAwMDE3Mzk4LDE5Mjg2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbLTc3NjA5NTQyMiwxOTI4NjUzMjMyXX0=
 -->
