@@ -15,11 +15,11 @@ The entire halo lightcone is stored in a single hdf5 data file, which can be fou
 [Halo Lightcone](Canonical%20Path%09/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky)
 
 ### Data structure
-The lightcone file comprises 22 datasets, one for each of the 42 GADGET snapshots that were used in its construction, ranging from 
+The lightcone file comprises 22 datasets, one for each of the 42 GADGET snapshots that were used in its construction, ranging from $63 (z=0)$ to $42 (z\simeq 1.4)$.
 
 ## Visualisation
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MjkxNjQwOCwxOTI4NjUzMjMyXX0=
+eyJoaXN0b3J5IjpbLTEwMDE5MjczNjUsMTkyODY1MzIzMl19
 -->
