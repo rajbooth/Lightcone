@@ -53,9 +53,12 @@ with h5py.File(file, 'r') as f:
         print(snap, haloes.shape)
 
 depth = 0.2 # set thickness of data slice
-r_max = 3000 
-h = haloes[abs(haloes['pos']['z'])<depth ]
+r_max = 3000 # cut off radial distance
+# filter slice haloes from data set based on depth and r_max
+h = haloes[abs(haloes['pos']['z'])<depth ]  
 h = h[h['r']<r_max]
+
+# set halo coordinate
 x = h['pos']['x']
 y = h['pos']['y']
 m = h['mass']
@@ -65,6 +68,6 @@ vd = h['vel_disp']
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk1OTI2NjcsLTc3NjA5NTQyMiwxOT
-I4NjUzMjMyXX0=
+eyJoaXN0b3J5IjpbLTE5NTc1NjUzNCwtNzc2MDk1NDIyLDE5Mj
+g2NTMyMzJdfQ==
 -->
