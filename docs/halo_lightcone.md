@@ -36,11 +36,16 @@ The lightcone file provides positional data for each halo in both celestial and 
 ## Reading the lightcone file
 The following code snippet illustrates how to read from the halo lightcone file and view a slice though the lightcone.
 ```python
-
+# define data structures
+vect = np.dtype([('x', np.float32), ('y', np.float32), ('z', np.float32)])
+halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),
+                  ('mass', np.float32), ('r', np.float32), ('ra', np.float32), ('dec', np.float32), 
+                  ('zz', np.float32), ('vr', np.float32), ('vel_disp', np.float32)])
 ```
+
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY4Mzc0NjYsLTc3NjA5NTQyMiwxOT
+eyJoaXN0b3J5IjpbLTIwODU5NjExMjQsLTc3NjA5NTQyMiwxOT
 I4NjUzMjMyXX0=
 -->
