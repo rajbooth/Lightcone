@@ -78,6 +78,8 @@ plt.show()
 The fact that the halo lightcone also contains positional data in celestial coordinates means that it is easy to plot whole-sky data for a radial shell through the lightcone, as in this code snippet.
 
 ```python
+import healpy as hp
+import matplotlib.pyplot as plt
 # specify file location
 file = '/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky/halo_lightcone'
 snap = 44 # specify sdnapshot to be viewed
@@ -97,7 +99,7 @@ hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), ho
 ```
 ![Halo Lightcone Shell](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone_shell.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjgyODMwNCwtMTM3NTA5Mzc4LC0xNz
+eyJoaXN0b3J5IjpbMTg4Mzg4OTcyOSwtMTM3NTA5Mzc4LC0xNz
 E0MTAwNzAyLC0xODY0NDUxNjgsLTE0NTA5ODczODYsMjEyOTA2
 NTUxNSwyMDMzMjU0NjA2LDE1MTQyOTM2NywtNzc2MDk1NDIyLD
 E5Mjg2NTMyMzJdfQ==
