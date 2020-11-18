@@ -41,11 +41,21 @@ vect = np.dtype([('x', np.float32), ('y', np.float32), ('z', np.float32)])
 halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),
                   ('mass', np.float32), ('r', np.float32), ('ra', np.float32), ('dec', np.float32), 
                   ('zz', np.float32), ('vr', np.float32), ('vel_disp', np.float32)])
+
+# specify file location
+file = '/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky/halo_lightcone'
+# initialise halo data array
+haloes = np.empty(0,dtype=halo2)
+with h5py.File(file, 'r') as f:
+    # read each snapshot dataset into halo array
+    for snap in f.keys():
+        haloes = np.append(haloes,f[snap])
+        print(snap, haloes.shape)
 ```
 
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODU5NjExMjQsLTc3NjA5NTQyMiwxOT
-I4NjUzMjMyXX0=
+eyJoaXN0b3J5IjpbMjAzNTE3MzY1OCwtNzc2MDk1NDIyLDE5Mj
+g2NTMyMzJdfQ==
 -->
