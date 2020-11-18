@@ -24,13 +24,13 @@ The lightcone file provides positional data for each halo in both celestial and 
 | cm | position of halo centre of mass (x,y,z) | vect | Mpc/h |
 | vel | velocity of halo centre of mass (x,y,z) | vect |km/s |
 | pos | position of central halo particle (x,y,z) | vect | Mpc/h |
-| m | halo mass  |(float32) | $10^{10} M_{\odot}$ |
-| r | co-moving distance of central halo particle  |(float32) |Mpc/h |
-| ra | right ascention of central halo particle  |(float32) | $(\pm 90^\circ)$ |
-| dec | co-moving distance of central halo particle  |(float32) |$(\pm 90^\circ)$ |
-| zz | redshift of halo  |(float32) |Mpc/h |
-| vr | radial line-of-sight velocity of halo  |(float32) |km/s |
-| vel_disp | velocity dispersion  |(float32) |km/s |
+| m | halo mass  |float32| $10^{10} M_{\odot}$ |
+| r | co-moving distance of central halo particle  |float32 |Mpc/h |
+| ra | right ascention of central halo particle  |float32 | $(\pm 90^\circ)$ |
+| dec | co-moving distance of central halo particle  |float32 |$(\pm 90^\circ)$ |
+| zz | redshift of halo  |float32 |Mpc/h |
+| vr | radial line-of-sight velocity of halo  |float32)|km/s |
+| vel_disp | velocity dispersion  |float32 |km/s |
 
 ## Visualisation
 
@@ -95,7 +95,7 @@ hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), ho
 ```
 ![Halo Lightcone Shell](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone_shell.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYxMzMyMzk2LC0xNDUwOTg3Mzg2LDIxMj
-kwNjU1MTUsMjAzMzI1NDYwNiwxNTE0MjkzNjcsLTc3NjA5NTQy
-MiwxOTI4NjUzMjMyXX0=
+eyJoaXN0b3J5IjpbLTE4NjQ0NTE2OCwtMTQ1MDk4NzM4NiwyMT
+I5MDY1NTE1LDIwMzMyNTQ2MDYsMTUxNDI5MzY3LC03NzYwOTU0
+MjIsMTkyODY1MzIzMl19
 -->
