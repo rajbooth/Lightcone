@@ -24,7 +24,7 @@ The lightcone file provides positional data for each halo in both celestial and 
 | cm| position of halo centre of mass (x,y,z) | vect | Mpc/h |
 | vel| velocity of halo centre of mass (x,y,z) | vect |km/s |
 | pos| position of central halo particle (x,y,z) | vect | Mpc/h
-| m| halo mass  |(float32) | $10 |
+| m| halo mass  |(float32) | $10^{10} M_{\circ}$ |
 | r| co-moving distance of central halo particle  |(float32) |Mpc/h |
 | ra | right ascention of central halo particle  |(float32) | $(\pm 90^\circ)$ 
 | dec| co-moving distance of central halo particle  |(float32) |$(\pm 90^\circ)$ 
@@ -77,6 +77,6 @@ plt.show()
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTMxNjQ5MSwtNzc2MDk1NDIyLDE5Mj
-g2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbMzcwMzEwMTc1LC03NzYwOTU0MjIsMTkyOD
+Y1MzIzMl19
 -->
