@@ -51,11 +51,20 @@ with h5py.File(file, 'r') as f:
     for snap in f.keys():
         haloes = np.append(haloes,f[snap])
         print(snap, haloes.shape)
+
+depth = 0.2 # set thickness of data slice
+r_max = 3000 
+h = haloes[abs(haloes['pos']['z'])<depth ]
+h = h[h['r']<r_max]
+x = h['pos']['x']
+y = h['pos']['y']
+m = h['mass']
+vd = h['vel_disp']
 ```
 
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTE3MzY1OCwtNzc2MDk1NDIyLDE5Mj
-g2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbLTE0Njk1OTI2NjcsLTc3NjA5NTQyMiwxOT
+I4NjUzMjMyXX0=
 -->
