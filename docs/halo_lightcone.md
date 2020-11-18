@@ -12,7 +12,7 @@ The process of building the halo lightcone is broadly similar to that used for t
 ## Lightcone data
 ### Data location
 The entire halo lightcone is stored in a single $7 Gbyte$ hdf5 data file, which can be found at:
-[Halo Lightcone](Canonical%20Path%09/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky)
+[/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky](/cosma6/data/dp004/dc-boot5/Lightcone/Halo_FullSky)
 
 ### File structure
 The lightcone file comprises 22 datasets, one for each of the 22 GADGET snapshots that were used in its construction, ranging from $63 (z=0)$ to $41 (z\simeq 1.4)$. The dataset key names are of the form *snapshot_xx*  where *xx* is the snapshot number.
@@ -23,10 +23,10 @@ The lightcone file provides positional data for each halo in both celestial and 
 |----------|-----------------------------|-----------|-------|
 | cm| position of halo centre of mass (x,y,z) | vect | Mpc/h |
 | vel| velocity of halo centre of mass (x,y,z) | vect |km/s |
-| pos| position of central halo particle (x,y,z) | vect | Mpc/h
+| pos| position of central halo particle (x,y,z) | vect | Mpc/h |
 | m| halo mass  |(float32) | $10^{10} M_{\odot}$ |
 | r| co-moving distance of central halo particle  |(float32) |Mpc/h |
-| ra | right ascention of central halo particle  |(float32) | $(\pm 90^\circ)$ 
+| ra | right ascention of central halo particle  |(float32) | $(\pm 90^\circ)$ |
 | dec| co-moving distance of central halo particle  |(float32) |$(\pm 90^\circ)$ 
 | zz | redshift of halo  |(float32) |Mpc/h |
 | vr | radial line-of-sight velocity of halo  |(float32) |km/s |
@@ -95,6 +95,7 @@ hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), ho
 ```
 ![Halo Lightcone Shell](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone_shell.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyOTA2NTUxNSwyMDMzMjU0NjA2LDE1MT
-QyOTM2NywtNzc2MDk1NDIyLDE5Mjg2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbLTE5NjU0MTQ0NTIsMjEyOTA2NTUxNSwyMD
+MzMjU0NjA2LDE1MTQyOTM2NywtNzc2MDk1NDIyLDE5Mjg2NTMy
+MzJdfQ==
 -->
