@@ -25,10 +25,13 @@ The lightcone file provides positional data for each halo in both celestial and 
 * RA - right ascension  $(\pm 180^\circ)$
 * z - redshift
 
+halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),('mass', np.float32), ('r', np.float32), ('ra', np.float32), ('dec', np.float32), ('zz', np.float32), ('vr', np.float32), ('vel_disp', np.float32)])
+
 * 
 ## Visualisation
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NjA5NTQyMiwxOTI4NjUzMjMyXX0=
+eyJoaXN0b3J5IjpbLTMxNzY1NDkyNywtNzc2MDk1NDIyLDE5Mj
+g2NTMyMzJdfQ==
 -->
