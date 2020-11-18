@@ -27,7 +27,9 @@ The lightcone file provides positional data for each halo in both celestial and 
 | r| co-moving distance of central halo particle  |(float32) |Mpc/h |
 | ra | right ascention of central halo particle  |(float32) | $(\pm 90^\circ)$ 
 | dec| co-moving distance of central halo particle  |(float32) |$(\pm 90^\circ)$ 
-| zz | co-moving distance of central halo particle  |(float32) |Mpc/h |
+| zz | redshift of halo  |(float32) |Mpc/h |
+| vr | radial line-of-sight velocity of halo  |(float32) |km/s |
+| vel_disp | velocity dispersion  |(float32) |km |
 * r - co-moving radial distance $(Mpc)$
 * Dec - declination in degrees $(\pm 90^\circ)$
 * RA - right ascension  $(\pm 180^\circ)$
@@ -40,6 +42,6 @@ halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),('mass', np.float32
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzNzExNTkxLC03NzYwOTU0MjIsMTkyOD
-Y1MzIzMl19
+eyJoaXN0b3J5IjpbMTE1NDE3MTYwMSwtNzc2MDk1NDIyLDE5Mj
+g2NTMyMzJdfQ==
 -->
