@@ -93,8 +93,8 @@ dens_map = np.histogram(pix, npix)[0]
 fig, ax = plt.subplots(1,1, figsize=(12,12))
 hp.mollview(dens_map, norm = 'hist', title = 'Snapshot {0:02d}'.format(snap), hold=True, xsize = 3600)
 ```
-
+![Halo Lightcone Shell](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone_shell.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzI1NDYwNiwxNTE0MjkzNjcsLTc3Nj
-A5NTQyMiwxOTI4NjUzMjMyXX0=
+eyJoaXN0b3J5IjpbMjEyOTA2NTUxNSwyMDMzMjU0NjA2LDE1MT
+QyOTM2NywtNzc2MDk1NDIyLDE5Mjg2NTMyMzJdfQ==
 -->
