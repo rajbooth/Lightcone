@@ -6,6 +6,7 @@ nav:
   - Building the lightcone: building_lightcone.md
   - Data products: data_products.md
   - Data visualisation: data_visualisation.md
+  - Halo lightcone: halo_lightcone.md
   
 theme:  readthedocs
 
