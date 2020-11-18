@@ -21,12 +21,12 @@ The lightcone file comprises 22 datasets, one for each of the 22 GADGET snapshot
 The lightcone file provides positional data for each halo in both celestial and Cartesian coordinates.  The following data fields are included in the dataset:
 | Parameter |         Description     | Data type| Units |
 |----------|-----------------------------|-----------|-------|
-| cm| position of halo centre of mass (x,y,z) | vect | Mpc/h
-| vel| velocity of halo centre of mass (x,y,z) | vect |
-| pos| position of central halo particle (x,y,z) | vect |
-| r| co-moving distance of central halo particle  |(float32) | vect |
-
-
+| cm| position of halo centre of mass (x,y,z) | vect | Mpc/h |
+| vel| velocity of halo centre of mass (x,y,z) | vect |km/s |
+| pos| position of central halo particle (x,y,z) | vect | Mpc/h
+| r| co-moving distance of central halo particle  |(float32) |Mpc/h |
+| ra | r central halo particle  |(float32) |Mpc/h |
+| r| co-moving distance of central halo particle  |(float32) |Mpc/h |
 
 * r - co-moving radial distance $(Mpc)$
 * Dec - declination in degrees $(\pm 90^\circ)$
@@ -40,6 +40,6 @@ halo2 = np.dtype([('cm', vect), ('vel', vect), ('pos', vect),('mass', np.float32
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NjYxNjkyNywtNzc2MDk1NDIyLDE5Mj
-g2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbLTE0NjczMzY5MDEsLTc3NjA5NTQyMiwxOT
+I4NjUzMjMyXX0=
 -->
