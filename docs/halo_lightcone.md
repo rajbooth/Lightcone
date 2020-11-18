@@ -58,16 +58,24 @@ r_max = 3000 # cut off radial distance
 h = haloes[abs(haloes['pos']['z'])<depth ]  
 h = h[h['r']<r_max]
 
-# set halo coordinate
+# populate halo parameter arrays
 x = h['pos']['x']
 y = h['pos']['y']
 m = h['mass']
 vd = h['vel_disp']
+
+#
+area = m/100
+col = np.log(vd)
+fig = plt.subplots(figsize = (12,12))
+plt.scatter(x, y, s=area, c=col, ec = None, alpha=0.8)
+plt.savefig('Halo lightcone.png')
+plt.show()
 ```
 
 ![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTc1NjUzNCwtNzc2MDk1NDIyLDE5Mj
-g2NTMyMzJdfQ==
+eyJoaXN0b3J5IjpbOTAyMTk4NDIxLC03NzYwOTU0MjIsMTkyOD
+Y1MzIzMl19
 -->
