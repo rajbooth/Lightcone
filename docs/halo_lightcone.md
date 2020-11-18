@@ -73,10 +73,9 @@ plt.scatter(x, y, s=area, c=col, ec = None, alpha=0.8)
 #plt.savefig('Halo lightcone.png')
 plt.show()
 ```
-
-![enter image description here](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
+![Halo Lightcone](https://raw.githubusercontent.com/rajbooth/Lightcone/master/images/Halo_lightcone.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4NDk5MzIxLC03NzYwOTU0MjIsMTkyOD
+eyJoaXN0b3J5IjpbMTUxNDI5MzY3LC03NzYwOTU0MjIsMTkyOD
 Y1MzIzMl19
 -->
